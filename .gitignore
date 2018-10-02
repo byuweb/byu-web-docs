@@ -1,3 +1,8 @@
+# Mac and design stuff
+*.psd
+.DS_Store
+
+
 # Logs
 logs
 *.log

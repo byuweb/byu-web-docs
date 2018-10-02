@@ -1,0 +1,26 @@
+title: Headings
+collated: true
+default: pagetitle
+
+variants:
+  - name: pagetitle
+    context:
+      heading: Page Title
+  - name: heading1
+    context:
+      heading: Heading 1
+  - name: heading2
+    context:
+      heading: Heading 2
+  - name: heading3
+    context:
+      heading: Heading 3
+  - name: heading4
+    context:
+      heading: Heading 4
+  - name: heading5
+    context:
+      heading: Heading 5
+  - name: heading6
+    context:
+      heading: Heading 6
