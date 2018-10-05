@@ -1,3 +1,11 @@
 name: paragraph
-context:
-  text: Paragraphs follow the main body text style of 18px/30px, with 12px spacing between them.
+title: Paragraphs
+label: Paragraphs
+collated: true
+variants:
+  - name: default
+    context:
+      text: "Paragraphs follow the main body text style of 18px/30px, with 12px spacing between them. Color is #222 (which has an AAA contrast rating against a white background)."
+  - name: lead
+    context:
+      text: A lead paragraph may be the first paragraph in an article, or a summary of what's to come. It stands out visually from other text.

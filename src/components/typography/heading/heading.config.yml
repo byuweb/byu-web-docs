@@ -1,7 +1,8 @@
 title: Headings
+label: Headings
 collated: true
 default: pagetitle
-
+preview: '@preview--compact'
 variants:
   - name: pagetitle
     context:

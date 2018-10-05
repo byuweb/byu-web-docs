@@ -1,0 +1,24 @@
+name: list
+label: Lists
+title: Lists
+variants:
+  - name: default
+    label: Unordered
+    context: 
+      items:
+        - item: Item 1
+        - item: Item 2
+        - item: Item 3
+  - name: ordered
+    context: 
+      items:
+        - item: Item 1
+        - item: Item 2
+        - item: Item 3
+  - name: multiline-list-items
+    context: 
+      items:
+        - item: I stuffed a shirt or two into my old carpet-bag, tucked it under my arm, and started for Cape Horn and the Pacific.  
+        - item: Quitting the good city of old Manhatto, I duly arrived in New Bedford. It was a Saturday night in December.
+        - item: Much was I disappointed upon learning that the little packet for Nantucket had already sailed, and that no way of reaching that place would offer, till the following Monday.
+        - item: As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage, it may as well be related that I, for one, had no idea of so doing.

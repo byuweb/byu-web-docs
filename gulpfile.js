@@ -23,7 +23,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const fractal = require('@frctl/fractal').create();
 
 /* Set the title of the project */
-fractal.set('project.title', 'BYU Web Docs');
+fractal.set('project.title', 'Web Docs');
 fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Nathan Walton');
 
@@ -38,6 +38,11 @@ fractal.web.set('static.path', __dirname + '/public');
 
 /* Set the static HTML build destination */
 fractal.web.set('builder.dest', __dirname + '/build');
+
+/* Set the default collator (a wrapper for collated component views) */
+fractal.components.set('default.collator', function(markup, item) {
+  return `<div class="variant"><h2 class="label">${item.label}</h2> <div class="content">${markup}</div> </div>`;
+});
 
 
 /* Handlebars instance */
@@ -60,6 +65,21 @@ const hbs = require('@frctl/handlebars')({
 
 fractal.components.engine(hbs); /* set as the default template engine for components */
 fractal.docs.engine(hbs); /* you can also use the same instance for documentation, if you like! */
+
+
+/* Mandelbrot theme customization */
+const byuTheme = require('@frctl/mandelbrot')({
+    // theme config here
+    skin: "navy",
+    panels: ["html", "view", "resources", "context", "info"/*, "notes"*/],
+    styles: ["default","/fractal/theme.css"],
+    nav: ["docs", "components"]
+});
+
+// specify a directory to hold the theme override templates
+byuTheme.addLoadPath(__dirname + '/theme-overrides');  
+
+fractal.web.theme(byuTheme);
 
 
 
@@ -118,25 +138,36 @@ gulp.task('fractal:build', function(){
  * CSS
  * =========================== */
 
- const sassLocations = [
-    './src/sass/*.scss', 
+const mainSassLocations = [
     './src/sass/*.sass',
-    './src/components/**/*.scss',
     './src/components/**/*.sass',
     ];
 
-gulp.task('sass', function () {
-    return gulp.src(sassLocations)
+const themeSassLocations = [ './theme-overrides/style/*.sass' ]
+
+gulp.task('sass:main', function () {
+    return gulp.src( mainSassLocations )
         .pipe(concat('style.sass'))
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css'));
 });
- 
-gulp.task('sass:watch', function () {
-    gulp.watch( sassLocations, ['sass']);
+
+gulp.task('sass:theme', function () {
+    return gulp.src( themeSassLocations )
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./public/fractal/'));
 });
+
+gulp.task('sass:watch', function () {
+    gulp.watch( mainSassLocations, ['sass:main']);
+    gulp.watch( themeSassLocations, ['sass:theme']);
+});
+
+
 
 
 
@@ -145,5 +176,5 @@ gulp.task('sass:watch', function () {
  * Startup
  * =========================== */
 
-gulp.task('default', [ 'sass', 'fractal:start', 'sass:watch' ]);
+gulp.task('default', [ 'sass:main',  'sass:theme', 'fractal:start', 'sass:watch' ]);
 
