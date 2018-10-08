@@ -1,2 +1,43 @@
+ul, ol
+	padding-left: 0
+	padding-left: $spacing4
+
 li
 	margin: 0 0 $spacing1
+
+ul ul, ol ol, ol ul, ul ol
+	margin: $spacing1 0
+	
+
+ul
+	list-style: disc
+ul ul
+	list-style: circle
+ul ul ul
+	list-style: square
+ul ul ul ul
+	list-style: circle
+ul ul ul ul ul
+	list-style: disc
+
+ol
+	list-style: decimal
+ol ol
+	list-style: lower-alpha
+ol ol ol
+	list-style: lower-roman
+ol ol ol ol
+	list-style: decimal
+ol ol ol ol ol
+	list-style: lower-alpha
+
+
+dl 
+	0 0 $spacing3
+
+dd
+	margin: 0 0 $spacing2 $spacing4
+	line-height: 1.5
+dt
+	margin: $spacing3 0 $spacing1
+	font-weight: 500

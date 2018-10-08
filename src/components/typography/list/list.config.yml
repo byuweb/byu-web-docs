@@ -15,6 +15,22 @@ variants:
         - item: Item 1
         - item: Item 2
         - item: Item 3
+  - name: definition
+    context:
+      definitions:
+        - term: fractal
+          descriptions:
+            - text: '[noun] a curve or geometric figure, each part of which has the same statistical character as the whole. Fractals are useful in modeling structures (such as eroded coastlines or snowflakes) in which similar patterns recur at progressively smaller scales, and in describing partly random or chaotic phenomena such as crystal growth, fluid turbulence, and galaxy formation.'
+            - text: '[adjective] relating to or of the nature of a fractal or fractals.'
+        - term: gulp
+          descriptions:
+            - text: '[verb] swallow (drink or food) quickly or in large mouthfuls, often audibly.' 
+            - text: '[verb] breathe (air) deeply and quickly.' 
+            - text: '[verb] make effortful breathing or swallowing movements, typically in response to strong emotion.' 
+            - text: '[noun] an act of gulping food or drink.' 
+            - text: '[noun] a large mouthful of liquid hastily drunk.' 
+            - text: '[noun] a large quantity of air breathed in.' 
+            - text: '[noun] a swallowing movement of the throat.'
   - name: multiline-list-items
     context: 
       items:
