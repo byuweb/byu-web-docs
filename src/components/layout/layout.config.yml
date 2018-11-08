@@ -1,0 +1,13 @@
+title: Layout
+label: Layout
+collated: true
+preview: '@preview--fullwidth'
+variants:
+  - name: default
+    label: Section
+    context:
+      markup: '<section><p>Default</p></section>'
+  - name: Full
+    label: Full
+    context:
+      markup: '<section class="full">Full</section>'
