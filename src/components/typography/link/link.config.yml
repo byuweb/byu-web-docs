@@ -1,0 +1,12 @@
+name: link
+title: Links
+label: Links
+context:
+  href: '#'
+  text: Inline link
+
+variants:
+  - name: default
+  - name: block
+    context:
+      text: Block link
