@@ -31,13 +31,13 @@ fractal.set('project.author', 'Nathan Walton');
 fractal.components.set('path', __dirname + '/src/components');
 
 /* Tell Fractal where the documentation pages will live */
-fractal.docs.set('path', __dirname + '/src/docs');
+fractal.docs.set('path', __dirname + '/src/info');
 
 /* Specify a directory of static assets */
 fractal.web.set('static.path', __dirname + '/public');
 
 /* Set the static HTML build destination */
-fractal.web.set('builder.dest', __dirname + '/build');
+fractal.web.set('builder.dest', __dirname + '/docs');
 
 /* Set the default collator (a wrapper for collated component views) */
 fractal.components.set('default.collator', function(markup, item) {
