@@ -1,10 +1,12 @@
 @import "https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css"
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
 // @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i')
 
 
 $font-heading: "HCo Ringside Narrow SSm", Arial Narrow, Arial, sans-serif
 $font-text: 'Open Sans', Helvetica, Arial, sans-serif
+$font-mono: 'Roboto Mono', monospace
 
 html
 	font-size: 1em
@@ -28,3 +30,7 @@ p, ul, ol, dl
 
 img
 	max-width: 100%
+
+code, kbd, samp
+  font-family: $font-mono
+  color: #d06
