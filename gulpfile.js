@@ -41,7 +41,7 @@ fractal.web.set('builder.dest', __dirname + '/build');
 
 /* Set the default collator (a wrapper for collated component views) */
 fractal.components.set('default.collator', function(markup, item) {
-  return `<div class="variant"><h2 class="label">${item.label}</h2> <div class="content">${markup}</div> </div>`;
+  return `<div class="variant"><h2 class="label">${item.label}</h2> <a class="link" href="../preview/${item.handle}">View</a> <div class="content">${markup}</div> </div>`;
 });
 
 

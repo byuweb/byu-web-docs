@@ -6,11 +6,13 @@ html
 
 body
 	font-family: "HCo Ringside Narrow SSm", Arial Narrow, Arial, sans-serif;
-	font-size: 1.125rem
+	font-size: 1rem
 	font-weight: 300
 	color: #222
 	line-height: 1.6
 
+	@media( min-width: $break480 )
+		font-size: 1.125rem
+
 p, ul, ol, dl
 	margin: $spacing3 0
-	max-width: 40em
