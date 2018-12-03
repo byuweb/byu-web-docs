@@ -1,18 +1,30 @@
 @import "https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i')
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i')
 
+
+$font-heading: "HCo Ringside Narrow SSm", Arial Narrow, Arial, sans-serif
+$font-text: 'Open Sans', Helvetica, Arial, sans-serif
 
 html
 	font-size: 1em
 
 body
-	font-family: "HCo Ringside Narrow SSm", Arial Narrow, Arial, sans-serif;
+	font-family: $font-text
 	font-size: 1rem
-	font-weight: 300
+	font-weight: 400
 	color: #222
 	line-height: 1.6
 
 	@media( min-width: $break480 )
 		font-size: 1.125rem
 
+h1, h2, h3, h4, h5, h6
+	font-family: $font-heading
+
 p, ul, ol, dl
 	margin: $spacing3 0
+
+
+img
+	max-width: 100%
