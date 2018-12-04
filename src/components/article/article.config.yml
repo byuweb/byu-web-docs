@@ -9,3 +9,5 @@ variants:
     label: 'Open Sans'
   - name: roboto
     label: 'Roboto'
+  - name: noto
+    label: 'Noto Sans'
