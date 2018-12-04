@@ -2,6 +2,7 @@ name: link
 title: Links
 label: Links
 collated: true
+status: wip
 context:
   href: '#'
   text: Inline link

@@ -1,0 +1,11 @@
+name: article
+title: Article
+label: Article
+preview: "@preview--article"
+status: wip
+
+variants:
+  - name: default
+    label: 'Open Sans'
+  - name: roboto
+    label: 'Roboto'
