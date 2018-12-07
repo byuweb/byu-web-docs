@@ -25,3 +25,35 @@
 		text-decoration: none
 		&:hover
 			text-decoration: underline
+
+
+.colors
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	grid-auto-rows: auto
+	grid-gap: 5px
+
+	&.columns-2
+		grid-template-columns: 1fr 1fr
+		width: 66%
+
+	.color
+		padding: 1.5rem 1rem 2rem
+		border-radius: 2px
+		code
+			color: #141414
+
+		h2
+			color: #141414
+			font-size: 1rem
+			margin: 0 0 0.5rem
+		p
+			font-size: 0.9rem
+			margin: 0
+
+		&.white-text
+			color: #fff
+			h2
+				color: #fff
+			code
+				color: #fff

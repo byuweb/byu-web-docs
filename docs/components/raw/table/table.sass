@@ -1,0 +1,32 @@
+.table-container
+	overflow-x: auto
+
+table
+	border-collapse: collapse
+
+	caption
+		@extend .caption
+
+th
+	font-weight: $font-weight-bold
+
+td, th
+	padding: $spacing3 $spacing4
+	border: 1px solid $colorLine
+	text-align: left
+	vertical-align: top
+	line-height: 1.4
+	thead &
+		border-top: none
+		border-bottom-width: 2px
+	tfoot &
+		border-top-width: 2px
+		border-bottom: none
+
+tr 
+	*:first-child
+		border-left: none
+		padding-left: $spacing1
+	*:last-child
+		border-right: none
+		padding-right: $spacing2

@@ -1,0 +1,164 @@
+name: color
+collated: true
+variants:
+  - name: default
+    title: Main Colors
+    label: Main Colors
+    context:
+      colors:
+        - name: BYU Navy
+          hex: 002e5d
+          var: byuNavy
+          dark: true
+        - name: BYU Royal
+          hex: 0057b8
+          var: byuRoyal
+          dark: true
+        - name: White
+          hex: fff
+          var: white
+
+  - name: Greys
+    context: 
+      colors:
+        - name: Darkest Grey
+          hex: "141414"
+          var: grey90
+          dark: true
+        - name: Dark Grey
+          hex: "666"
+          var: grey70
+          dark: true
+        - name: Medium Grey
+          hex: 8f8f8f
+          var: grey50
+          dark: true
+        - name: Light Grey
+          hex: c5c5c5
+          var: grey30
+        - name: Lightest Grey
+          hex: e6e6e6
+          var: grey10
+
+  - name: Accent Colors
+    context:
+      colors:
+        - name: Royal Blue
+          var: $royal
+          hex: "0057b8"
+          dark: true
+        - name: Medium Blue
+          var: $royal50
+          hex: "5199e1"
+          dark: true
+        - name: Light Blue
+          var: $royal20
+          hex: "afd6fe"
+
+        - name: Yellow
+          var: $yellow
+          hex: "fcc015"
+        - name: Medium Yellow
+          var: $yellow50
+          hex: "ffda73"
+        - name: Light Yellow
+          var: $yellow20
+          hex: "fff0c5"
+
+        - name: Purple
+          var: $purple
+          hex: "500e7c"
+          dark: true
+        - name: Medium Purple
+          var: $purple50
+          hex: "af88ca"
+        - name: Light Purple
+          var: $purple20
+          hex: "d6bde7"
+
+        - name: Green
+          var: $green
+          hex: "38870c"
+          dark: true
+        - name: Medium Green
+          var: $green50
+          hex: "94c576"
+        - name: Light Green
+          var: $green20
+          hex: "cee0c3"
+
+        - name: Orange
+          var: $orange
+          hex: "d8580c"
+          dark: true
+        - name: Medium Orange
+          var: $orange50
+          hex: "f7a883"
+        - name: Light Orange
+          var: $orange20
+          hex: "ffdacf"
+
+        - name: Red
+          var: $red
+          hex: "a60318"
+          dark: true
+        - name: Medium Red
+          var: $red50
+          hex: "f5acb6"
+        - name: Light Red
+          var: $red20
+          hex: "fde3e6"
+
+  - name: Text colors
+    context:
+      columns: 2
+      colors:
+        - name: Darkest Grey
+          var: textcolor
+          hex: "141414"
+          dark: true
+        - name: Navy Blue
+          var: textblue
+          hex: "002e5d"
+          dark: true
+        - name: Medium Grey
+          var: textgrey
+          hex: "666"
+          dark: true
+        - name: White
+          var: textwhite
+          hex: "fff"
+
+
+  - name: UI Colors
+    context:
+      columns: 2
+      colors:
+        - name: Info
+          var: colorInfo
+          hex: "0057b8"
+          dark: true
+        - name: Info Light
+          var: colorInfoLight
+          hex: "afd6fe"
+        - name: Warning
+          var: colorWarning
+          hex: "fcc015"
+          dark: true
+        - name: Warning Light
+          var: colorWarningLight
+          hex: "fff0c5"
+        - name: Confirm
+          var: colorConfirm
+          hex: "38870c"
+          dark: true
+        - name: Confirm Light
+          var: colorConfirmLight
+          hex: "cee0c3"
+        - name: Danger
+          var: colorDanger
+          hex: "a60318"
+          dark: true
+        - name: Danger Light
+          var: colorDangerLight
+          hex: "fde3e6"

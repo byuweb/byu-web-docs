@@ -1,0 +1,9 @@
+<div class="colors columns-{{columns}}">
+	{{#each colors }}
+	<div class="color{{#if dark}} white-text{{/if}}" style="background:#{{hex}}">
+		<h2>{{ name }}</h2>
+		<p><code>#{{ hex }}</code></p>
+		<p><code>${{ var }}</code></p>
+	</div>
+	{{/each}}
+</div>

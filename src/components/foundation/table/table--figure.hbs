@@ -1,0 +1,25 @@
+<figure tabindex="0" role="group"{{#if caption}} aria-labelledby="{{caption.id}}"{{/if}}>
+	{{#if heading}}<{{heading.level}}>{{{heading.data}}}</{{heading.level}}>{{/if}}
+	<div class="table-container">
+		<table>
+			{{#if head}}<thead>
+				<tr>
+					{{#each head.cells}}<th scope="col">{{{data}}}</th>{{/each}}
+				</tr>
+			</thead>{{/if}}
+			{{#if foot}}<tfoot>
+				<tr>
+					{{#if foot.header}}<th scope="row">{{{foot.header}}}</th>{{/if}}
+					{{#each foot.cells}}<td>{{{data}}}</td>{{/each}}
+				</tr>
+			</tfoot>{{/if}}
+			<tbody>
+				{{#each rows}}<tr>
+					{{#if header}}<th scope="row">{{{header}}}</th>{{/if}}
+					{{#each cells}}<td>{{{data}}}</td>{{/each}}
+				</tr>{{/each}}
+			</tbody>
+		</table>
+	</div>
+	{{#if caption}}<figcaption id="{{caption.id}}">{{{caption.data}}}</figcaption>{{/if}}
+</figure>

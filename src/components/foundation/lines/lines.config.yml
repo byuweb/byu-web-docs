@@ -1,0 +1,12 @@
+name: lines
+title: Borders and Lines
+label: Borders and Lines
+collated: true
+variants: 
+  - name: default
+    label: Horizontal Rule
+    context: 
+      markup: "<hr>"
+  - name: table
+    context:
+      markup: "<table> <tr><td>&nbsp;</td><td>&nbsp;</td></tr> <tr><td>&nbsp;</td><td>&nbsp;</td></tr> </table>"

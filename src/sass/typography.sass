@@ -1,13 +1,24 @@
 @import "https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css"
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i')
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i')
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i')
+//https://www.wired.com/2016/10/meet-noto-googles-free-font-800-languages/
+
+@font-face
+    font-family: 'Noto Mono'
+    src: url('../font/notomono/NotoMono-Regular-webfont.eot')
+    src: url('../font/notomono/NotoMono-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../font/notomono/NotoMono-Regular-webfont.woff') format('woff'), url('../font/notomono/NotoMono-Regular-webfont.ttf') format('truetype'), url('../font/notomono/NotoMono-Regular-webfont.svg#noto_monoregular') format('svg')
+    font-weight: normal
+    font-style: normal
+
 
 
 $font-heading: "HCo Ringside Narrow SSm", Arial Narrow, Arial, sans-serif
-$font-text: 'Open Sans', Helvetica, Arial, sans-serif
-$font-mono: 'Roboto Mono', monospace
+$font-text: 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif
+$font-mono: 'Noto Mono', 'Roboto Mono', monospace
+
+$font-weight-normal: 400
+$font-weight-bold: 700
 
 html
 	font-size: 1em
@@ -15,18 +26,21 @@ html
 body
 	font-family: $font-text
 	font-size: 1rem
-	font-weight: 400
-	color: #222
+	font-weight: $font-weight-normal
+	color: $textcolor
 	line-height: 1.6
 
 	@media( min-width: $break480 )
 		font-size: 1.125rem
 
+	.open-sans
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif
+
 	.roboto
-		font-family: 'Roboto', $font-text
+		font-family: 'Roboto', Helvetica, Arial, sans-serif
 
 	.noto
-		font-family: 'Noto Sans', sans-serif
+		font-family: 'Noto Sans', Helvetica, Arial, sans-serif
 
 
 h1, h2, h3, h4, h5, h6
