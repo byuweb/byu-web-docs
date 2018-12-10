@@ -41,7 +41,10 @@ fractal.web.set('builder.dest', __dirname + '/docs');
 
 /* Set the default collator (a wrapper for collated component views) */
 fractal.components.set('default.collator', function(markup, item) {
-  return `<div class="variant"><h2 class="label">${item.label}</h2> <a class="link" target="_blank" href="../preview/${item.handle}">View</a> <section class="content">${markup}</section> </div>`;
+  var context = item.context;
+  var markupBefore = context && context.markupBefore ? context.markupBefore : "";
+  var markupAfter = context && context.markupAfter ? context.markupAfter : "";
+  return `<div class="variant"><h2 class="label">${item.label}</h2> <a class="link" target="_blank" href="../preview/${item.handle}">View</a> <section class="content">${markupBefore}${markup}${markupAfter}</section> </div>`;
 });
 
 

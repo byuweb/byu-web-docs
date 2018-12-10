@@ -1,0 +1,12 @@
+name: image
+label: Images
+collated: true
+context:
+  url: /components/raw/image/1701-03-contemporary-dance-poster-0094.jpg
+  alt: ""
+  classes: ""
+variants:
+  - name: default
+  - name: emphasized
+    context:
+      classes: emphasis

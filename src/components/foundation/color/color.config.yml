@@ -144,7 +144,6 @@ variants:
         - name: Warning
           var: colorWarning
           hex: "fcc015"
-          dark: true
         - name: Warning Light
           var: colorWarningLight
           hex: "fff0c5"

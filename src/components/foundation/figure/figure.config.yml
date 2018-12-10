@@ -1,3 +1,24 @@
 name: figure
 label: Figures
 status: wip
+collated: true
+variants:
+  - name: default
+    label: Simple image
+    context:
+      componentHandle: '\@image'
+      contextData: 
+        url: '@image.url'
+        alt: '@image.alt'
+      border: false
+      caption:
+        id: figure-1 
+        data: Figure 1. Caption here
+  - name: table
+    context: 
+      componentHandle: '\@table'
+      contextData: 
+        rows: '@table.rows'
+      caption:
+        id: figure-2 
+        data: Figure 2. Caption here

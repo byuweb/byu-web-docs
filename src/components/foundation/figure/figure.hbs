@@ -1,0 +1,4 @@
+<figure tabindex="0" role="group"{{#if caption}} aria-labelledby="{{caption.id}}"{{/if}}>
+	{{> (lookup . 'componentHandle') contextData }}
+	{{#if caption}}<figcaption id="{{caption.id}}">{{{caption.data}}}</figcaption>{{/if}}
+</figure>

@@ -2,50 +2,60 @@ name: table
 label: Tables
 collated: true
 status: wip
-context: 
-  heading:
-    data: Table Heading
-    level: h3
-  caption:
-    data: Caption text
-    id: caption-id
-  head:
-    cells:
-      - data: Heading
-      - data: Column Heading&nbsp;1
-      - data: Column Heading&nbsp;2
-      - data: Column Heading&nbsp;3
-  foot:
-    header: Footer&nbsp;Heading
-    cells:
-      - data: Column Footer&nbsp;1
-      - data: Column Footer&nbsp;2
-      - data: Column Footer&nbsp;3
+context:
   rows:
-    - header: Row&nbsp;Heading&nbsp;1
-      cells:
-        - data: Cell&nbsp;1.1
-        - data: Cell&nbsp;1.2
-        - data: Cell&nbsp;1.3
-    - header: Row&nbsp;Heading&nbsp;2
-      cells:
-        - data: Cell&nbsp;2.1
-        - data: Cell&nbsp;2.2
-        - data: Cell&nbsp;2.3
-    - header: Row&nbsp;Heading&nbsp;3
-      cells:
-        - data: Cell&nbsp;3.1
-        - data: Cell&nbsp;3.2
-        - data: Cell&nbsp;3.3
+    - cells:
+        - data: Cell 1.1
+        - data: Cell 1.2
+        - data: Cell 1.3
+    - cells:
+        - data: Cell 2.1
+        - data: Cell 2.2
+        - data: Cell 2.3
+    - cells:
+        - data: Cell 3.1
+        - data: Cell 3.2
+        - data: Cell 3.3
 
 variants:
   - name: default
-  - name: nofigure
-    label: Without Figure
+  - name: full
+    label: With headers and footer
     context:
       heading:
-        data: Without <code>&lt;figure&gt;</code> markup
+        data: Table Heading
         level: h3
+      caption:
+        data: Caption text
+        id: caption-id
+      head:
+        cells:
+          - data: Heading
+          - data: Column Heading&nbsp;1
+          - data: Column Heading&nbsp;2
+          - data: Column Heading&nbsp;3
+      foot:
+        header: Footer&nbsp;Heading
+        cells:
+          - data: Column Footer&nbsp;1
+          - data: Column Footer&nbsp;2
+          - data: Column Footer&nbsp;3
+      rows:
+        - header: Row&nbsp;Heading&nbsp;1
+          cells:
+            - data: Cell&nbsp;1.1
+            - data: Cell&nbsp;1.2
+            - data: Cell&nbsp;1.3
+        - header: Row&nbsp;Heading&nbsp;2
+          cells:
+            - data: Cell&nbsp;2.1
+            - data: Cell&nbsp;2.2
+            - data: Cell&nbsp;2.3
+        - header: Row&nbsp;Heading&nbsp;3
+          cells:
+            - data: Cell&nbsp;3.1
+            - data: Cell&nbsp;3.2
+            - data: Cell&nbsp;3.3
   - name: wide
     context: 
       heading:
