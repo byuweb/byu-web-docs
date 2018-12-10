@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../fractal/theme.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Borders and Lines | Web Docs</title>
+<title>Lines & Borders | Web Docs</title>
 
 </head>
 <body>
@@ -61,7 +61,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/lines.html" title="Component preview">
-            Borders and Lines
+            Lines & Borders
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -160,16 +160,42 @@
 </pre>
         
             <pre><span class="hljs-comment">&lt;!-- Table --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&amp;nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&amp;nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&amp;nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&amp;nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table-container"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"caption-id"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Heading&amp;nbsp;1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Heading&amp;nbsp;2<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Heading&amp;nbsp;3<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Heading&amp;nbsp;4<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;1.1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;1.2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;1.3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;1.4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;2.1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;2.2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;2.3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;2.4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;3.1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;3.2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;3.3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cell&amp;nbsp;3.4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 </pre>
         
@@ -180,7 +206,11 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b49df0f308f67f0f91ff4db09f314c53-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"></span><span class="hljs-template-variable">{{{ markup }}</span><span class="xml">}</span></pre>
+        <pre><span class="xml"><span class="hljs-comment">&lt;!-- Horizontal Rule --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Table --&gt;</span>
+</span><span class="hljs-template-variable">{{&gt; '@table' }}</span><span class="xml"></span></pre>
     </code>
 </div>
 
@@ -195,13 +225,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-a12d83c3f5f3bc343011f54747c7f9fc">lines.sass</option>
+                <option value="file-6691c08d7e8f03830ea87f4658abfa13">lines.sass</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-a12d83c3f5f3bc343011f54747c7f9fc" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-6691c08d7e8f03830ea87f4658abfa13" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -210,10 +240,11 @@
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
                                 <pre>hr
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">2rem</span> <span class="hljs-number">0</span>
+	<span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacing6</span> <span class="hljs-number">15%</span> <span class="hljs-variable">$spacing6</span> <span class="hljs-number">10%</span>
 	<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>
-	<span class="hljs-attribute">background</span>: <span class="hljs-variable">$colorLine</span>
+	<span class="hljs-attribute">background</span>: <span class="hljs-variable">$colorLineDark</span>
+
 </pre>
                             </code>
                             
@@ -230,7 +261,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">67 Bytes</span>
+                    <span class="Meta-value">93 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -248,7 +279,8 @@
             <pre>
 <span class="hljs-comment">/* Horizontal Rule */</span>
 {
-  <span class="hljs-attr">"markup"</span>: <span class="hljs-string">"&lt;hr&gt;"</span>
+  <span class="hljs-attr">"markupBefore"</span>: <span class="hljs-string">"&lt;p&gt;Horizontal rules have spacing above and below. They're a little darker than other borders and lines.&lt;/p&gt;"</span>,
+  <span class="hljs-attr">"markupAfter"</span>: <span class="hljs-string">"&lt;p&gt;Horizontal rules provide a distinct break between sections to indicate a change, such as a change in voice or thought.&lt;/p&gt;"</span>
 }
 
 </pre>
@@ -256,7 +288,76 @@
             <pre>
 <span class="hljs-comment">/* Table */</span>
 {
-  <span class="hljs-attr">"markup"</span>: <span class="hljs-string">"&lt;table&gt; &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;"</span>
+  <span class="hljs-attr">"caption"</span>: {
+    <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Table borders follow the conventions for other borders and lines."</span>,
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"caption-id"</span>
+  },
+  <span class="hljs-attr">"head"</span>: {
+    <span class="hljs-attr">"cells"</span>: [
+      {
+        <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Heading&amp;nbsp;1"</span>
+      },
+      {
+        <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Heading&amp;nbsp;2"</span>
+      },
+      {
+        <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Heading&amp;nbsp;3"</span>
+      },
+      {
+        <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Heading&amp;nbsp;4"</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">"rows"</span>: [
+    {
+      <span class="hljs-attr">"cells"</span>: [
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;1.1"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;1.2"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;1.3"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;1.4"</span>
+        }
+      ]
+    },
+    {
+      <span class="hljs-attr">"cells"</span>: [
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;2.1"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;2.2"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;2.3"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;2.4"</span>
+        }
+      ]
+    },
+    {
+      <span class="hljs-attr">"cells"</span>: [
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;3.1"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;3.2"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;3.3"</span>
+        },
+        {
+          <span class="hljs-attr">"data"</span>: <span class="hljs-string">"Cell&amp;nbsp;3.4"</span>
+        }
+      ]
+    }
+  ]
 }
 
 </pre>
@@ -521,9 +622,33 @@
     
         
         
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image.html" data-pjax>
+                <span>Images</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
-                <span>Borders and Lines</span>
+                <span>Lines & Borders</span>
                 
 
 <div class="Status Status--unlabelled">
