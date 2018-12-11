@@ -9,25 +9,9 @@ var byu_table = (function(){
 
 	var doc = document;
 
+
 	// Execute the function
-	executeOnLoad( updateTables );
-
-
-	/*
-	 * Func: ExecuteOnLoad
-	 * Desc: Execute specified function when the DOM is ready. Handle 
-	 * Args: functionName - Function Identifier - Name of the function to execute
-	 */
-	function executeOnLoad( functionName ) {
-		// in case the document is already rendered
-		if (doc.readyState!='loading') functionName();
-		// modern browsers
-		else if (doc.addEventListener) doc.addEventListener('DOMContentLoaded', functionName);
-		// IE <= 8
-		else doc.attachEvent('onreadystatechange', function(){
-		    if (doc.readyState=='complete') functionName();
-		});
-	}
+	byu_main.executeOnLoad( updateTables );
 	
 
 	/*
@@ -41,17 +25,54 @@ var byu_table = (function(){
 
 		for (var i=0; i < containers.length; i++) {
 		    var container = containers[i];
-		    var c_width = container.offsetWidth;
-		    var table = container. getElementsByTagName("table")[0];
-		    var t_width = table.offsetWidth;
-
-		    console.log( c_width < t_width );
+		    updateTable( container );
 		}
 	}
 
-	// Return public methods
-	return {
 
-	};
+	/*
+	 * Func: UpdateTable
+	 * Desc: Check if a table is wider than its container, and mark scrolling position within it
+	 * Args: @container - HTML Element - A container element for a table (probably of class "table-container")
+	 */
+	function updateTable( container ) {
+		var c_width = container.offsetWidth;
+	    var table = container. getElementsByTagName("table")[0];
+	    var t_width = table.offsetWidth;
+	    var table_wide_class = "table-wide";
+	    var start_visible_class = "start-visible";
+	    var end_visible_class = "end-visible";
+
+	    if ( c_width < t_width ) {
+
+	    	// Add table wide class if it's not already there
+	    	if ( !container.hasClass( table_wide_class ) ) { 
+		    	container.addClass( table_wide_class );
+		    }
+
+	    	// Check if the start of the table is visible and handle
+	    	if ( table.scrollLeft == 0 ) {
+	    		if ( !container.hasClass( start_visible_class ) ) {
+		    		container.addClass( start_visible_class );
+	    		}
+	    	} else {
+	    		container.removeClass( start_visible_class );
+	    	}
+
+	    	// Check if the end of the table is visible and handle
+	    	if ( t_width - table.scrollLeft == c_width ) {
+	    		if ( !container.hasClass( end_visible_class ) ) {
+		    		container.addClass( end_visible_class );
+	    		}
+	    	} else {
+	    		container.removeClass( end_visible_class );
+	    	}
+	    } 
+
+	    // The table is not too wide for its container
+	    else {
+	    	container.removeClass( table_wide_class );
+	    }
+	}
 
 })();

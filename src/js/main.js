@@ -5,6 +5,8 @@
 
 var byu_main = (function(){
 
+	var doc = document;
+
 	/*
 	 * HTML Prototype function assignments
 	 * Desc: Make it easy to add, test, and remove HTML classes via compatible, plain JS
@@ -27,7 +29,7 @@ var byu_main = (function(){
 	    }
 	    return this;
 	};
-	
+
 	// RemoveClass
 	HTMLElement.prototype.removeClass = function(name) {
 	  if (this.hasClass(name)) {
@@ -37,4 +39,27 @@ var byu_main = (function(){
 	  return this;
 	};
 
-});
+
+	/*
+	 * Func: ExecuteOnLoad
+	 * Desc: Execute specified function when the DOM is ready. Handle 
+	 * Args: functionName - Function Identifier - Name of the function to execute
+	 */
+	function executeOnLoad( functionName ) {
+		// in case the document is already rendered
+		if (doc.readyState!='loading') functionName();
+		// modern browsers
+		else if (doc.addEventListener) doc.addEventListener('DOMContentLoaded', functionName);
+		// IE <= 8
+		else doc.attachEvent('onreadystatechange', function(){
+		    if (doc.readyState=='complete') functionName();
+		});
+	}
+
+
+	// Expose public methods
+	return {
+		executeOnLoad: executeOnLoad,
+	}
+
+})();
