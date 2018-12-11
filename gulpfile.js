@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 
 
 
@@ -150,8 +151,8 @@ const themeSassLocations = [ './theme-overrides/style/*.sass' ]
 
 gulp.task('sass:main', function () {
     return gulp.src( mainSassLocations )
-        .pipe(concat('style.sass'))
         .pipe(sourcemaps.init())
+        .pipe(concat('style.sass'))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css'));
@@ -172,6 +173,32 @@ gulp.task('sass:watch', function () {
 
 
 
+/* ===========================
+ * JS
+ * =========================== */
+
+const mainJsLocations = [
+    './src/js/*.js',
+    './src/components/**/*.js',
+    '!./src/components/**/*.config.js',
+    ];
+
+const uglifyConfig = {
+    mangle: true,
+    };
+
+gulp.task('js:main', function () {
+    return gulp.src( mainJsLocations )
+        .pipe(sourcemaps.init())
+        .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('js:watch', function () {
+    gulp.watch( mainJsLocations, ['js:main']);
+});
 
 
 
@@ -179,5 +206,13 @@ gulp.task('sass:watch', function () {
  * Startup
  * =========================== */
 
-gulp.task('default', [ 'sass:main',  'sass:theme', 'fractal:start', 'sass:watch' ]);
+gulp.task('default', [ 
+    'sass:main',  
+    'sass:theme', 
+    'js:main', 
+    'fractal:start', 
+    'sass:watch', 
+    'js:watch' 
+]);
+
 
