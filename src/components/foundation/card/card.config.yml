@@ -1,0 +1,11 @@
+name: card
+label: Cards
+collated: true
+context:
+  image: '@image'
+  title: Test
+  url: /test
+  meta: Meta
+  text: Text here
+variants:
+  - name: default
