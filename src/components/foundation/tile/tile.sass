@@ -1,0 +1,31 @@
+.tile, .tiles li
+	@extend %card
+	margin: 1rem
+	max-width: 20rem
+
+	img
+		display: block
+		border-radius: 2px 2px 0 0
+
+	.text
+		padding: 1.5rem
+
+		h2
+			margin-top: 0
+			font-size: 1.4rem
+			color: $textcolor
+
+		.meta
+			font-size: 1rem
+			color: $royal
+			font-weight: bold
+
+		a
+			text-decoration: none
+			&, &:link
+				color: inherit
+
+		p 
+			color: $textgrey
+			font-size: 1rem
+			margin-bottom: 0

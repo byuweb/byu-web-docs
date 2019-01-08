@@ -1,0 +1,10 @@
+<li class="tile">  
+    {{#if image }}<img src="{{ path image.url }}" alt="{{ image.alt }}">{{/if}}
+    <div class="text">
+		<h2>
+			<a href="{{ url }}">{{ title }}</a>
+		</h2>
+		<h3 class="meta">{{ meta }}</h3>
+		<p>{{ text }}</p>
+	</div>
+</li>  

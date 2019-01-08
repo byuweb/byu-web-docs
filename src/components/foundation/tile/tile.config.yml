@@ -1,0 +1,13 @@
+name: tile
+label: Tiles
+collated: true
+context:
+  image:
+    url: /components/raw/tile/madrian_1215.jpg
+    alt: Portrait of Brigitte C. Madrian, ninth dean of the BYU Marriott School of Business
+  title: Top 10 BYU News stories of 2018
+  url: https://news.byu.edu/news/top-10-byu-news-stories-2018
+  meta: Dec 20, 2018 | Joe Hadfield
+  text: The most-read BYU News of the year include Star Wars-inspired research, advice for parents, a new chocolate milk flavor and the DNA of a 7’6” basketball player.
+variants:
+  - name: default
