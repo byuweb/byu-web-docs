@@ -154,12 +154,14 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tile"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../raw/tile/madrian_1215.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Portrait of Brigitte C. Madrian, ninth dean of the BYU Marriott School of Business"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../raw/tile/madrian_1215.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Portrait of Brigitte C. Madrian, ninth dean of the BYU Marriott School of Business"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://news.byu.edu/news/top-10-byu-news-stories-2018"</span>&gt;</span>Top 10 BYU News stories of 2018<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tile-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://news.byu.edu/news/top-10-byu-news-stories-2018"</span>&gt;</span>Top 10 BYU News stories of 2018<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta"</span>&gt;</span>Dec 20, 2018 | Joe Hadfield<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta"</span>&gt;</span>Dec 20, 2018<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The most-read BYU News of the year include Star Wars-inspired research, advice for parents, a new chocolate milk flavor and the DNA of a 7’6” basketball player.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></pre>
@@ -171,10 +173,12 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-40faca221c8550f78b9d1ccbbd08e6fa-panel-view">
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tile"</span>&gt;</span>  
-    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> image }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path image.url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ image.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> image }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
+    	<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path image.url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ image.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>
-			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tile-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 		<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta"</span>&gt;</span></span><span class="hljs-template-variable">{{ meta }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -241,23 +245,40 @@
 	<span class="hljs-string">@extend</span> <span class="hljs-string">%card</span>
 	<span class="hljs-attr">margin:</span> <span class="hljs-number">1</span><span class="hljs-string">rem</span>
 	<span class="hljs-attr">max-width:</span> <span class="hljs-number">20</span><span class="hljs-string">rem</span>
+	<span class="hljs-attr">position:</span> <span class="hljs-string">relative</span>
 
-	<span class="hljs-string">img</span>
-		<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
-		<span class="hljs-attr">border-radius:</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+	<span class="hljs-string">.image</span>
+		<span class="hljs-attr">width:</span> <span class="hljs-number">100</span><span class="hljs-string">%</span>
+		<span class="hljs-attr">height:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">padding-bottom:</span> <span class="hljs-number">56.25</span><span class="hljs-string">%</span>
+		<span class="hljs-attr">overflow:</span> <span class="hljs-string">hidden</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">relative</span>
+
+		<span class="hljs-string">img</span>
+			<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
+			<span class="hljs-attr">top:</span> <span class="hljs-number">0</span>
+			<span class="hljs-attr">left:</span> <span class="hljs-number">0</span>
+			<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
+			<span class="hljs-attr">border-radius:</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>
 
 	<span class="hljs-string">.text</span>
-		<span class="hljs-attr">padding:</span> <span class="hljs-number">1.5</span><span class="hljs-string">rem</span>
+		<span class="hljs-attr">padding:</span> <span class="hljs-number">1.25</span><span class="hljs-string">em</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">static</span>
+		<span class="hljs-attr">transition:</span> <span class="hljs-string">color</span> <span class="hljs-number">200</span><span class="hljs-string">ms</span> <span class="hljs-string">ease</span>
 
 		<span class="hljs-string">h2</span>
-			<span class="hljs-attr">margin-top:</span> <span class="hljs-number">0</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-number">1.4</span><span class="hljs-string">rem</span>
-			<span class="hljs-attr">color:</span> <span class="hljs-string">$textcolor</span>
+			<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
+			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize20</span>
+			<span class="hljs-attr">color:</span> <span class="hljs-string">$navy</span>
+			<span class="hljs-attr">position:</span> <span class="hljs-string">static</span>
+			<span class="hljs-attr">font-weight:</span> <span class="hljs-string">bold</span>
+			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
 
 		<span class="hljs-string">.meta</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-number">1</span><span class="hljs-string">rem</span>
+			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
 			<span class="hljs-attr">color:</span> <span class="hljs-string">$royal</span>
-			<span class="hljs-attr">font-weight:</span> <span class="hljs-string">bold</span>
+			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
+			<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
 
 		<span class="hljs-string">a</span>
 			<span class="hljs-attr">text-decoration:</span> <span class="hljs-string">none</span>
@@ -266,9 +287,34 @@
 
 		<span class="hljs-string">p</span> 
 			<span class="hljs-attr">color:</span> <span class="hljs-string">$textgrey</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-number">1</span><span class="hljs-string">rem</span>
+			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
 			<span class="hljs-attr">margin-bottom:</span> <span class="hljs-number">0</span>
-</pre>
+			<span class="hljs-attr">line-height:</span> <span class="hljs-number">1.4</span>
+			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
+
+	<span class="hljs-string">.tile-link:after</span>
+		<span class="hljs-attr">content:</span> <span class="hljs-string">" "</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
+		<span class="hljs-attr">left:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">top:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">right:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">bottom:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">box-shadow:</span> <span class="hljs-number">0</span> <span class="hljs-number">4</span><span class="hljs-string">px</span> <span class="hljs-number">12</span><span class="hljs-string">px</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-string">rgba(0,0,0,.17)</span>
+		<span class="hljs-attr">transition:</span> <span class="hljs-string">opacity</span> <span class="hljs-number">200</span><span class="hljs-string">ms</span> <span class="hljs-string">ease</span>
+		<span class="hljs-attr">opacity:</span> <span class="hljs-number">0</span>
+
+	<span class="hljs-string">&amp;:hover,</span> <span class="hljs-string">&amp;:focus</span>
+		<span class="hljs-attr">border-color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$royal,</span> <span class="hljs-string">$grey10,</span> <span class="hljs-number">25</span><span class="hljs-string">%</span> <span class="hljs-string">)</span>
+		<span class="hljs-string">.tile-link:after</span>
+			<span class="hljs-attr">opacity:</span> <span class="hljs-number">1</span>
+		<span class="hljs-string">.text</span> 
+			<span class="hljs-string">h2</span>
+				<span class="hljs-string">//</span> <span class="hljs-attr">text-decoration:</span> <span class="hljs-string">underline</span>
+				<span class="hljs-attr">color:</span> <span class="hljs-string">$textcolor</span>
+			<span class="hljs-string">.meta</span>
+				<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$royal,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span>
+			<span class="hljs-string">p</span>
+				<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$textgrey,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span></pre>
                             </code>
                             
                         </div>
@@ -284,7 +330,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">400 Bytes</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -306,7 +352,7 @@
   },
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Top 10 BYU News stories of 2018"</span>,
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://news.byu.edu/news/top-10-byu-news-stories-2018"</span>,
-  <span class="hljs-attr">"meta"</span>: <span class="hljs-string">"Dec 20, 2018 | Joe Hadfield"</span>,
+  <span class="hljs-attr">"meta"</span>: <span class="hljs-string">"Dec 20, 2018"</span>,
   <span class="hljs-attr">"text"</span>: <span class="hljs-string">"The most-read BYU News of the year include Star Wars-inspired research, advice for parents, a new chocolate milk flavor and the DNA of a 7’6” basketball player."</span>
 }</pre>
             

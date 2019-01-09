@@ -10,7 +10,7 @@ context:
           alt: Researchers help child at MRI machine
         title: "‘A way cool way to be’: BYU team gains insights into understudied group of children with autism"
         url: https://news.byu.edu/news/way-cool-way-be-byu-team-gains-insights-understudied-group-children-autism
-        meta: Jan 2, 2019 | Andrea Christensen
+        meta: Jan 2, 2019
         text: In the first study of its kind, a team of researchers was able to perform functional MRIs of a group of children with autism whose IQs averaged 54. The scans offer a glimpse into what’s happening in their brains.
     - contextData:
         image:
@@ -18,7 +18,7 @@ context:
           alt: Leading cause of death chart
         title: "BYU study: Cancer passing heart disease as leading cause of death in more and more states"
         url: https://news.byu.edu/node/11880
-        meta: Dec 18, 2018 | Todd Hollingshead
+        meta: Dec 18, 2018
         text: "Heart disease has been the leading cause of death in the United States for more than a century, ever since the early 1900s when it displaced acute diseases for the distinction. Now a growing number of states are crowning a new leading cause of death: cancer."
     - contextData:
         image:
@@ -26,7 +26,7 @@ context:
           alt: U.S. Capitol
         title: Does political party trump ideology?
         url: https://news.byu.edu/news/does-political-party-trump-ideology
-        meta: Dec 18, 2018 | Andrea Christensen
+        meta: Dec 18, 2018
         text: With party and ideology so closely intertwined, the question has in the past been nearly impossible to pin down, but a BYU duo just published a study showing that a person’s policy positions are quite malleable when told that leaders of their political party support a different position.
 
 variants:
