@@ -1,2 +1,39 @@
-ul.tiles
+.tiles
 	list-style: none
+	padding: 0
+	position: relative
+
+	section &
+		@media( min-width: $break960 )
+			+emphasis()
+		@media( min-width: $break1200 )
+			+feature()
+
+@supports (display: grid)
+	.tiles
+		display: grid
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr))
+		grid-gap: 1em
+
+		.tile
+			margin: 0
+			max-height: 24em
+
+	&.wide
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr))
+
+	.wide .tile
+		max-height: 28em
+
+	&.narrow
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+		grid-gap: 1em 0.5em
+
+	.narrow .tile
+		font-size: 1rem
+		max-height: 22em
+		.image
+			padding-bottom: 66.67%
+
+		h2
+			line-height: 1.25

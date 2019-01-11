@@ -227,45 +227,71 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
-                                <pre><span class="hljs-selector-tag">article</span>,
-<span class="hljs-selector-tag">aside</span>,
-<span class="hljs-selector-tag">details</span>,
-<span class="hljs-selector-tag">figcaption</span>,
-<span class="hljs-selector-tag">figure</span>,
-<span class="hljs-selector-tag">footer</span>,
-<span class="hljs-selector-tag">header</span>,
+                                <pre>$columnWidth: <span class="hljs-number">42</span>rem
+$emphasisWidth: <span class="hljs-number">52.5</span>rem
+$featureWidth: <span class="hljs-number">60</span>rem
+
+$emphasisPercent: ( $emphasisWidth / $columnWidth ) * <span class="hljs-number">100</span>%
+$emphasisMargin: ( ($emphasisPercent - <span class="hljs-number">100</span>) / <span class="hljs-number">2</span> ) * <span class="hljs-number">-1</span>
+$featurePercent: ( $featureWidth / $columnWidth ) * <span class="hljs-number">100</span>%
+$featureMargin: ( ($featurePercent - <span class="hljs-number">100</span>) / <span class="hljs-number">2</span> ) * <span class="hljs-number">-1</span>
+
+=emphasis()
+	<span class="hljs-keyword">max</span>-width: $emphasisPercent
+	margin-left: $emphasisMargin
+	margin-right: $emphasisMargin
+
+=feature()
+	<span class="hljs-keyword">max</span>-width: $featurePercent
+	margin-left: $featureMargin
+	margin-right: $featureMargin
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
 main,
-<span class="hljs-selector-tag">nav</span>,
-<span class="hljs-selector-tag">section</span>
-	<span class="hljs-attribute">display</span>: block
+nav,
+section
+	display: block
 
 
-<span class="hljs-selector-tag">section</span>, <span class="hljs-selector-class">.column</span>
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">5%</span>
-	<span class="hljs-attribute">transition</span>: margin <span class="hljs-number">200ms</span> ease
+section, .column
+	margin: <span class="hljs-number">0</span> <span class="hljs-number">5</span>%
+	transition: margin <span class="hljs-number">200</span>ms ease
 
-	@media( <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$break480</span> )
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">10%</span>
+	@media( <span class="hljs-keyword">min</span>-width: $break480 )
+		margin: <span class="hljs-number">0</span> <span class="hljs-number">10</span>%
 
-	@media( <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$break720</span> )
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">15%</span>
+	@media( <span class="hljs-keyword">min</span>-width: $break720 )
+		margin: <span class="hljs-number">0</span> <span class="hljs-number">15</span>%
 
-	@media( <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$break960</span> )
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">42rem</span>
+	@media( <span class="hljs-keyword">min</span>-width: $break960 )
+		margin: <span class="hljs-number">0</span> auto
+		width: <span class="hljs-number">42</span>rem
 
 
-<span class="hljs-selector-tag">section</span> <span class="hljs-selector-class">.emphasis</span>
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">111.11%</span>
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">1.5rem</span> -<span class="hljs-number">5.555%</span>
-	@media( <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$break480</span> )
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">125%</span>
-		<span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">12.5%</span>
-		<span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">12.5%</span>
+section .emphasis
+	<span class="hljs-keyword">max</span>-width: <span class="hljs-number">111.11</span>%
+	margin: <span class="hljs-number">1.5</span>rem <span class="hljs-number">-5.555</span>%
+	@media( <span class="hljs-keyword">min</span>-width: $break480 )
+		+emphasis()
 
-<span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.full</span>
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>
+section .feature
+	<span class="hljs-keyword">max</span>-width: <span class="hljs-number">111.11</span>%
+	margin: <span class="hljs-number">1.5</span>rem <span class="hljs-number">-5.555</span>%
+	@media( <span class="hljs-keyword">min</span>-width: $break480 )
+		+feature()
+
+
+section.full
+	margin: <span class="hljs-number">0</span>
+	width: <span class="hljs-number">100</span>%
 </pre>
                             </code>
                             
@@ -282,7 +308,7 @@ main,
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">520 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -318,7 +344,7 @@ main,
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="layout--default.html">
@@ -335,6 +361,10 @@ main,
             
                 <a href="layout--emphasis.html">
                     <span>Emphasized item</span>
+                </a>, 
+            
+                <a href="layout--feature.html">
+                    <span>Featured item</span>
                 </a>
             
             </span>
@@ -651,7 +681,7 @@ main,
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -840,7 +870,7 @@ main,
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

@@ -73,7 +73,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
 
 </div>
 
@@ -241,11 +241,23 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
-                                <pre><span class="hljs-string">.tile,</span> <span class="hljs-string">.tiles</span> <span class="hljs-string">li</span>
+                                <pre><span class="hljs-string">.tile</span>
 	<span class="hljs-string">@extend</span> <span class="hljs-string">%card</span>
 	<span class="hljs-attr">margin:</span> <span class="hljs-number">1</span><span class="hljs-string">rem</span>
-	<span class="hljs-attr">max-width:</span> <span class="hljs-number">20</span><span class="hljs-string">rem</span>
+	<span class="hljs-string">//</span> <span class="hljs-attr">max-width:</span> <span class="hljs-number">20</span><span class="hljs-string">rem</span>
 	<span class="hljs-attr">position:</span> <span class="hljs-string">relative</span>
+	<span class="hljs-attr">overflow:</span> <span class="hljs-string">hidden</span>
+
+	<span class="hljs-string">&amp;:after</span>
+		<span class="hljs-attr">content:</span> <span class="hljs-string">" "</span>
+		<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
+		<span class="hljs-attr">width:</span> <span class="hljs-number">100</span><span class="hljs-string">%</span>
+		<span class="hljs-attr">height:</span> <span class="hljs-number">1</span><span class="hljs-string">em</span>
+		<span class="hljs-attr">background:</span> <span class="hljs-comment">#fff</span>
+		<span class="hljs-attr">bottom:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">left:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">box-shadow:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span><span class="hljs-string">em</span> <span class="hljs-number">1</span><span class="hljs-string">em</span> <span class="hljs-comment">#fff</span>
 
 	<span class="hljs-string">.image</span>
 		<span class="hljs-attr">width:</span> <span class="hljs-number">100</span><span class="hljs-string">%</span>
@@ -254,43 +266,47 @@
 		<span class="hljs-attr">overflow:</span> <span class="hljs-string">hidden</span>
 		<span class="hljs-attr">position:</span> <span class="hljs-string">relative</span>
 
-		<span class="hljs-string">img</span>
-			<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
-			<span class="hljs-attr">top:</span> <span class="hljs-number">0</span>
-			<span class="hljs-attr">left:</span> <span class="hljs-number">0</span>
-			<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
-			<span class="hljs-attr">border-radius:</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+	<span class="hljs-string">img</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
+		<span class="hljs-attr">top:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">left:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
+		<span class="hljs-attr">border-radius:</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">2</span><span class="hljs-string">px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">max-width:</span> <span class="hljs-string">auto</span>
+		<span class="hljs-attr">width:</span> <span class="hljs-number">100</span><span class="hljs-string">%</span>
+		<span class="hljs-string">@supports</span> <span class="hljs-string">(object-fit:</span> <span class="hljs-string">cover)</span>
+			<span class="hljs-attr">object-fit:</span> <span class="hljs-string">cover</span>
+			<span class="hljs-attr">height:</span> <span class="hljs-number">100</span><span class="hljs-string">%</span>
 
 	<span class="hljs-string">.text</span>
 		<span class="hljs-attr">padding:</span> <span class="hljs-number">1.25</span><span class="hljs-string">em</span>
 		<span class="hljs-attr">position:</span> <span class="hljs-string">static</span>
 		<span class="hljs-attr">transition:</span> <span class="hljs-string">color</span> <span class="hljs-number">200</span><span class="hljs-string">ms</span> <span class="hljs-string">ease</span>
 
-		<span class="hljs-string">h2</span>
-			<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize20</span>
-			<span class="hljs-attr">color:</span> <span class="hljs-string">$navy</span>
-			<span class="hljs-attr">position:</span> <span class="hljs-string">static</span>
-			<span class="hljs-attr">font-weight:</span> <span class="hljs-string">bold</span>
-			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
+	<span class="hljs-string">h2</span>
+		<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
+		<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize20</span>
+		<span class="hljs-attr">color:</span> <span class="hljs-string">$textcolor</span>
+		<span class="hljs-attr">position:</span> <span class="hljs-string">static</span>
+		<span class="hljs-attr">font-weight:</span> <span class="hljs-string">bold</span>
 
-		<span class="hljs-string">.meta</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
-			<span class="hljs-attr">color:</span> <span class="hljs-string">$royal</span>
-			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
-			<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
+	<span class="hljs-string">.meta</span>
+		<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
+		<span class="hljs-attr">color:</span> <span class="hljs-string">$royal</span>
+		<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
+		<span class="hljs-attr">margin:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-string">$spacing2</span>
 
-		<span class="hljs-string">a</span>
-			<span class="hljs-attr">text-decoration:</span> <span class="hljs-string">none</span>
-			<span class="hljs-string">&amp;,</span> <span class="hljs-string">&amp;:link</span>
-				<span class="hljs-attr">color:</span> <span class="hljs-string">inherit</span>
+	<span class="hljs-string">a</span>
+		<span class="hljs-attr">text-decoration:</span> <span class="hljs-string">none</span>
+		<span class="hljs-string">&amp;,</span> <span class="hljs-string">&amp;:link</span>
+			<span class="hljs-attr">color:</span> <span class="hljs-string">inherit</span>
 
-		<span class="hljs-string">p</span> 
-			<span class="hljs-attr">color:</span> <span class="hljs-string">$textgrey</span>
-			<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
-			<span class="hljs-attr">margin-bottom:</span> <span class="hljs-number">0</span>
-			<span class="hljs-attr">line-height:</span> <span class="hljs-number">1.4</span>
-			<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
+	<span class="hljs-string">p</span> 
+		<span class="hljs-attr">color:</span> <span class="hljs-string">$textgrey</span>
+		<span class="hljs-attr">font-size:</span> <span class="hljs-string">$fontSize15</span>
+		<span class="hljs-attr">margin-bottom:</span> <span class="hljs-number">0</span>
+		<span class="hljs-attr">line-height:</span> <span class="hljs-number">1.4</span>
+		<span class="hljs-attr">transition:</span> <span class="hljs-string">inherit</span>
 
 	<span class="hljs-string">.tile-link:after</span>
 		<span class="hljs-attr">content:</span> <span class="hljs-string">" "</span>
@@ -307,14 +323,10 @@
 		<span class="hljs-attr">border-color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$royal,</span> <span class="hljs-string">$grey10,</span> <span class="hljs-number">25</span><span class="hljs-string">%</span> <span class="hljs-string">)</span>
 		<span class="hljs-string">.tile-link:after</span>
 			<span class="hljs-attr">opacity:</span> <span class="hljs-number">1</span>
-		<span class="hljs-string">.text</span> 
-			<span class="hljs-string">h2</span>
-				<span class="hljs-string">//</span> <span class="hljs-attr">text-decoration:</span> <span class="hljs-string">underline</span>
-				<span class="hljs-attr">color:</span> <span class="hljs-string">$textcolor</span>
-			<span class="hljs-string">.meta</span>
-				<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$royal,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span>
-			<span class="hljs-string">p</span>
-				<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$textgrey,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span></pre>
+		<span class="hljs-string">.meta</span>
+			<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$royal,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span>
+		<span class="hljs-string">p</span>
+			<span class="hljs-attr">color:</span> <span class="hljs-string">mix(</span> <span class="hljs-string">$textgrey,</span> <span class="hljs-string">$textcolor</span> <span class="hljs-string">)</span></pre>
                             </code>
                             
                         </div>
@@ -330,7 +342,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -396,10 +408,14 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="tile_group.html">@<span>tile_group</span></a>
+                <a href="tile_group.html">@<span>tile_group</span></a>, 
+            
+                <a href="tile_group--wide.html">@<span>tile_group--wide</span></a>, 
+            
+                <a href="tile_group--narrow.html">@<span>tile_group--narrow</span></a>
             
             </span>
         </li>
@@ -692,7 +708,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -881,7 +897,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
