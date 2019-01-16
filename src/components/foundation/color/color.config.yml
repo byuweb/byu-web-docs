@@ -44,69 +44,69 @@ variants:
     context:
       colors:
         - name: Royal Blue
-          var: $royal
+          var: royal
           hex: "0057b8"
           dark: true
         - name: Medium Blue
-          var: $royal50
+          var: royal50
           hex: "5199e1"
           dark: true
         - name: Light Blue
-          var: $royal20
+          var: royal20
           hex: "afd6fe"
 
         - name: Yellow
-          var: $yellow
+          var: yellow
           hex: "fcc015"
         - name: Medium Yellow
-          var: $yellow50
+          var: yellow50
           hex: "ffda73"
         - name: Light Yellow
-          var: $yellow20
+          var: yellow20
           hex: "fff0c5"
 
         - name: Purple
-          var: $purple
+          var: purple
           hex: "500e7c"
           dark: true
         - name: Medium Purple
-          var: $purple50
+          var: purple50
           hex: "af88ca"
         - name: Light Purple
-          var: $purple20
+          var: purple20
           hex: "d6bde7"
 
         - name: Green
-          var: $green
+          var: green
           hex: "38870c"
           dark: true
         - name: Medium Green
-          var: $green50
+          var: green50
           hex: "94c576"
         - name: Light Green
-          var: $green20
+          var: green20
           hex: "cee0c3"
 
         - name: Orange
-          var: $orange
+          var: orange
           hex: "d8580c"
           dark: true
         - name: Medium Orange
-          var: $orange50
+          var: orange50
           hex: "f7a883"
         - name: Light Orange
-          var: $orange20
+          var: orange20
           hex: "ffdacf"
 
         - name: Red
-          var: $red
+          var: red
           hex: "a60318"
           dark: true
         - name: Medium Red
-          var: $red50
+          var: red50
           hex: "f5acb6"
         - name: Light Red
-          var: $red20
+          var: red20
           hex: "fde3e6"
 
   - name: Text colors

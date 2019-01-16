@@ -14,6 +14,8 @@ $byuNavy: #002e5d
 $byuRoyal: #0057b8
 $white: #fff
 
+$navy: $byuNavy
+
 // Accents
 
 $royal: $byuRoyal
@@ -83,13 +85,17 @@ $colorLineDark: $grey30
 
 // Sizing
 
-$fontSize16: 1em / 1.125
-$fontSize18: 1.125em / 1.125
-$fontSize20: 1.25em / 1.125
-$fontSize24: 1.5em / 1.125
-$fontSize36: 2.25em / 1.125
-$fontSize48: 3em / 1.125
-$fontSize64: 4em / 1.125
+$baseFontMultiplier: 1.125
+$baseFontSize: 1em * $baseFontMultiplier // 18px
+
+$fontSize15: 0.9375em / $baseFontMultiplier
+$fontSize16: 1em / $baseFontMultiplier
+$fontSize18: 1.125em / $baseFontMultiplier
+$fontSize20: 1.25em / $baseFontMultiplier
+$fontSize24: 1.5em / $baseFontMultiplier
+$fontSize36: 2.25em / $baseFontMultiplier
+$fontSize48: 3em / $baseFontMultiplier
+$fontSize64: 4em / $baseFontMultiplier
 
 
 
@@ -115,4 +121,17 @@ $spacing8: 8.5rem
 $break480: 30rem
 $break720: 45rem
 $break960: 60rem
+$break1200: 75rem
 $break1440: 90rem
+
+
+
+/*
+ * Foundations
+ */
+
+%card
+	list-style-type: none
+	border-radius: 2px
+	border: 1px solid $grey10
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.10)

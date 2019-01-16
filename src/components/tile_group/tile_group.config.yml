@@ -1,0 +1,65 @@
+name: tile_group
+label: Tile Groups
+status: wip
+collated: true
+context:
+  tiles: 
+    - contextData: '@tile'
+
+    - contextData: 
+        image:
+          url: /components/raw/tile_group/1901-08_002.jpg
+          alt: Child in superhero costume in grocery store
+        title: "Good vs. Evil: How heroes and villains affect the food you buy"
+        url: https://news.byu.edu/node/11884
+        meta: Jan 10, 2019
+        text: Research led by professor Tamara Masters finds people are willing to pay more for vice foods — think ice cream, cookies, and other unhealthy snacks — when a hero is used in the packaging.
+
+    - contextData: 
+        image:
+          url: /components/raw/tile_group/president_worthen_375.jpg
+          alt: BYU Devotional Speaker President Kevin J Worthen
+        title: "BYU Devotional: Find your spiritual gifts, Know who you are"
+        url: https://news.byu.edu/node/11883
+        meta: Jan 8, 2019
+        text: President Kevin J Worthen and Sister Peggy S. Worthen welcomed students back to campus with the first devotional of the semester. They spoke about spiritual gifts and eternal identities.
+
+    - contextData:
+        image:
+          url: /components/raw/tile_group/autism2.jpg
+          alt: Researchers help child at MRI machine
+        title: "‘A way cool way to be’: BYU team gains insights into understudied group of children with autism"
+        url: https://news.byu.edu/news/way-cool-way-be-byu-team-gains-insights-understudied-group-children-autism
+        meta: Jan 2, 2019
+        text: In the first study of its kind, a team of researchers was able to perform functional MRIs of a group of children with autism whose IQs averaged 54. The scans offer a glimpse into what’s happening in their brains.
+
+    - contextData:
+        image:
+          url: /components/raw/tile_group/thumbchart.jpg
+          alt: Leading cause of death chart
+        title: "BYU study: Cancer passing heart disease as leading cause of death in more and more states"
+        url: https://news.byu.edu/node/11880
+        meta: Dec 18, 2018
+        text: "Heart disease has been the leading cause of death in the United States for more than a century, ever since the early 1900s when it displaced acute diseases for the distinction. Now a growing number of states are crowning a new leading cause of death: cancer."
+
+    - contextData:
+        image:
+          url: /components/raw/tile_group/capitol_thumbnail.jpg
+          alt: U.S. Capitol
+        title: Does political party trump ideology?
+        url: https://news.byu.edu/news/does-political-party-trump-ideology
+        meta: Dec 18, 2018
+        text: With party and ideology so closely intertwined, the question has in the past been nearly impossible to pin down, but a BYU duo just published a study showing that a person’s policy positions are quite malleable when told that leaders of their political party support a different position.
+
+
+variants:
+  - name: default
+  - name: wide
+    context:
+      classes: wide
+  - name: narrow
+    context:
+      classes: narrow
+
+
+

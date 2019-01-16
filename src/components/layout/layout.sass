@@ -1,3 +1,24 @@
+$columnWidth: 42rem
+$emphasisWidth: 52.5rem
+$featureWidth: 60rem
+
+$emphasisPercent: ( $emphasisWidth / $columnWidth ) * 100%
+$emphasisMargin: ( ($emphasisPercent - 100) / 2 ) * -1
+$featurePercent: ( $featureWidth / $columnWidth ) * 100%
+$featureMargin: ( ($featurePercent - 100) / 2 ) * -1
+
+=emphasis()
+	max-width: $emphasisPercent
+	margin-left: $emphasisMargin
+	margin-right: $emphasisMargin
+
+=feature()
+	max-width: $featurePercent
+	margin-left: $featureMargin
+	margin-right: $featureMargin
+
+
+
 article,
 aside,
 details,
@@ -30,9 +51,14 @@ section .emphasis
 	max-width: 111.11%
 	margin: 1.5rem -5.555%
 	@media( min-width: $break480 )
-		max-width: 125%
-		margin-left: -12.5%
-		margin-right: -12.5%
+		+emphasis()
+
+section .feature
+	max-width: 111.11%
+	margin: 1.5rem -5.555%
+	@media( min-width: $break480 )
+		+feature()
+
 
 section.full
 	margin: 0
