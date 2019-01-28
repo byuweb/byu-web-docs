@@ -1,12 +1,12 @@
 <li class="tile">  
-    {{#if image }}<div class="image">
-    	<img src="{{ path image.url }}" alt="{{ image.alt }}">
-    </div>{{/if}}
+    {{#with image }}<div class="image">
+        <img src="{{ path url }}" alt="{{ alt }}">
+    </div>{{/with}}
     <div class="text">
-		<h2>
-			<a class="tile-link" href="{{ url }}">{{ title }}</a>
-		</h2>
-		<h3 class="meta">{{ meta }}</h3>
-		<p>{{ text }}</p>
-	</div>
+        <h2>
+            <a class="tile-link" href="{{ url }}">{{ title }}</a>
+        </h2>
+        <h3 class="meta">{{ meta }}</h3>
+        <p>{{ text }}</p>
+    </div>
 </li>  
