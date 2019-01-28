@@ -3,6 +3,7 @@ title: Article
 label: Article
 preview: "@preview--article"
 status: wip
+hidden: true
 
 variants:
   - name: default

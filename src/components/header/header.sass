@@ -1,41 +1,47 @@
 .byu-header
-	background: $byuNavy
-	padding: 0.875rem 1.25rem 1.1rem
-
-
-.byu-link
-	display: block
-	position: absolute
-	top: 0
-	left: -4.5rem
-	width: 4.5rem
-	height: 100%
-	background: 0 0.35rem url('/img/byu-monogram-white.png') no-repeat
-	background-size: 100% auto
-	overflow: hidden
-	text-indent: -9em
-
-
-.site-title, .site-subtitle
-	color: #fff
-	font-weight: 400
-	margin: 0 0 0 4.5rem
-
-
-.site-title
 	font-size: 1.125rem
 
-
-	a, a:link, a:hover, a:visited, a:focus
-		color: #fff
-		text-decoration: none
-
 	@media( min-width: $break480 )
-		font-size: 1.25rem
+		font-size: 1.3125rem
 
 	@media( min-width: $break960 )
 		font-size: 1.5rem
 
+	.site-banner
+		padding: 0.5em 0.75em 0.7em
+		background: $byuNavy
 
-.site-subtitle
-	font-size: 1rem
+	.byu-link
+		background: 0 0.23em / 100% auto url('/img/byu-monogram-white.png') no-repeat
+		display: block
+		font-size: inherit
+		height: 100%
+		left: -3em
+		overflow: hidden
+		position: absolute
+		text-indent: -9em
+		top: 0
+		width: 3em
+
+
+	.site-title, .site-subtitle
+
+
+
+	.site-title
+		color: #fff
+		font-size: inherit
+		font-weight: 400
+		margin: 0 0 0 3em
+
+		a, a:link, a:hover, a:visited, a:focus
+			color: #fff
+			text-decoration: none
+
+
+	.site-subtitle
+		color: #fff
+		font-size: 0.65em
+		font-style: italic
+		font-weight: 400
+		margin: 0 0 0 4.6em

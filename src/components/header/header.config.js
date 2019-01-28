@@ -12,7 +12,7 @@ module.exports = {
       name: "default",
       label: "Standard Text Header",
       context: {
-        title: "Hamburgefonts",
+        title: "Site Title",
         url: "/",
       },
     },
@@ -21,12 +21,62 @@ module.exports = {
       name: "subtitle",
       label: "With subtitle",
       context: {
-        title: "Hamburgefonts",
-        subtitle: "Subtitle",
+        title: "School of Web Development",
+        subtitle: "College of Awesome",
         url: "/",
       },
     },
 
+   {
+      name: "search",
+      label: "With search",
+      context: {
+        title: "Department of Developmental Psychology",
+        url: "/",
+        search: {
+            action: "/",
+            paramName: "q"
+        },
+      },
+    },
+
+   {
+      name: "nav",
+      label: "With navigation",
+      context: {
+        title: "College of Nursing",
+        url: "/",
+        nav: [
+            {url:"/",title:"Home"},
+            {url:"/about",title:"About"},
+            {url:"/programs",title:"Programs"},
+            {url:"/students",title:"Students"},
+            {url:"/alumni",title:"Alumni"},
+            {url:"/giving",title:"Giving"},
+        ],
+      },
+    },
+
+   {
+      name: "nav-search",
+      label: "With navigation and search",
+      context: {
+        title: "College of Nursing",
+        url: "/",
+        search: {
+            action: "/",
+            paramName: "q"
+        },
+        nav: [
+            {url:"/",title:"Home"},
+            {url:"/about",title:"About"},
+            {url:"/programs",title:"Programs"},
+            {url:"/students",title:"Students"},
+            {url:"/alumni",title:"Alumni"},
+            {url:"/giving",title:"Giving"},
+        ],
+      },
+    },
 
    ],
 };
