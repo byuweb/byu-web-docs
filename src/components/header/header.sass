@@ -23,25 +23,68 @@
 		top: 0
 		width: 3em
 
+	.titles
+		display: inline-block
 
-	.site-title, .site-subtitle
+		.site-title, .site-subtitle
 
 
-
-	.site-title
-		color: #fff
-		font-size: inherit
-		font-weight: 400
-		margin: 0 0 0 3em
-
-		a, a:link, a:hover, a:visited, a:focus
+		.site-title
 			color: #fff
-			text-decoration: none
+			font-size: inherit
+			font-weight: 400
+			margin: 0 0 0 3em
+
+			a, a:link, a:hover, a:visited, a:focus
+				color: #fff
+				text-decoration: none
 
 
-	.site-subtitle
-		color: #fff
-		font-size: 0.65em
-		font-style: italic
-		font-weight: 400
-		margin: 0 0 0 4.6em
+		.site-subtitle
+			color: #fff
+			font-size: 0.65em
+			font-style: italic
+			font-weight: 400
+			margin: 0 0 0 4.6em
+
+	form.site-search
+		float: right
+		width: 216px
+		height: 27px
+		display: inline-block
+		margin-top: 7px
+
+		label[for="site-search"]
+			border: 0
+			clip: rect(0 0 0 0)
+			height: 1px
+			margin: -1px
+			overflow: hidden
+			padding: 0
+			position: absolute
+			width: 1px
+
+		input
+			width: 175px
+			height: 27px
+			float: left
+			padding: 5px 10px
+			font-size: 12px
+			font-weight: 500
+			border: none
+			box-sizing: border-box
+
+		button
+			background-color: #ededed
+			border: 1px solid #ededed
+			color: #fff
+			width: 41px
+			height: 27px
+			display: flex
+			justify-content: center
+			align-items: center
+			box-sizing: border-box
+
+			img
+				width: 17px
+				height: 17px

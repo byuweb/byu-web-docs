@@ -1,10 +1,12 @@
 <header role="banner" class="byu-header">
     <div class="site-banner">
-        <h1 class="site-title">
-            <a class="byu-link" href="https://byu.edu">BYU</a>
-            <a href="{{ url }}">{{ title }}</a>
-        </h1>
-        {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
+        <div class="titles">
+            <h1 class="site-title">
+                <a class="byu-link" href="https://byu.edu">BYU</a>
+                <a href="{{ url }}">{{ title }}</a>
+            </h1>
+            {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
+        </div>
         {{#with search }}
         <form class="site-search" action="{{action}}">
             <label for="site-search">Search</label>
