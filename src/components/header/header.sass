@@ -1,5 +1,6 @@
 .byu-header
 	font-size: 1.125rem
+	box-shadow: 0 0 10px rgba(0,0,0,.16)
 
 	@media( min-width: $break480 )
 		font-size: 1.3125rem
@@ -24,19 +25,114 @@
 		top: 0
 		width: 3em
 
-	.site-title
-		color: #fff
-		font-size: inherit
-		font-weight: 400
-		margin: 0 0 0 3em
+	.titles
+		display: inline-block
 
-		a, a:link, a:hover, a:visited, a:focus
+		.site-title, .site-subtitle
+
+
+		.site-title
 			color: #fff
-			text-decoration: none
+			font-size: inherit
+			font-weight: 400
+			margin: 0 0 0 3em
 
-	.site-subtitle
-		color: #fff
-		font-size: 0.65em
-		font-style: italic
-		font-weight: 400
-		margin: 0 0 0 4.6em
+			a, a:link, a:hover, a:visited, a:focus
+				color: #fff
+				text-decoration: none
+
+
+		.site-subtitle
+			color: #fff
+			font-size: 0.65em
+			font-style: italic
+			font-weight: 400
+			margin: 0 0 0 4.6em
+
+	form.site-search
+		font-family: $font-heading
+		float: right
+		width: 216px
+		height: 27px
+		display: inline-block
+		margin-top: 7px
+
+		label[for="site-search"]
+			border: 0
+			clip: rect(0 0 0 0)
+			height: 1px
+			margin: -1px
+			overflow: hidden
+			padding: 0
+			position: absolute
+			width: 1px
+
+		input
+			width: 175px
+			height: 27px
+			float: left
+			padding: 5px 10px
+			font-size: 12px
+			font-weight: 500
+			border: none
+			box-sizing: border-box
+
+		button
+			background-color: $grey10
+			border: 1px solid $grey10
+			color: #fff
+			width: 41px
+			height: 27px
+			display: flex
+			justify-content: center
+			align-items: center
+			box-sizing: border-box
+
+			img
+				width: 17px
+				height: 17px
+
+	nav.site-navigation
+		height: 35px
+		padding-rght: 1.25em
+		font-family: $font-heading
+
+		button
+			border: 0
+			clip: rect(0 0 0 0)
+			height: 1px
+			margin: -1px
+			overflow: hidden
+			padding: 0
+			position: absolute
+			width: 1px
+
+		ul
+			display: flex
+			justify-content: space-around
+			max-width: 1200px
+			height: 35px
+			margin: 0 auto
+			li
+				list-style: none
+				line-height: 35px
+				font-size: 14px
+				font-weight: 400
+				margin: 0
+				width: 100%
+				text-align: center
+
+				a
+					color: $byuNavy
+					text-transform: uppercase
+					display: block
+					width: 100%
+					height: 100%
+				
+			li:hover
+				background-color: #32538d
+
+				a
+					color: white
+					text-decoration: none
+
