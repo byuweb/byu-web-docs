@@ -12,7 +12,7 @@ module.exports = {
       name: "default",
       label: "Standard Text Header",
       context: {
-        title: "Site Title",
+        title: "Components Demo Site",
         url: "/",
       },
     },
