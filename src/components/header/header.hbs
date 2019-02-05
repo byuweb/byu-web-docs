@@ -1,11 +1,20 @@
 <header role="banner" class="byu-header">
     <div class="site-banner">
-    	<h1 class="site-title">
-    		<a class="byu-link" href="https://byu.edu">BYU</a>
-    		<a href="{{ url }}">{{ title }}</a>
-    	</h1>
-    	{{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
-    </div> 
+        <h1 class="site-title">
+            <a class="byu-link" href="https://byu.edu">BYU</a>
+            <a href="{{ url }}">{{ title }}</a>
+        </h1>
+        {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
+        {{#with search }}
+        <form class="site-search" action="{{action}}">
+            <label for="site-search">Search</label>
+            <input type="search" id="site-search" name="{{paramName}}" aria-label="Site search">
+            <button>
+                <img id="search-icon" src="https://cdn.byu.edu/shared-icons/latest/fontawesome/search-navy.svg" alt="Run Search">
+            </button>
+        </form>
+        {{/with}}
+    </div>
 
     {{#if nav }}
     <nav class="site-navigation">
@@ -15,13 +24,5 @@
         </ul>
     </nav>
     {{/if}}
-
-    {{#with search }}
-    <form class="site-search" action="{{action}}">
-        <label for="site-search">Search</label>
-        <input type="search" id="site-search" name="{{paramName}}" aria-label="Site search">
-        <button>Search</button>
-    </form>
-    {{/with}}
 
 </header>
