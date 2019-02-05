@@ -1,5 +1,6 @@
 .byu-header
 	font-size: 1.125rem
+	box-shadow: 0 0 10px rgba(0,0,0,.16)
 
 	@media( min-width: $break480 )
 		font-size: 1.3125rem
@@ -88,3 +89,47 @@
 			img
 				width: 17px
 				height: 17px
+
+	nav.site-navigation
+		height: 35px
+		padding-rght: 1.25em
+		font-family: $font-heading
+
+		button
+			border: 0
+			clip: rect(0 0 0 0)
+			height: 1px
+			margin: -1px
+			overflow: hidden
+			padding: 0
+			position: absolute
+			width: 1px
+
+		ul
+			display: flex
+			justify-content: space-around
+			max-width: 1200px
+			height: 35px
+			margin: 0 auto
+			li
+				list-style: none
+				line-height: 35px
+				font-size: 14px
+				font-weight: 400
+				margin: 0
+				width: 100%
+				text-align: center
+
+				a
+					color: $byuNavy
+					text-transform: uppercase
+					display: block
+					width: 100%
+					height: 100%
+				
+			li:hover
+				background-color: #32538d
+
+				a
+					color: white
+					text-decoration: none
