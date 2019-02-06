@@ -1,6 +1,6 @@
 # BYU Web Docs
 
-Fractal documentation for the new BYU web theme.
+Fractal documentation for the new BYU web theme. Only tested with node 8.15.x.
 
 ## Development
 
