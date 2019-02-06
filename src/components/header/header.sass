@@ -12,24 +12,21 @@
 		padding: 0.5em 0.75em 0.7em
 		background: $byuNavy
 
-	.byu-link
-		background: 0 0.23em / 100% auto url('/img/byu-monogram-white.png') no-repeat
-		background-image: url('/img/byu-monogram-white.svg'), none // Enhancement: Browsers that support multiple backgrounds also support SVG
-		display: block
-		font-size: inherit
-		height: 100%
-		left: -3.1em
-		overflow: hidden
-		position: absolute
-		text-indent: -9em
-		top: 0
-		width: 3em
-
 	.titles
 		display: inline-block
 
-		.site-title, .site-subtitle
-
+		.byu-link
+			background: 0 0.23em / 100% auto url('/img/byu-monogram-white.png') no-repeat
+			background-image: url('/img/byu-monogram-white.svg'), none // Enhancement: Browsers that support multiple backgrounds also support SVG
+			display: block
+			font-size: inherit
+			height: 100%
+			left: -3.1em
+			overflow: hidden
+			position: absolute
+			text-indent: -9em
+			top: 0
+			width: 3em
 
 		.site-title
 			color: #fff
@@ -48,6 +45,23 @@
 			font-style: italic
 			font-weight: 400
 			margin: 0 0 0 4.6em
+
+	.action-btn
+		font-family: $font-heading
+		background-color: #32538d
+		border: none
+		height: 29px
+		font-size: 11px
+		text-transform: uppercase
+		padding: 0 24px
+
+		a
+			color: white
+			text-decoration: none
+			margin: 0
+			padding: 0
+
+
 
 	form.site-search
 		font-family: $font-heading
