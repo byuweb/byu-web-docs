@@ -5,7 +5,6 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-const replace = require('gulp-replace');
 
 
 /* ===========================
