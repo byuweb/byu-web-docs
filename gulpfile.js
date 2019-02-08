@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-
+const replace = require('gulp-replace');
 
 
 /* ===========================
@@ -132,7 +132,11 @@ gulp.task('fractal:build', function(){
 });
 
 
-
+gulp.task('fractal:post-build', function(){
+    return gulp.src( './docs/css/*.css' )
+        .pipe(replace('url(/img/','url(/byu-web-docs/img/'))
+        .pipe(gulp.dest('docs/css/'))
+});
 
 
 
