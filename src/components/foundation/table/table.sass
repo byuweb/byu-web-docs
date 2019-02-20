@@ -7,22 +7,33 @@ table
 	caption
 		@extend .caption
 
+	.spacing-tight &, .spacing-extratight &
+		font-size: $fontSize16
+
 th
 	font-weight: $font-weight-bold
 
 td, th
 	padding: $spacing3 $spacing4
-	border: 1px dotted $colorLine
-	border: none
+	border: 1px solid $colorLine
+	// border: none
 	text-align: left
 	vertical-align: top
 	line-height: 1.4
-	thead &
-		border-top: none
-		border-bottom-width: 2px
-	tfoot &
-		border-top-width: 2px
-		border-bottom: none
+
+	.border-row &
+		border-right: none
+		border-left: none
+
+	.border-open &
+		border: none
+
+	.spacing-tight &
+		padding: $spacing2 $spacing3
+
+	.spacing-extratight &
+		padding: $spacing1 $spacing2
+
 
 tr 
 	*:first-child
@@ -31,3 +42,21 @@ tr
 	*:last-child
 		border-right: none
 		padding-right: $spacing2
+
+	&:first-child
+		td, th
+			border-top: none
+
+	&:last-child
+		td, th
+			border-bottom: none
+
+thead
+	border-bottom: 2px solid $colorLine
+	.border-open &
+		border-bottom: none
+
+tfoot
+	border-top: 2px solid $colorLine
+	.border-open &
+		border-top: none
