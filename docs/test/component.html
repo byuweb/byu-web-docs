@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Components speed test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script async src="https://cdn.byu.edu/byu-theme-components/1.x.x/byu-theme-components.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/1.x.x/byu-theme-components.min.css" />
+
+  <style>
+    main { padding: 5rem 10%; font-family: helvetica, arial, sans-serif; }
+  </style>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <byu-header>
+    <span slot="site-title">Components Speed Test</span>
+    <byu-search slot="search" action="https://www.google.com/#q=$1" method="get" placeholder="Search"></byu-search>
+    <byu-user-info slot="user">
+        <a slot="login" href="#login">Sign In</a>
+        <a slot="logout" href="#logout">Sign Out</a>
+    </byu-user-info>
+    <byu-menu slot="nav" collapsed>
+        <a href="javascript: void 0" class="active">Link 1</a>
+        <a href="javascript: void 0">Link 2</a>
+        <a href="javascript: void 0">Link 3</a>
+        <a href="javascript: void 0">Link 4</a>
+        <a href="javascript: void 0">Link 5</a>
+        <a href="javascript: void 0">Link 6</a>
+    </byu-menu>
+  </byu-header>
+
+  <main>
+    Main content here
+  </main>
+
+  <byu-footer></byu-footer>
+
+</body>
+
+</html>

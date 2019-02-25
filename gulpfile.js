@@ -7,7 +7,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 
 
-
 /* ===========================
  * FRACTAL
  * =========================== */
@@ -132,7 +131,11 @@ gulp.task('fractal:build', function(){
 });
 
 
-
+gulp.task('fractal:post-build', function(){
+    return gulp.src( './docs/css/*.css' )
+        .pipe(replace('url(/img/','url(/byu-web-docs/img/'))
+        .pipe(gulp.dest('docs/css/'))
+});
 
 
 
