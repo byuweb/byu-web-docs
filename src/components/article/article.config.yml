@@ -1,6 +1,6 @@
 name: article
 title: Article
-label: Article
+label: Article (typography test)
 preview: "@preview--article"
 status: wip
 # hidden: true
@@ -8,7 +8,9 @@ status: wip
 variants:
   - name: default
     label: 'Open Sans'
+    hidden: true
   - name: roboto
     label: 'Roboto'
+    hidden: true
   - name: noto
     label: 'Noto Sans'
