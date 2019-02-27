@@ -56,6 +56,22 @@ module.exports = {
       }
     },
 
+    {
+      name: "user-login",
+      label: "With user login",
+      context: {
+        title: "College of Something Cool",
+        url: "/",
+        userLogin: {
+          userName: "Cosmo Cougar"
+        },
+        search: {
+            action: "/",
+            paramName: "q"
+        }
+      }
+    },
+
    {
       name: "nav",
       label: "With navigation",
