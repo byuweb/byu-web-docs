@@ -7,6 +7,9 @@
             </h1>
             {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
         </div>
+        {{#with actionBtn}}
+        <button class="action-btn"><a href="{{url}}">BYU News</a></button>
+        {{/with}}
         {{#with search }}
         <form class="site-search" action="{{action}}">
             <label for="site-search">Search</label>

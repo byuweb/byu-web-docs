@@ -40,6 +40,22 @@ module.exports = {
       },
     },
 
+    {
+      name: "action-btn",
+      label: "With action button",
+      context: {
+        title: "College of Engineering",
+        url: "/",
+        actionBtn: {
+          url: "//news.byu.edu"
+        },
+        search: {
+            action: "/",
+            paramName: "q"
+        }
+      }
+    },
+
    {
       name: "nav",
       label: "With navigation",
