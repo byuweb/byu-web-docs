@@ -3,6 +3,7 @@ title: Links
 label: Links
 collated: true
 status: wip
+hidden: true
 context:
   href: '#'
   text: Inline link

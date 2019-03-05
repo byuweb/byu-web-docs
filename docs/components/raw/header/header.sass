@@ -9,8 +9,11 @@
 		font-size: 1.5rem
 
 	.site-banner
-		padding: 0.5em 0.75em 0.7em
+		padding: 0.7em 0.75em 0.7em
 		background: $byuNavy
+		grid-template-columns: 60% 15% 25%
+		display: grid
+		grid-column: 1 / 4
 
 	.byu-link
 		background: 0 0.23em / 100% auto url('../img/byu-monogram-white.png') no-repeat // Default: png format
@@ -46,13 +49,36 @@
 			font-weight: 400
 			margin: 0 0 0 4.6em
 
+	.action-btn
+		font-family: $font-heading
+		background-color: #32538d
+		border: none
+		height: 27px
+		font-size: 11px
+		text-transform: uppercase
+		padding: 0 24px
+		grid-column-start: 2
+		justify-self: end
+
+		a
+			color: white
+			text-decoration: none
+			margin: 0
+			padding: 0
+	
+	.action-btn:hover
+		background-color: #fff
+		
+		a
+			color: $navy
+
+
 	form.site-search
 		font-family: $font-heading
-		float: right
 		width: 216px
 		height: 27px
-		display: inline-block
-		margin-top: 7px
+		grid-column: 3 / 4
+		justify-self: end
 
 		label[for="site-search"]
 			border: 0

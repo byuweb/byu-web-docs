@@ -1,4 +1,4 @@
 name: test
 preview: '@preview--compact'
 status: wip
-# hidden: true
+hidden: true
