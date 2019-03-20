@@ -9,154 +9,66 @@
 		font-size: 1.5rem
 
 	.site-banner
-		padding: 0.7em 0.75em 0.7em
 		background: $byuNavy
-		grid-template-columns: 60% 15% 25%
-		display: grid
-		grid-column: 1 / 4
+		@media(min-width: $breakSm)
+			@supports(display: flex)
+				display: flex
+				flex-direction: row
 
 	.byu-link
-		background: 0 0.23em / 100% auto url('../img/byu-monogram-white.png') no-repeat // Default: png format
-		background-image: url('../img/byu-monogram-white.svg'), none // Enhancement: Browsers that support multiple backgrounds also support SVG
+		background: $byuNavy url('../img/byu-monogram-white.png') center center / 3em auto  no-repeat // Default: png format
 		display: block
-		font-size: inherit
-		height: 100%
-		left: -3.1em
-		overflow: hidden
-		position: absolute
-		text-indent: -9em
-		top: 0
-		width: 3em
+		height: 2em
+		width: 5em
+
+		@media(min-width: $breakSm)
+			@supports(display: flex)
+				width: 4.5em
+				min-width: 3.5em
+				height: auto
+
+				&:after
+					content: " "
+					display: block
+					position: absolute
+					width: 1px
+					height: 74%
+					right: 0
+					top: 13%
+					background: #0f5499
 
 	.titles
-		display: inline-block
+		padding: 0.5em 1em
+		flex-grow: 1
+		border-top: 1px solid #0f5499
+		@media(min-width: $breakSm)
+			@supports(display: flex)
+				border-top: none
+				align-self: center
 
-		.site-title
+
+	.site-title
+		color: #fff
+		font-size: inherit
+		font-weight: 400
+		margin: $spacing1 0
+		bottom: 1px
+
+		a, a:link, a:hover, a:visited, a:focus
 			color: #fff
-			font-size: inherit
-			font-weight: 400
-			margin: 0 0 0 3em
-
-			a, a:link, a:hover, a:visited, a:focus
-				color: #fff
-				text-decoration: none
-
-
-		.site-subtitle
-			color: #fff
-			font-size: 0.65em
-			font-style: italic
-			font-weight: 400
-			margin: 0 0 0 4.6em
-
-	.action-btn
-		font-family: $font-heading
-		background-color: #32538d
-		border: none
-		height: 27px
-		font-size: 11px
-		text-transform: uppercase
-		padding: 0 24px
-		grid-column-start: 2
-		justify-self: end
-
-		a
-			color: white
 			text-decoration: none
-			margin: 0
-			padding: 0
-	
-	.action-btn:hover
-		background-color: #fff
-		
+
+	.site-subtitle
+		color: #fff
+		font-size: 0.67em
+		font-weight: 400
+		margin: $spacing1 0
+
+
+	.hierarchy
+		line-height: 1.4
+		font-size: 0.67em
 		a
-			color: $navy
-
-
-	form.site-search
-		font-family: $font-heading
-		width: 216px
-		height: 27px
-		grid-column: 3 / 4
-		justify-self: end
-
-		label[for="site-search"]
-			border: 0
-			clip: rect(0 0 0 0)
-			height: 1px
-			margin: -1px
-			overflow: hidden
-			padding: 0
-			position: absolute
-			width: 1px
-
-		input
-			width: 175px
-			height: 27px
-			float: left
-			padding: 5px 10px
-			font-size: 12px
-			font-weight: 500
-			border: none
-			box-sizing: border-box
-
-		button
-			background-color: $grey10
-			border: 1px solid $grey10
 			color: #fff
-			width: 41px
-			height: 27px
-			display: flex
-			justify-content: center
-			align-items: center
-			box-sizing: border-box
-
-			img
-				width: 17px
-				height: 17px
-
-	nav.site-navigation
-		height: 35px
-		padding-rght: 1.25em
-		font-family: $font-heading
-
-		button
-			border: 0
-			clip: rect(0 0 0 0)
-			height: 1px
-			margin: -1px
-			overflow: hidden
-			padding: 0
-			position: absolute
-			width: 1px
-
-		ul
-			display: flex
-			justify-content: space-around
-			max-width: 1200px
-			height: 35px
-			margin: 0 auto
-			padding: 0
-			li
-				list-style: none
-				line-height: 35px
-				font-size: 14px
-				font-weight: 400
-				margin: 0
-				width: 100%
-				text-align: center
-
-				a
-					color: $byuNavy
-					text-transform: uppercase
-					display: block
-					width: 100%
-					height: 100%
-				
-			li:hover
-				background-color: #32538d
-
-				a
-					color: white
-					text-decoration: none
+			opacity: 0.75
 

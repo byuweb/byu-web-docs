@@ -3,7 +3,6 @@ module.exports = {
   label: "Header",
   status: "wip",
   collated: true,
-  hidden: true,
   collator: function(markup, item) {
     return `<div class="variant"><h2 class="label">${item.label}</h2> <a class="link" target="_blank" href="../preview/${item.handle}">View</a> <div class="content">${markup}</div> </div>`;
    },
@@ -13,18 +12,31 @@ module.exports = {
       name: "default",
       label: "Standard Text Header",
       context: {
-        title: "Components Demo Site",
+        title: "Mission & Aims",
         url: "/",
       },
     },
 
    {
-      name: "subtitle",
-      label: "With subtitle",
+      name: "hierarchy",
+      label: "With hierarchy links",
       context: {
-        title: "School of Web Development",
-        subtitle: "College of Awesome",
-        url: "/",
+        title: "English",
+        url: "//english.byu.edu",
+        hierarchyLinks: [
+          {url: "//humanities.byu.edu", title:"College of Humanities"}
+        ]
+      },
+    },
+
+   {
+      name: "subtitle",
+      label: "With super- and sub-titles",
+      context: {
+        title: "Kennedy Center",
+        supertitle: "David M.",
+        subtitle: "For International Studies",
+        url: "//kennedy.byu.edu",
       },
     },
 
