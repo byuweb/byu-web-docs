@@ -30,3 +30,20 @@ body, .Tree-title, .Tree-item, .Tree-collectionLabel
 
 .Document-title
 	color: #036
+
+.Pen-preview.resizable
+	overflow: hidden
+
+.Preview-wrapper.resizable:after
+	content: attr(style)
+	position: absolute
+	top: 0.5em
+	right: 0
+	width: 5em
+	margin-right: -7em
+	font-size: 0.75em
+	line-height: 1.4
+	height: 2.8em
+	overflow: hidden
+	color: #aaa
+	text-style: italic

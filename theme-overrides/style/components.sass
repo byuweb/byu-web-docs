@@ -18,13 +18,19 @@
 
 	.content
 		padding: 3.25rem 0
+		z-index: 0
 
 	.link
 		right: 0
 		background: transparent
 		text-decoration: none
+		display: block
+		z-index: 1
+		transition: all 200ms ease
 		&:hover
-			text-decoration: underline
+			background: #eee
+			border-radius: 0 0 0 3px
+			color: #333
 
 
 .colors
