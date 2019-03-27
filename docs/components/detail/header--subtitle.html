@@ -155,9 +155,11 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"banner"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-header"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-banner"</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://byu.edu"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>BYU<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"titles"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-subtitle"</span>&gt;</span>David M.<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-title"</span>&gt;</span>
@@ -165,8 +167,11 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-subtitle"</span>&gt;</span>For International Studies<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-id-search"</span>&gt;</span>
+
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></pre>
@@ -179,13 +184,15 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"banner"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-header"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-banner"</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://byu.edu"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>BYU<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"titles"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> hierarchyLinks }}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hierarchy"</span>&gt;</span>
-                </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> hierarchyLinks }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> breadcrumbLinks }}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> breadcrumbLinks }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
                 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> supertitle }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-subtitle"</span>&gt;</span></span><span class="hljs-template-variable">{{ supertitle }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
@@ -194,25 +201,48 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> subtitle }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-subtitle"</span>&gt;</span></span><span class="hljs-template-variable">{{ subtitle }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-id-search"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">with</span></span> actionBtn}}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-btn"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>BYU News<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">with</span></span>}}</span><span class="xml">
+
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">with</span></span> search }}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-search"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">action</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"site-search"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"search-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"site-search"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"site-search"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{paramName}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Site search"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"search-icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.byu.edu/shared-icons/latest/fontawesome/search-navy.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Run Search"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"search-btn"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><span class="hljs-selector-class">.st</span>{<span class="hljs-attribute">stroke-width</span>:<span class="hljs-number">10</span>;<span class="hljs-attribute">fill</span>:none;<span class="hljs-attribute">stroke</span>:currentColor;<span class="hljs-attribute">stroke-linecap</span>:round;}</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"st"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"45.5"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"45.5"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"24.5"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"st"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M63 63l16 16"</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">with</span></span>}}</span><span class="xml">
+
+            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">with</span></span> byuID}}</span><span class="xml">
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-id"</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> username}}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-netID"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://my.byu.edu"</span>&gt;</span></span><span class="hljs-template-variable">{{username}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentcolor"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 95c-26 0-34-18-34-18 3-12 8-18 17-18 5 5 10 7 17 7s12-2 17-7c9 0 14 6 17 18 0 0-7 18-34 18z"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"45"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"currentcolor"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"10"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentcolor"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"40"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"20"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-cas cas-signout"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://cas.byu.edu/cas/logout"</span>&gt;</span>Sign Out<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+                
+                </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> username}}</span><span class="xml">                
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"byu-cas cas-signin"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://cas.byu.edu/cas/login"</span>&gt;</span>Sign in<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span>}}</span><span class="xml">
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">with</span></span>}}</span><span class="xml">
+
+            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">with</span></span> actionBtn}}</span><span class="xml">
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-btn"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">with</span></span>}}</span><span class="xml">
+
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> nav }}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"site-navigation"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-button"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> nav}}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -236,6 +266,8 @@
                 
                 <option value="file-dfa69eed679228b4b559c7838824df82">header.sass</option>
                 
+                <option value="file-a77b4bc902d6c353d70157492055fd8e">nav.sass</option>
+                
             </select>
         </div>
 
@@ -248,79 +280,330 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
-                                <pre><span class="hljs-string">.byu-header</span>
-	<span class="hljs-attr">font-size:</span> <span class="hljs-number">1.125</span><span class="hljs-string">rem</span>
-	<span class="hljs-attr">box-shadow:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10</span><span class="hljs-string">px</span> <span class="hljs-string">rgba(0,0,0,.16)</span>
+                                <pre>.byu-header
+	font-size: <span class="hljs-number">1.125</span>rem
+	box-shado<span class="hljs-variable">w:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10</span>px rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">16</span>)
 
-	<span class="hljs-string">@media(</span> <span class="hljs-attr">min-width:</span> <span class="hljs-string">$break480</span> <span class="hljs-string">)</span>
-		<span class="hljs-attr">font-size:</span> <span class="hljs-number">1.3125</span><span class="hljs-string">rem</span>
-
-	<span class="hljs-string">@media(</span> <span class="hljs-attr">min-width:</span> <span class="hljs-string">$break960</span> <span class="hljs-string">)</span>
-		<span class="hljs-attr">font-size:</span> <span class="hljs-number">1.5</span><span class="hljs-string">rem</span>
-
-	<span class="hljs-string">.site-banner</span>
-		<span class="hljs-attr">background:</span> <span class="hljs-string">$byuNavy</span>
-		<span class="hljs-string">@media(min-width:</span> <span class="hljs-string">$breakSm)</span>
-			<span class="hljs-string">@supports(display:</span> <span class="hljs-string">flex)</span>
-				<span class="hljs-attr">display:</span> <span class="hljs-string">flex</span>
-				<span class="hljs-attr">flex-direction:</span> <span class="hljs-string">row</span>
-
-	<span class="hljs-string">.byu-link</span>
-		<span class="hljs-attr">background:</span> <span class="hljs-string">$byuNavy</span> <span class="hljs-string">url('../img/byu-monogram-white.png')</span> <span class="hljs-string">center</span> <span class="hljs-string">center</span> <span class="hljs-string">/</span> <span class="hljs-number">3</span><span class="hljs-string">em</span> <span class="hljs-string">auto</span>  <span class="hljs-literal">no</span><span class="hljs-bullet">-repeat</span> <span class="hljs-string">//</span> <span class="hljs-attr">Default:</span> <span class="hljs-string">png</span> <span class="hljs-string">format</span>
-		<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
-		<span class="hljs-attr">height:</span> <span class="hljs-number">2</span><span class="hljs-string">em</span>
-		<span class="hljs-attr">width:</span> <span class="hljs-number">5</span><span class="hljs-string">em</span>
-
-		<span class="hljs-string">@media(min-width:</span> <span class="hljs-string">$breakSm)</span>
-			<span class="hljs-string">@supports(display:</span> <span class="hljs-string">flex)</span>
-				<span class="hljs-attr">width:</span> <span class="hljs-number">4.5</span><span class="hljs-string">em</span>
-				<span class="hljs-attr">min-width:</span> <span class="hljs-number">3.5</span><span class="hljs-string">em</span>
-				<span class="hljs-attr">height:</span> <span class="hljs-string">auto</span>
-
-				<span class="hljs-string">&amp;:after</span>
-					<span class="hljs-attr">content:</span> <span class="hljs-string">" "</span>
-					<span class="hljs-attr">display:</span> <span class="hljs-string">block</span>
-					<span class="hljs-attr">position:</span> <span class="hljs-string">absolute</span>
-					<span class="hljs-attr">width:</span> <span class="hljs-number">1</span><span class="hljs-string">px</span>
-					<span class="hljs-attr">height:</span> <span class="hljs-number">74</span><span class="hljs-string">%</span>
-					<span class="hljs-attr">right:</span> <span class="hljs-number">0</span>
-					<span class="hljs-attr">top:</span> <span class="hljs-number">13</span><span class="hljs-string">%</span>
-					<span class="hljs-attr">background:</span> <span class="hljs-comment">#0f5499</span>
-
-	<span class="hljs-string">.titles</span>
-		<span class="hljs-attr">padding:</span> <span class="hljs-number">0.5</span><span class="hljs-string">em</span> <span class="hljs-number">1</span><span class="hljs-string">em</span>
-		<span class="hljs-attr">flex-grow:</span> <span class="hljs-number">1</span>
-		<span class="hljs-attr">border-top:</span> <span class="hljs-number">1</span><span class="hljs-string">px</span> <span class="hljs-string">solid</span> <span class="hljs-comment">#0f5499</span>
-		<span class="hljs-string">@media(min-width:</span> <span class="hljs-string">$breakSm)</span>
-			<span class="hljs-string">@supports(display:</span> <span class="hljs-string">flex)</span>
-				<span class="hljs-attr">border-top:</span> <span class="hljs-string">none</span>
-				<span class="hljs-attr">align-self:</span> <span class="hljs-string">center</span>
+	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
+		color: #fff
+		text-decoration: none
+		transition: opacity <span class="hljs-number">200</span>ms ease
 
 
-	<span class="hljs-string">.site-title</span>
-		<span class="hljs-attr">color:</span> <span class="hljs-comment">#fff</span>
-		<span class="hljs-attr">font-size:</span> <span class="hljs-string">inherit</span>
-		<span class="hljs-attr">font-weight:</span> <span class="hljs-number">400</span>
-		<span class="hljs-attr">margin:</span> <span class="hljs-string">$spacing1</span> <span class="hljs-number">0</span>
-		<span class="hljs-attr">bottom:</span> <span class="hljs-number">1</span><span class="hljs-string">px</span>
+	@media( <span class="hljs-built_in">min</span>-width: $break480 )
+		font-size: <span class="hljs-number">1.3125</span>rem
 
-		<span class="hljs-string">a,</span> <span class="hljs-attr">a:link,</span> <span class="hljs-attr">a:hover,</span> <span class="hljs-attr">a:visited,</span> <span class="hljs-attr">a:focus</span>
-			<span class="hljs-attr">color:</span> <span class="hljs-comment">#fff</span>
-			<span class="hljs-attr">text-decoration:</span> <span class="hljs-string">none</span>
+	@media( <span class="hljs-built_in">min</span>-width: $break960 )
+		font-size: <span class="hljs-number">1.5</span>rem
 
-	<span class="hljs-string">.site-subtitle</span>
-		<span class="hljs-attr">color:</span> <span class="hljs-comment">#fff</span>
-		<span class="hljs-attr">font-size:</span> <span class="hljs-number">0.67</span><span class="hljs-string">em</span>
-		<span class="hljs-attr">font-weight:</span> <span class="hljs-number">400</span>
-		<span class="hljs-attr">margin:</span> <span class="hljs-string">$spacing1</span> <span class="hljs-number">0</span>
+	.site-banner
+		background: $byuNavy
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
+				<span class="hljs-keyword">display</span>: grid
+				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4</span><span class="hljs-keyword">em</span> auto
+
+			@media(<span class="hljs-built_in">min</span>-width: $break480)
+				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span> auto
+
+			@media(<span class="hljs-built_in">min</span>-width: $break720)
+				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span> auto <span class="hljs-built_in">min</span>-content
+
+	.byu-link
+		background: $byuNavy url(<span class="hljs-string">'../img/byu-monogram-white.png'</span>) <span class="hljs-number">0.6</span><span class="hljs-keyword">em</span> <span class="hljs-keyword">center</span> / <span class="hljs-number">3</span><span class="hljs-keyword">em</span> auto  <span class="hljs-keyword">no</span>-<span class="hljs-built_in">repeat</span> // Defaul<span class="hljs-variable">t:</span> png format
+		<span class="hljs-keyword">display</span>: block
+		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">2</span><span class="hljs-keyword">em</span>
+		width: <span class="hljs-number">4</span><span class="hljs-keyword">em</span>
+
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
+				// flex: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5</span><span class="hljs-keyword">em</span>
+				// <span class="hljs-built_in">min</span>-width: <span class="hljs-number">3.5</span><span class="hljs-keyword">em</span>
+				heigh<span class="hljs-variable">t:</span> auto
+
+			@media(<span class="hljs-built_in">min</span>-width: $break480)
+				width: <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span>
+				background-position: <span class="hljs-number">1</span><span class="hljs-keyword">em</span> <span class="hljs-keyword">center</span>
+
+	.titles
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.75</span><span class="hljs-keyword">em</span>
+		flex-gro<span class="hljs-variable">w:</span> <span class="hljs-number">1</span>
+
+		// Add <span class="hljs-keyword">a</span> <span class="hljs-built_in">line</span> separating BYU from the titles
+		&amp;:before
+			conten<span class="hljs-variable">t:</span> <span class="hljs-string">" "</span>
+			<span class="hljs-keyword">display</span>: block
+			position: absolute
+			width: <span class="hljs-number">94</span>%
+			heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1</span>px
+			righ<span class="hljs-variable">t:</span> <span class="hljs-number">3</span>%
+			top: <span class="hljs-number">0</span>
+			background: $royalWeb
+
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
+				align-self: <span class="hljs-keyword">center</span>
+
+				// Line should <span class="hljs-keyword">be</span> <span class="hljs-keyword">vertical</span> <span class="hljs-keyword">if</span> header <span class="hljs-keyword">is</span> in horizontal layout
+				&amp;:before
+					width: <span class="hljs-number">1</span>px
+					heigh<span class="hljs-variable">t:</span> <span class="hljs-number">74</span>%
+					righ<span class="hljs-variable">t:</span> auto
+					lef<span class="hljs-variable">t:</span> <span class="hljs-number">0</span>
+					top: <span class="hljs-number">13</span>%
+
+			@media(<span class="hljs-built_in">min</span>-width: $break480)
+				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
 
 
-	<span class="hljs-string">.hierarchy</span>
-		<span class="hljs-attr">line-height:</span> <span class="hljs-number">1.4</span>
-		<span class="hljs-attr">font-size:</span> <span class="hljs-number">0.67</span><span class="hljs-string">em</span>
-		<span class="hljs-string">a</span>
-			<span class="hljs-attr">color:</span> <span class="hljs-comment">#fff</span>
-			<span class="hljs-attr">opacity:</span> <span class="hljs-number">0.75</span>
+	// Main site title
+	.site-title
+		color: #fff
+		font-size: inherit
+		font-weigh<span class="hljs-variable">t:</span> <span class="hljs-number">400</span>
+		margin: $spacing1 <span class="hljs-number">0</span>
+		bottom: <span class="hljs-number">1</span>px
+
+
+	// Subtitle AND supertitle (<span class="hljs-keyword">only</span> difference <span class="hljs-keyword">is</span> placement)
+	.site-subtitle
+		color: #fff
+		font-size: <span class="hljs-number">0.67</span><span class="hljs-keyword">em</span>
+		font-weigh<span class="hljs-variable">t:</span> <span class="hljs-number">400</span>
+		margin: $spacing1 <span class="hljs-number">0</span>
+
+
+	// Breadcrumb above the titles
+	.breadcrumb
+		<span class="hljs-built_in">line</span>-heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.4</span>
+		font-size: <span class="hljs-number">0.67</span><span class="hljs-keyword">em</span>
+		<span class="hljs-keyword">a</span>
+			opacity: <span class="hljs-number">0.75</span>
+			&amp;:hover, &amp;:focus
+				opacity: <span class="hljs-number">1</span>
+
+
+
+//********************
+// Action Button, Sign-in, <span class="hljs-built_in">and</span> Search
+//********************
+
+.action-id-<span class="hljs-built_in">search</span>
+	font-size: $fontSize16
+
+	@supports(<span class="hljs-keyword">display</span>: grid)
+		@media(<span class="hljs-built_in">min</span>-width: $breakSm)
+			grid-column: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>
+
+		@media(<span class="hljs-built_in">min</span>-width: $break720)
+			grid-column: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>
+			<span class="hljs-keyword">display</span>: flex
+			flex-direction: row
+			font-size: <span class="hljs-number">0.9375</span>rem
+			align-item<span class="hljs-variable">s:</span> <span class="hljs-keyword">center</span>
+			font-family: $font-heading
+
+		@media(<span class="hljs-built_in">min</span>-width: $break960)
+			font-size: <span class="hljs-number">1</span>rem
+
+
+//********************
+// Search
+//********************
+
+.site-<span class="hljs-built_in">search</span>
+	border-bottom: <span class="hljs-number">2</span>px solid $byuNavy
+
+	@supports(<span class="hljs-keyword">display</span>: grid)
+		@media(<span class="hljs-built_in">min</span>-width: $break720)
+			<span class="hljs-built_in">min</span>-width: <span class="hljs-number">9</span><span class="hljs-keyword">em</span>
+			order: <span class="hljs-number">3</span>
+			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+
+		@media(<span class="hljs-built_in">min</span>-width: $break960)
+			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+			<span class="hljs-built_in">min</span>-width: <span class="hljs-number">12</span><span class="hljs-keyword">em</span>
+
+	.<span class="hljs-built_in">search</span>-label
+		@extend .visually-hidden
+
+	#site-<span class="hljs-built_in">search</span>
+		paddin<span class="hljs-variable">g:</span> $spacing2 <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
+		width: <span class="hljs-number">100</span>%
+		margin-righ<span class="hljs-variable">t:</span> <span class="hljs-number">2</span><span class="hljs-keyword">em</span>
+		<span class="hljs-keyword">display</span>: block
+		<span class="hljs-built_in">line</span>-heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.2</span>
+		border: <span class="hljs-number">1</span>px solid #fff
+		font-size: <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+		box-sizin<span class="hljs-variable">g:</span> border-box
+
+		@media(<span class="hljs-built_in">min</span>-width: $break480)
+			paddin<span class="hljs-variable">g:</span> $spacing2 <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
+
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			@media(<span class="hljs-built_in">min</span>-width: $break720)
+				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+				border-radiu<span class="hljs-variable">s:</span> <span class="hljs-number">0.9625</span><span class="hljs-keyword">em</span>
+
+	.<span class="hljs-built_in">search</span>-btn
+		@extend %button-reset
+		color: $byuNavy
+		<span class="hljs-keyword">display</span>: block
+		position: absolute
+		top: <span class="hljs-number">0</span>
+		righ<span class="hljs-variable">t:</span> <span class="hljs-number">0</span>
+		heigh<span class="hljs-variable">t:</span> $spacing2 + $spacing2 + <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+		width: $spacing2 + $spacing2 + <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+		background: transparent
+		border: <span class="hljs-number">1</span>px solid transparent
+
+		svg
+			width: <span class="hljs-number">100</span>%
+			heigh<span class="hljs-variable">t:</span> <span class="hljs-number">100</span>%
+
+		&amp;:hover, &amp;:focus
+			background: #eee
+			color: $byuNavy
+
+		&amp;:focus
+			border: <span class="hljs-number">1</span>px solid #ccc
+
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			@media(<span class="hljs-built_in">min</span>-width: $break720)
+				width: <span class="hljs-number">1.8</span><span class="hljs-keyword">em</span>
+				heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.8</span><span class="hljs-keyword">em</span>
+
+
+
+	#search-icon
+		top: <span class="hljs-number">0.1</span><span class="hljs-keyword">em</span>
+		width: <span class="hljs-number">1.3</span><span class="hljs-keyword">em</span>
+		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.3</span><span class="hljs-keyword">em</span>
+
+
+
+//********************
+// Sign in
+//********************
+
+
+.byu-id
+	background: #eee
+	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
+	color: $byuNavy
+
+	@media(<span class="hljs-built_in">min</span>-width: $break480)
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.1</span><span class="hljs-keyword">em</span>
+
+	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
+		color: $byuNavy
+		<span class="hljs-keyword">display</span>: inline-block
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.6</span><span class="hljs-keyword">em</span>
+
+	svg
+		width: <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
+		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
+		<span class="hljs-keyword">display</span>: inline-block
+		<span class="hljs-keyword">vertical</span>-align: baseline
+		top: <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span>
+		margin: <span class="hljs-number">0</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span>
+
+	@supports(<span class="hljs-keyword">display</span>: grid)
+		@media(<span class="hljs-built_in">min</span>-width: $break720)
+			<span class="hljs-keyword">display</span>: flex
+			align-item<span class="hljs-variable">s:</span> <span class="hljs-keyword">center</span>
+			background: transparent
+			order: <span class="hljs-number">2</span>
+			color: #fff
+			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+			<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
+				color: #fff
+				white-space: nowrap
+			svg
+				top: <span class="hljs-number">0</span>
+				margin: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+
+		@media(<span class="hljs-built_in">min</span>-width: $break960)
+			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+
+
+//********************
+// Action Button
+//********************
+
+
+.action-btn
+	background: #fff
+	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span>
+	white-space: nowrap
+
+	<span class="hljs-keyword">a</span>
+		background: $royalWeb
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.5</span><span class="hljs-keyword">em</span>
+		<span class="hljs-keyword">display</span>: inline-block
+
+	@media(<span class="hljs-built_in">min</span>-width: $break480)
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.85</span><span class="hljs-keyword">em</span>
+
+	@supports(<span class="hljs-keyword">display</span>: grid)
+		@media(<span class="hljs-built_in">min</span>-width: $break720)
+			background: transparent
+			order: <span class="hljs-number">1</span>
+			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+			<span class="hljs-keyword">a</span>
+				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.5</span><span class="hljs-keyword">em</span>
+
+		@media(<span class="hljs-built_in">min</span>-width: $break960)
+			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+
+
+//********************
+// Navigation
+//********************
+
+
+.<span class="hljs-keyword">menu</span>-button
+	<span class="hljs-keyword">display</span>: none
+
+.site-navigation
+	margin: <span class="hljs-number">0</span>
+	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span>
+	font-size: $fontSize16
+	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
+		color: $byuNavy
+		<span class="hljs-keyword">display</span>: inline-block
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.35</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
+
+		@media(<span class="hljs-built_in">min</span>-width: $break480)
+			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.35</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.1</span><span class="hljs-keyword">em</span>
+
+	@media(<span class="hljs-built_in">min</span>-width: $break720)
+		margin-lef<span class="hljs-variable">t:</span> <span class="hljs-number">5.75</span><span class="hljs-keyword">em</span>
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+
+	ul
+		margin: <span class="hljs-number">0</span>
+		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+		<span class="hljs-keyword">list</span>-style: none
+
+		@supports(<span class="hljs-keyword">display</span>: grid)
+			<span class="hljs-keyword">display</span>: grid
+			grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-built_in">repeat</span>(auto-fill, minmax(<span class="hljs-number">8</span><span class="hljs-keyword">em</span>, <span class="hljs-number">1</span>fr))
+
+		@media(<span class="hljs-built_in">min</span>-width: $break720)
+			<span class="hljs-keyword">display</span>: block
+			font-size: $fontSize15
+			font-family: $font-heading
+			letter-spacin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+			li
+				<span class="hljs-keyword">display</span>: inline-block
+				margin: <span class="hljs-number">0</span>
+				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+
+			<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
+				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+
+
 
 </pre>
                             </code>
@@ -338,7 +621,36 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">5.5 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-a77b4bc902d6c353d70157492055fd8e" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-Sass FileBrowser-code">
+                                <pre></pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/header/nav.sass"><span>/components/raw/header/nav.sass</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/header/nav.sass</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">0 Byte</span>
                 </li>
             </ul>
         </div>
@@ -377,15 +689,15 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(8)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header--default.html">
                     <span>Standard Text Header</span>
                 </a>, 
             
-                <a href="header--hierarchy.html">
-                    <span>With hierarchy links</span>
+                <a href="header--breadcrumb.html">
+                    <span>With breadcrumb links</span>
                 </a>, 
             
                 <a href="">
@@ -406,6 +718,10 @@
             
                 <a href="header--nav-search.html">
                     <span>With navigation and search</span>
+                </a>, 
+            
+                <a href="header--all.html">
+                    <span>With everything</span>
                 </a>
             
             </span>

@@ -18,12 +18,12 @@ module.exports = {
     },
 
    {
-      name: "hierarchy",
-      label: "With hierarchy links",
+      name: "breadcrumb",
+      label: "With breadcrumb links",
       context: {
         title: "English",
         url: "//english.byu.edu",
-        hierarchyLinks: [
+        breadcrumbLinks: [
           {url: "//humanities.byu.edu", title:"College of Humanities"}
         ]
       },
@@ -60,7 +60,8 @@ module.exports = {
         title: "College of Engineering",
         url: "/",
         actionBtn: {
-          url: "//news.byu.edu"
+          url: "//news.byu.edu",
+          title: "BYU News"
         },
         search: {
             action: "/",
@@ -95,6 +96,34 @@ module.exports = {
         search: {
             action: "/",
             paramName: "q"
+        },
+        nav: [
+            {url:"/",title:"Home"},
+            {url:"/about",title:"About"},
+            {url:"/programs",title:"Programs"},
+            {url:"/students",title:"Students"},
+            {url:"/alumni",title:"Alumni"},
+            {url:"/giving",title:"Giving"},
+        ],
+      },
+    },
+
+   {
+      name: "all",
+      label: "With everything",
+      context: {
+        title: "College of Nursing",
+        url: "/",
+        actionBtn: {
+          url: "//donate.byu.edu",
+          title: "Donate"
+        },
+        search: {
+            action: "/",
+            paramName: "q"
+        },
+        byuID: {
+          username: "pparker"
         },
         nav: [
             {url:"/",title:"Home"},

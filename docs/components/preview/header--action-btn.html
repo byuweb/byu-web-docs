@@ -13,9 +13,11 @@
 
 <header role="banner" class="byu-header">
     <div class="site-banner">
+
         <a class="byu-link" href="https://byu.edu">
             <span class="visually-hidden">BYU</span>
         </a>
+
         <div class="titles">
             
             <h1 class="site-title">
@@ -23,16 +25,26 @@
             </h1>
             
         </div>
+
+
         <div class="action-id-search">
-            <button class="action-btn"><a href="//news.byu.edu">BYU News</a></button>
+
             <form class="site-search" action="/">
-                <label for="site-search">Search</label>
+                <label class="search-label" for="site-search">Search</label>
                 <input type="search" id="site-search" name="q" aria-label="Site search" placeholder="Search">
-                <button>
-                    <img id="search-icon" src="https://cdn.byu.edu/shared-icons/latest/fontawesome/search-navy.svg" alt="Run Search">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <style>.st{stroke-width:10;fill:none;stroke:currentColor;stroke-linecap:round;}</style>
+                        <circle class="st" cx="45.5" cy="45.5" r="24.5"/><path class="st" d="M63 63l16 16"/>
+                    </svg>
                 </button>
             </form>
+
+
+            <div class="action-btn"><a href="//news.byu.edu">BYU News</a></div>
+
         </div>
+
     </div>
 
 

@@ -1,12 +1,14 @@
 <header role="banner" class="byu-header">
     <div class="site-banner">
+
         <a class="byu-link" href="https://byu.edu">
             <span class="visually-hidden">BYU</span>
         </a>
+
         <div class="titles">
-            {{#if hierarchyLinks }}
-                <nav class="hierarchy">
-                {{#each hierarchyLinks }}<a href="{{ url }}">{{ title }}</a>{{/each}}
+            {{#if breadcrumbLinks }}
+                <nav class="breadcrumb">
+                {{#each breadcrumbLinks }}<a href="{{ url }}">{{ title }}</a>{{/each}}
                 </nav>
             {{/if}}
             {{#if supertitle }}<h2 class="site-subtitle">{{ supertitle }}</h2>{{/if}}
@@ -15,25 +17,48 @@
             </h1>
             {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
         </div>
+
+
         <div class="action-id-search">
-            {{#with actionBtn}}
-            <button class="action-btn"><a href="{{url}}">BYU News</a></button>
-            {{/with}}
+
             {{#with search }}
             <form class="site-search" action="{{action}}">
-                <label for="site-search">Search</label>
+                <label class="search-label" for="site-search">Search</label>
                 <input type="search" id="site-search" name="{{paramName}}" aria-label="Site search" placeholder="Search">
-                <button>
-                    <img id="search-icon" src="https://cdn.byu.edu/shared-icons/latest/fontawesome/search-navy.svg" alt="Run Search">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <style>.st{stroke-width:10;fill:none;stroke:currentColor;stroke-linecap:round;}</style>
+                        <circle class="st" cx="45.5" cy="45.5" r="24.5"/><path class="st" d="M63 63l16 16"/>
+                    </svg>
                 </button>
             </form>
             {{/with}}
+
+            {{#with byuID}}
+            <div class="byu-id">
+                {{#if username}}
+                <a class="byu-netID" href="https://my.byu.edu">{{username}}</a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="currentcolor" d="M50 95c-26 0-34-18-34-18 3-12 8-18 17-18 5 5 10 7 17 7s12-2 17-7c9 0 14 6 17 18 0 0-7 18-34 18z"/><circle cx="50" cy="50" r="45" fill="none" stroke="currentcolor" stroke-width="10"/><circle fill="currentcolor" cx="50" cy="40" r="20"/></svg>
+                <a class="byu-cas cas-signout" href="http://cas.byu.edu/cas/logout">Sign Out</a>
+                {{/if}}
+                
+                {{#unless username}}                
+                <a class="byu-cas cas-signin" href="http://cas.byu.edu/cas/login">Sign in</a>
+                {{/unless}}
+            </div>
+            {{/with}}
+
+            {{#with actionBtn}}
+            <div class="action-btn"><a href="{{url}}">{{title}}</a></div>
+            {{/with}}
+
         </div>
+
     </div>
 
     {{#if nav }}
     <nav class="site-navigation">
-        <button aria-expanded="false">Menu</button>
+        <button class="menu-button" aria-expanded="false">Menu</button>
         <ul>
             {{#each nav}}<li><a href="{{url}}">{{title}}</a></li>{{/each}}
         </ul>
