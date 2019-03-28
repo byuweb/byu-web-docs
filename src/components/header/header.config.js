@@ -60,8 +60,8 @@ module.exports = {
         title: "College of Engineering",
         url: "/",
         actionBtn: {
-          url: "//news.byu.edu",
-          title: "BYU News"
+          url: "//donate.byu.edu",
+          title: "Donate"
         },
         search: {
             action: "/",

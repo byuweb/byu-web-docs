@@ -293,327 +293,378 @@
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
                                 <pre>.byu-header
-	font-size: <span class="hljs-number">1.125</span>rem
-	box-shado<span class="hljs-variable">w:</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10</span>px rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">16</span>)
+	font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1.125</span>rem
+	box-shadow: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10</span>px rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">.16</span>)
+	border-bottom: <span class="hljs-number">1</span>px solid #ddd
 
-	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
-		color: #fff
-		text-decoration: none
+	a, a:link, a:visited
+		<span class="hljs-keyword">color</span>: #fff
+		<span class="hljs-keyword">text</span>-decoration: none
 		transition: opacity <span class="hljs-number">200</span>ms ease
 
 
-	@media( <span class="hljs-built_in">min</span>-width: $break480 )
-		font-size: <span class="hljs-number">1.3125</span>rem
+	@media( <span class="hljs-keyword">min</span>-width: $break480 )
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1.3125</span>rem
 
-	@media( <span class="hljs-built_in">min</span>-width: $break960 )
-		font-size: <span class="hljs-number">1.5</span>rem
+	@media( <span class="hljs-keyword">min</span>-width: $break960 )
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1.5</span>rem
 
 	.site-banner
 		background: $byuNavy
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
-				<span class="hljs-keyword">display</span>: grid
-				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4</span><span class="hljs-keyword">em</span> auto
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+				display: <span class="hljs-keyword">grid</span>
+				<span class="hljs-keyword">grid</span>-template-columns: <span class="hljs-number">4</span>em auto
 
-			@media(<span class="hljs-built_in">min</span>-width: $break480)
-				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span> auto
+			@media(<span class="hljs-keyword">min</span>-width: $break480)
+				<span class="hljs-keyword">grid</span>-template-columns: <span class="hljs-number">4.75</span>em auto
 
-			@media(<span class="hljs-built_in">min</span>-width: $break720)
-				grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span> auto <span class="hljs-built_in">min</span>-content
+			@media(<span class="hljs-keyword">min</span>-width: $break720)
+				<span class="hljs-keyword">grid</span>-template-columns: <span class="hljs-number">4.75</span>em auto <span class="hljs-keyword">min</span>-content
 
 	.byu-link
-		background: $byuNavy url(<span class="hljs-string">'../img/byu-monogram-white.png'</span>) <span class="hljs-number">0.6</span><span class="hljs-keyword">em</span> <span class="hljs-keyword">center</span> / <span class="hljs-number">3</span><span class="hljs-keyword">em</span> auto  <span class="hljs-keyword">no</span>-<span class="hljs-built_in">repeat</span> // Defaul<span class="hljs-variable">t:</span> png format
-		<span class="hljs-keyword">display</span>: block
-		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">2</span><span class="hljs-keyword">em</span>
-		width: <span class="hljs-number">4</span><span class="hljs-keyword">em</span>
+		background: $byuNavy url(<span class="hljs-string">'../img/byu-monogram-white.png'</span>) <span class="hljs-number">0.6</span>em center / <span class="hljs-number">3</span>em auto  no-repeat <span class="hljs-comment">// Default: png format</span>
+		display: block
+		height: <span class="hljs-number">2</span>em
+		width: <span class="hljs-number">4</span>em
 
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
-				// flex: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5</span><span class="hljs-keyword">em</span>
-				// <span class="hljs-built_in">min</span>-width: <span class="hljs-number">3.5</span><span class="hljs-keyword">em</span>
-				heigh<span class="hljs-variable">t:</span> auto
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+				<span class="hljs-comment">// flex: 0 0 5em</span>
+				<span class="hljs-comment">// min-width: 3.5em</span>
+				height: auto
 
-			@media(<span class="hljs-built_in">min</span>-width: $break480)
-				width: <span class="hljs-number">4.75</span><span class="hljs-keyword">em</span>
-				background-position: <span class="hljs-number">1</span><span class="hljs-keyword">em</span> <span class="hljs-keyword">center</span>
+			@media(<span class="hljs-keyword">min</span>-width: $break480)
+				width: <span class="hljs-number">4.75</span>em
+				background-position: <span class="hljs-number">1</span>em center
 
 	.titles
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.75</span><span class="hljs-keyword">em</span>
-		flex-gro<span class="hljs-variable">w:</span> <span class="hljs-number">1</span>
+		padding: <span class="hljs-number">0.5</span>em <span class="hljs-number">0.75</span>em
+		flex-grow: <span class="hljs-number">1</span>
 
-		// Add <span class="hljs-keyword">a</span> <span class="hljs-built_in">line</span> separating BYU from the titles
+		<span class="hljs-comment">// Add a line separating BYU from the titles</span>
 		&amp;:before
-			conten<span class="hljs-variable">t:</span> <span class="hljs-string">" "</span>
-			<span class="hljs-keyword">display</span>: block
+			content: <span class="hljs-string">" "</span>
+			display: block
 			position: absolute
 			width: <span class="hljs-number">94</span>%
-			heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1</span>px
-			righ<span class="hljs-variable">t:</span> <span class="hljs-number">3</span>%
+			height: <span class="hljs-number">1</span>px
+			right: <span class="hljs-number">3</span>%
 			top: <span class="hljs-number">0</span>
 			background: $royalWeb
 
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			@media(<span class="hljs-built_in">min</span>-width: $breakSm)
-				align-self: <span class="hljs-keyword">center</span>
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+				<span class="hljs-keyword">align</span>-self: center
 
-				// Line should <span class="hljs-keyword">be</span> <span class="hljs-keyword">vertical</span> <span class="hljs-keyword">if</span> header <span class="hljs-keyword">is</span> in horizontal layout
+				<span class="hljs-comment">// Line should be vertical if header is in horizontal layout</span>
 				&amp;:before
 					width: <span class="hljs-number">1</span>px
-					heigh<span class="hljs-variable">t:</span> <span class="hljs-number">74</span>%
-					righ<span class="hljs-variable">t:</span> auto
-					lef<span class="hljs-variable">t:</span> <span class="hljs-number">0</span>
+					height: <span class="hljs-number">74</span>%
+					right: auto
+					left: <span class="hljs-number">0</span>
 					top: <span class="hljs-number">13</span>%
 
-			@media(<span class="hljs-built_in">min</span>-width: $break480)
-				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+			@media(<span class="hljs-keyword">min</span>-width: $break480)
+				padding: <span class="hljs-number">0.5</span>em <span class="hljs-number">1</span>em
 
 
-	// Main site title
+	<span class="hljs-comment">// Main site title</span>
 	.site-title
-		color: #fff
-		font-size: inherit
-		font-weigh<span class="hljs-variable">t:</span> <span class="hljs-number">400</span>
+		<span class="hljs-keyword">color</span>: #fff
+		font-<span class="hljs-keyword">size</span>: inherit
+		font-weight: <span class="hljs-number">400</span>
 		margin: $spacing1 <span class="hljs-number">0</span>
 		bottom: <span class="hljs-number">1</span>px
 
 
-	// Subtitle AND supertitle (<span class="hljs-keyword">only</span> difference <span class="hljs-keyword">is</span> placement)
+	<span class="hljs-comment">// Subtitle AND supertitle (only difference is placement)</span>
 	.site-subtitle
-		color: #fff
-		font-size: <span class="hljs-number">0.67</span><span class="hljs-keyword">em</span>
-		font-weigh<span class="hljs-variable">t:</span> <span class="hljs-number">400</span>
+		<span class="hljs-keyword">color</span>: #fff
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">0.67</span>em
+		font-weight: <span class="hljs-number">400</span>
 		margin: $spacing1 <span class="hljs-number">0</span>
 
 
-	// Breadcrumb above the titles
+	<span class="hljs-comment">// Breadcrumb above the titles</span>
 	.breadcrumb
-		<span class="hljs-built_in">line</span>-heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.4</span>
-		font-size: <span class="hljs-number">0.67</span><span class="hljs-keyword">em</span>
-		<span class="hljs-keyword">a</span>
+		line-height: <span class="hljs-number">1.4</span>
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">0.67</span>em
+		a
 			opacity: <span class="hljs-number">0.75</span>
 			&amp;:hover, &amp;:focus
 				opacity: <span class="hljs-number">1</span>
 
 
 
-//********************
-// Action Button, Sign-in, <span class="hljs-built_in">and</span> Search
-//********************
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// Action Button, Sign-in and Search Section</span>
+<span class="hljs-comment">//********************</span>
 
-.action-id-<span class="hljs-built_in">search</span>
-	font-size: $fontSize16
+.action-id-search
+	font-<span class="hljs-keyword">size</span>: $fontSize16
+	font-family: $font-heading
 
-	@supports(<span class="hljs-keyword">display</span>: grid)
-		@media(<span class="hljs-built_in">min</span>-width: $breakSm)
-			grid-column: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>
+	a, svg
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
 
-		@media(<span class="hljs-built_in">min</span>-width: $break720)
-			grid-column: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>
-			<span class="hljs-keyword">display</span>: flex
+	@supports(display: <span class="hljs-keyword">grid</span>)
+		@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+			<span class="hljs-keyword">grid</span>-column: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>
+			display: <span class="hljs-keyword">grid</span>
+			<span class="hljs-keyword">grid</span>-template-columns: auto auto
+
+		@media(<span class="hljs-keyword">min</span>-width: $break720)
+			<span class="hljs-keyword">grid</span>-column: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>
+			display: flex
 			flex-direction: row
-			font-size: <span class="hljs-number">0.9375</span>rem
-			align-item<span class="hljs-variable">s:</span> <span class="hljs-keyword">center</span>
-			font-family: $font-heading
+			font-<span class="hljs-keyword">size</span>: <span class="hljs-number">0.9375</span>rem
+			<span class="hljs-keyword">align</span>-items: center
+			background: transparent none
 
-		@media(<span class="hljs-built_in">min</span>-width: $break960)
-			font-size: <span class="hljs-number">1</span>rem
+		@media(<span class="hljs-keyword">min</span>-width: $break960)
+			font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
 
 
-//********************
-// Search
-//********************
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// Search</span>
+<span class="hljs-comment">//********************</span>
 
-.site-<span class="hljs-built_in">search</span>
-	border-bottom: <span class="hljs-number">2</span>px solid $byuNavy
+.site-search
 
-	@supports(<span class="hljs-keyword">display</span>: grid)
-		@media(<span class="hljs-built_in">min</span>-width: $break720)
-			<span class="hljs-built_in">min</span>-width: <span class="hljs-number">9</span><span class="hljs-keyword">em</span>
+	@supports(display: <span class="hljs-keyword">grid</span>)
+		@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+			<span class="hljs-keyword">grid</span>-column: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>
+
+		@media(<span class="hljs-keyword">min</span>-width: $break720)
+			<span class="hljs-keyword">min</span>-width: <span class="hljs-number">9</span>em
 			order: <span class="hljs-number">3</span>
-			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span>em <span class="hljs-number">0</span> <span class="hljs-number">0.5</span>em
 
-		@media(<span class="hljs-built_in">min</span>-width: $break960)
-			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
-			<span class="hljs-built_in">min</span>-width: <span class="hljs-number">12</span><span class="hljs-keyword">em</span>
+		@media(<span class="hljs-keyword">min</span>-width: $break960)
+			margin: <span class="hljs-number">0</span> <span class="hljs-number">1</span>em
+			<span class="hljs-keyword">min</span>-width: <span class="hljs-number">12</span>em
 
-	.<span class="hljs-built_in">search</span>-label
+	.search-label
 		@extend .visually-hidden
 
-	#site-<span class="hljs-built_in">search</span>
-		paddin<span class="hljs-variable">g:</span> $spacing2 <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
+	#site-search
+		padding: $spacing3 <span class="hljs-number">0.65</span>em
 		width: <span class="hljs-number">100</span>%
-		margin-righ<span class="hljs-variable">t:</span> <span class="hljs-number">2</span><span class="hljs-keyword">em</span>
-		<span class="hljs-keyword">display</span>: block
-		<span class="hljs-built_in">line</span>-heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.2</span>
+		margin-right: <span class="hljs-number">2</span>em
+		display: block
+		line-height: <span class="hljs-number">1.2</span>
 		border: <span class="hljs-number">1</span>px solid #fff
-		font-size: <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
-		box-sizin<span class="hljs-variable">g:</span> border-box
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
+		box-sizing: border-box
 
-		@media(<span class="hljs-built_in">min</span>-width: $break480)
-			paddin<span class="hljs-variable">g:</span> $spacing2 <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
+		@media(<span class="hljs-keyword">min</span>-width: $break480)
+			padding: $spacing3 <span class="hljs-number">1.25</span>em
 
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			@media(<span class="hljs-built_in">min</span>-width: $break720)
-				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
-				border-radiu<span class="hljs-variable">s:</span> <span class="hljs-number">0.9625</span><span class="hljs-keyword">em</span>
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			@media(<span class="hljs-keyword">min</span>-width: $break720)
+				padding: <span class="hljs-number">0.4</span>em <span class="hljs-number">1</span>em
+				border-radius: <span class="hljs-number">0.9625</span>em
 
-	.<span class="hljs-built_in">search</span>-btn
+	.search-btn
 		@extend %button-reset
-		color: $byuNavy
-		<span class="hljs-keyword">display</span>: block
+		<span class="hljs-keyword">color</span>: $byuNavy
+		display: block
 		position: absolute
-		top: <span class="hljs-number">0</span>
-		righ<span class="hljs-variable">t:</span> <span class="hljs-number">0</span>
-		heigh<span class="hljs-variable">t:</span> $spacing2 + $spacing2 + <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
-		width: $spacing2 + $spacing2 + <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+		top: $spacing1
+		right: <span class="hljs-number">0</span>
+		height: $spacing2 + $spacing2 + <span class="hljs-number">1</span>em
+		width: $spacing2 + $spacing2 + <span class="hljs-number">1</span>em
 		background: transparent
 		border: <span class="hljs-number">1</span>px solid transparent
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
 
 		svg
 			width: <span class="hljs-number">100</span>%
-			heigh<span class="hljs-variable">t:</span> <span class="hljs-number">100</span>%
+			height: <span class="hljs-number">100</span>%
 
 		&amp;:hover, &amp;:focus
-			background: #eee
-			color: $byuNavy
+			background: $grey10
+			<span class="hljs-keyword">color</span>: $byuNavy
 
 		&amp;:focus
 			border: <span class="hljs-number">1</span>px solid #ccc
 
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			@media(<span class="hljs-built_in">min</span>-width: $break720)
-				width: <span class="hljs-number">1.8</span><span class="hljs-keyword">em</span>
-				heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.8</span><span class="hljs-keyword">em</span>
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			@media(<span class="hljs-keyword">min</span>-width: $break720)
+				width: <span class="hljs-number">1.8</span>em
+				height: <span class="hljs-number">1.8</span>em
+				top: <span class="hljs-number">0</span>
 
 
 
 	#search-icon
-		top: <span class="hljs-number">0.1</span><span class="hljs-keyword">em</span>
-		width: <span class="hljs-number">1.3</span><span class="hljs-keyword">em</span>
-		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.3</span><span class="hljs-keyword">em</span>
+		top: <span class="hljs-number">0.1</span>em
+		width: <span class="hljs-number">1.3</span>em
+		height: <span class="hljs-number">1.3</span>em
 
 
 
-//********************
-// Sign in
-//********************
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// Sign in</span>
+<span class="hljs-comment">//********************</span>
 
 
 .byu-id
-	background: #eee
-	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
-	color: $byuNavy
+	background: $grey05
+	background-<span class="hljs-keyword">image</span>: linear-gradient($grey10, #fff <span class="hljs-number">4</span>px, #fff <span class="hljs-number">100</span>%)
+	padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">0.65</span>em
+	<span class="hljs-keyword">color</span>: $byuNavy
+	<span class="hljs-keyword">text</span>-<span class="hljs-keyword">align</span>: right
 
-	@media(<span class="hljs-built_in">min</span>-width: $break480)
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.1</span><span class="hljs-keyword">em</span>
+	@media(<span class="hljs-keyword">min</span>-width: $break480)
+		padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">1.1</span>em
 
-	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
-		color: $byuNavy
-		<span class="hljs-keyword">display</span>: inline-block
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.6</span><span class="hljs-keyword">em</span>
+	a, a:link, a:visited
+		<span class="hljs-keyword">color</span>: $byuNavy
+		display: inline-block
+		padding: <span class="hljs-number">0.5</span>em <span class="hljs-number">0</span> <span class="hljs-number">0.6</span>em
 
 	svg
-		width: <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
-		heigh<span class="hljs-variable">t:</span> <span class="hljs-number">1.25</span><span class="hljs-keyword">em</span>
-		<span class="hljs-keyword">display</span>: inline-block
-		<span class="hljs-keyword">vertical</span>-align: baseline
-		top: <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span>
-		margin: <span class="hljs-number">0</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span>
+		width: <span class="hljs-number">1.25</span>em
+		height: <span class="hljs-number">1.25</span>em
+		display: inline-block
+		vertical-<span class="hljs-keyword">align</span>: baseline
+		top: <span class="hljs-number">0.25</span>em
+		margin: <span class="hljs-number">0</span> <span class="hljs-number">0.25</span>em
 
-	@supports(<span class="hljs-keyword">display</span>: grid)
-		@media(<span class="hljs-built_in">min</span>-width: $break720)
-			<span class="hljs-keyword">display</span>: flex
-			align-item<span class="hljs-variable">s:</span> <span class="hljs-keyword">center</span>
+	@supports(display: <span class="hljs-keyword">grid</span>)
+
+		@media(<span class="hljs-keyword">min</span>-width: $break720)
 			background: transparent
 			order: <span class="hljs-number">2</span>
-			color: #fff
-			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
-			<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
-				color: #fff
-				white-space: nowrap
+			<span class="hljs-keyword">color</span>: #fff
+			padding: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span>em
+			display: flex
+			<span class="hljs-keyword">align</span>-items: center
+			justify-content: flex-end
+
 			svg
 				top: <span class="hljs-number">0</span>
-				margin: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
+				margin: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span>em
 
-		@media(<span class="hljs-built_in">min</span>-width: $break960)
-			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+			a, a:link, a:visited
+				<span class="hljs-keyword">color</span>: #fff
+				white-space: nowrap
+
+		@media(<span class="hljs-keyword">min</span>-width: $break960)
+			padding: <span class="hljs-number">0</span> <span class="hljs-number">1</span>em
 
 
-//********************
-// Action Button
-//********************
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// Action Button</span>
+<span class="hljs-comment">//********************</span>
 
 
 .action-btn
-	background: #fff
-	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span>
+	padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">0.4</span>em
 	white-space: nowrap
+	background: #fff
 
-	<span class="hljs-keyword">a</span>
+
+	a
 		background: $royalWeb
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.4</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.5</span><span class="hljs-keyword">em</span>
-		<span class="hljs-keyword">display</span>: inline-block
+		padding: <span class="hljs-number">0.4</span>em <span class="hljs-number">1.5</span>em
+		display: inline-block
+		font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
+		transition: background <span class="hljs-number">250</span>ms ease
 
-	@media(<span class="hljs-built_in">min</span>-width: $break480)
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.85</span><span class="hljs-keyword">em</span>
+		&amp;:hover, &amp;:focus
+			background: mix( $royalWeb, #fff, <span class="hljs-number">90</span>% )
+			<span class="hljs-keyword">text</span>-shadow: <span class="hljs-number">0</span> <span class="hljs-number">0</span> $spacing2 rgba($byuNavy, <span class="hljs-number">0.75</span>)
 
-	@supports(<span class="hljs-keyword">display</span>: grid)
-		@media(<span class="hljs-built_in">min</span>-width: $break720)
+	@media(<span class="hljs-keyword">min</span>-width: $break480)
+		padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">0.85</span>em
+
+	@supports(display: <span class="hljs-keyword">grid</span>)
+		@media(<span class="hljs-keyword">min</span>-width: $breakSm)
+			padding: <span class="hljs-number">0.5</span>em
+			<span class="hljs-keyword">grid</span>-column: <span class="hljs-number">1</span> / <span class="hljs-number">2</span>
+			<span class="hljs-keyword">grid</span>-row: <span class="hljs-number">2</span> / <span class="hljs-number">3</span>
+			background-<span class="hljs-keyword">image</span>: linear-gradient($grey10, #fff <span class="hljs-number">5</span>px, #fff <span class="hljs-number">100</span>%)
+
+		@media(<span class="hljs-keyword">min</span>-width: $break720)
 			background: transparent
 			order: <span class="hljs-number">1</span>
-			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span>
-			<span class="hljs-keyword">a</span>
-				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.5</span><span class="hljs-keyword">em</span>
+			padding: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span>em
+			a
+				background: $royalWeb
+				padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">1</span>em
 
-		@media(<span class="hljs-built_in">min</span>-width: $break960)
-			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
-
-
-//********************
-// Navigation
-//********************
+		@media(<span class="hljs-keyword">min</span>-width: $break960)
+			padding: <span class="hljs-number">0</span> <span class="hljs-number">1</span>em
+			a
+				padding: <span class="hljs-number">0.25</span>em <span class="hljs-number">1.5</span>em
 
 
-.<span class="hljs-keyword">menu</span>-button
-	<span class="hljs-keyword">display</span>: none
+
+
+
+
+
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// Navigation Menu</span>
+<span class="hljs-comment">//********************</span>
+
+
+.<span class="hljs-keyword">menu</span>-<span class="hljs-keyword">button</span>
+	display: none
 
 .site-navigation
 	margin: <span class="hljs-number">0</span>
-	paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.25</span><span class="hljs-keyword">em</span> <span class="hljs-number">0</span>
-	font-size: $fontSize16
-	<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
-		color: $byuNavy
-		<span class="hljs-keyword">display</span>: inline-block
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.35</span><span class="hljs-keyword">em</span> <span class="hljs-number">0.65</span><span class="hljs-keyword">em</span>
+	padding: <span class="hljs-number">0</span>
+	font-<span class="hljs-keyword">size</span>: $fontSize16
+	font-family: $font-heading
+	letter-spacing: <span class="hljs-number">0</span>
+	border-top: <span class="hljs-number">1</span>px solid $grey05
+	<span class="hljs-comment">// height: 0</span>
+	<span class="hljs-comment">// overflow: hidden</span>
+	a
+		&amp;, &amp;:link, &amp;:visited
+			<span class="hljs-keyword">color</span>: $byuNavy
+			display: block
+			padding: <span class="hljs-number">0.5</span>em <span class="hljs-number">1.1</span>em
+			font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1</span>rem
+			transition: background <span class="hljs-number">250</span>ms ease
 
-		@media(<span class="hljs-built_in">min</span>-width: $break480)
-			paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.35</span><span class="hljs-keyword">em</span> <span class="hljs-number">1.1</span><span class="hljs-keyword">em</span>
+		&amp;:hover, &amp;:focus
+			background: $grey10
 
-	@media(<span class="hljs-built_in">min</span>-width: $break720)
-		margin-lef<span class="hljs-variable">t:</span> <span class="hljs-number">5.75</span><span class="hljs-keyword">em</span>
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+	@media(<span class="hljs-keyword">min</span>-width: $break480)
+		padding: <span class="hljs-number">0</span> <span class="hljs-number">0.5</span>em
+
+	@media(<span class="hljs-keyword">min</span>-width: $break720)
+		margin-left: <span class="hljs-number">5.5</span>em
+		background: transparent
 
 	ul
 		margin: <span class="hljs-number">0</span>
-		paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
-		<span class="hljs-keyword">list</span>-style: none
+		padding: <span class="hljs-number">0</span>
+		list-style: none
 
-		@supports(<span class="hljs-keyword">display</span>: grid)
-			<span class="hljs-keyword">display</span>: grid
-			grid-template-column<span class="hljs-variable">s:</span> <span class="hljs-built_in">repeat</span>(auto-fill, minmax(<span class="hljs-number">8</span><span class="hljs-keyword">em</span>, <span class="hljs-number">1</span>fr))
+		li
+			margin: <span class="hljs-number">0</span>
+			padding: <span class="hljs-number">0</span>
 
-		@media(<span class="hljs-built_in">min</span>-width: $break720)
-			<span class="hljs-keyword">display</span>: block
-			font-size: $fontSize15
-			font-family: $font-heading
-			letter-spacin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+		@supports(display: <span class="hljs-keyword">grid</span>)
+			display: <span class="hljs-keyword">grid</span>
+			<span class="hljs-keyword">grid</span>-template-columns: repeat(auto-fill, minmax(<span class="hljs-number">5</span>em, auto))
+			<span class="hljs-keyword">grid</span>-gap: <span class="hljs-number">0.25</span>em
+
+		@media(<span class="hljs-keyword">min</span>-width: $break720)
+			display: block
+
 			li
-				<span class="hljs-keyword">display</span>: inline-block
-				margin: <span class="hljs-number">0</span>
-				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0</span>
+				display: inline-block
 
-			<span class="hljs-keyword">a</span>, <span class="hljs-variable">a:link</span>, <span class="hljs-variable">a:visited</span>
-				paddin<span class="hljs-variable">g:</span> <span class="hljs-number">0.5</span><span class="hljs-keyword">em</span> <span class="hljs-number">1</span><span class="hljs-keyword">em</span>
+			a, a:link, a:visited
+				padding: <span class="hljs-number">0.5</span>em <span class="hljs-number">1.35</span>em
+				white-space: nowrap
 
 
 
@@ -633,7 +684,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5.5 KB</span>
+                    <span class="Meta-value">6.4 KB</span>
                 </li>
             </ul>
         </div>
