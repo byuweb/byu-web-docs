@@ -1,6 +1,7 @@
 .byu-header
 	font-size: 1.125rem
 	box-shadow: 0 0 10px rgba(0,0,0,.16)
+	border-bottom: 1px solid #ddd
 
 	a, a:link, a:visited
 		color: #fff
@@ -108,6 +109,10 @@
 
 .action-id-search
 	font-size: $fontSize16
+	font-family: $font-heading
+
+	a, svg
+		font-size: 1rem
 
 	@supports(display: grid)
 		@media(min-width: $breakSm)
@@ -119,7 +124,6 @@
 			flex-direction: row
 			font-size: 0.9375rem
 			align-items: center
-			font-family: $font-heading
 
 		@media(min-width: $break960)
 			font-size: 1rem
@@ -130,7 +134,7 @@
 //********************
 
 .site-search
-	border-bottom: 2px solid $byuNavy
+	border-bottom: 1px solid $byuNavy
 
 	@supports(display: grid)
 		@media(min-width: $break720)
@@ -146,17 +150,17 @@
 		@extend .visually-hidden
 
 	#site-search
-		padding: $spacing2 0.65em
+		padding: $spacing3 0.65em
 		width: 100%
 		margin-right: 2em
 		display: block
 		line-height: 1.2
 		border: 1px solid #fff
-		font-size: 1em
+		font-size: 1rem
 		box-sizing: border-box
 
 		@media(min-width: $break480)
-			padding: $spacing2 1.25em
+			padding: $spacing3 1.25em
 
 		@supports(display: grid)
 			@media(min-width: $break720)
@@ -168,19 +172,20 @@
 		color: $byuNavy
 		display: block
 		position: absolute
-		top: 0
+		top: $spacing1
 		right: 0
 		height: $spacing2 + $spacing2 + 1em
 		width: $spacing2 + $spacing2 + 1em
 		background: transparent
 		border: 1px solid transparent
+		font-size: 1rem
 
 		svg
 			width: 100%
 			height: 100%
 
 		&:hover, &:focus
-			background: #eee
+			background: $grey10
 			color: $byuNavy
 
 		&:focus
@@ -190,6 +195,7 @@
 			@media(min-width: $break720)
 				width: 1.8em
 				height: 1.8em
+				top: 0
 
 
 
@@ -206,7 +212,7 @@
 
 
 .byu-id
-	background: #eee
+	background: $grey05
 	padding: 0.25em 0.65em
 	color: $byuNavy
 
@@ -251,17 +257,23 @@
 
 
 .action-btn
-	background: #fff
-	padding: 0.5em 0.4em
+	padding: 0.25em 0.4em
 	white-space: nowrap
+	background: $grey05
 
 	a
 		background: $royalWeb
 		padding: 0.4em 1.5em
 		display: inline-block
+		font-size: 1rem
+		transition: background 250ms ease
+
+		&:hover, &:focus
+			background: mix( $royalWeb, #fff, 90% )
+			text-shadow: 0 0 $spacing2 rgba($byuNavy, 0.75)
 
 	@media(min-width: $break480)
-		padding: 0.5em 0.85em
+		padding: 0.25em 0.85em
 
 	@supports(display: grid)
 		@media(min-width: $break720)
@@ -269,14 +281,15 @@
 			order: 1
 			padding: 0 0.5em
 			a
-				padding: 0.25em 1.5em
+				padding: 0.25em 1em
 
 		@media(min-width: $break960)
 			padding: 0 1em
-
+			a
+				padding: 0.25em 1.5em
 
 //********************
-// Navigation
+// Navigation Menu
 //********************
 
 
@@ -287,39 +300,50 @@
 	margin: 0
 	padding: 0.25em 0
 	font-size: $fontSize16
-	a, a:link, a:visited
-		color: $byuNavy
-		display: inline-block
-		padding: 0.35em 0.65em
-
-		@media(min-width: $break480)
+	font-family: $font-heading
+	letter-spacing: 0
+	background: $grey05
+	a
+		&, &:link, &:visited
+			color: $byuNavy
+			display: block
 			padding: 0.35em 1.1em
+			font-size: 1rem
+			transition: background 250ms ease
+
+		&:hover, &:focus
+			background: $grey10
+
+	@media(min-width: $break480)
+		padding: 0.25em 0.5em
 
 	@media(min-width: $break720)
-		margin-left: 5.75em
+		margin-left: 5.5em
 		padding: 0
+		background: transparent
 
 	ul
 		margin: 0
 		padding: 0
 		list-style: none
 
+		li
+			margin: 0
+			padding: 0
+
 		@supports(display: grid)
 			display: grid
-			grid-template-columns: repeat(auto-fill, minmax(8em, 1fr))
+			grid-template-columns: repeat(auto-fill, minmax(7em, 1fr))
+			grid-gap: 0.25em
 
 		@media(min-width: $break720)
 			display: block
-			font-size: $fontSize15
-			font-family: $font-heading
-			letter-spacing: 0
+
 			li
 				display: inline-block
-				margin: 0
-				padding: 0
 
 			a, a:link, a:visited
-				padding: 0.5em 1em
+				padding: 0.5em 1.35em
 
 
 
