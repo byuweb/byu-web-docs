@@ -91,7 +91,7 @@ module.exports = {
       name: "nav-search",
       label: "With navigation and search",
       context: {
-        title: "College of Nursing",
+        title: "College of Life Sciences",
         url: "/",
         search: {
             action: "/",
@@ -112,7 +112,8 @@ module.exports = {
       name: "all",
       label: "With everything",
       context: {
-        title: "College of Nursing",
+        supertitle: "College of",
+        title: "Physical & Mathematical Sciences",
         url: "/",
         actionBtn: {
           url: "//donate.byu.edu",
@@ -128,7 +129,7 @@ module.exports = {
         nav: [
             {url:"/",title:"Home"},
             {url:"/about",title:"About"},
-            {url:"/programs",title:"Programs"},
+            {url:"/programs",title:"Majors & Programs"},
             {url:"/students",title:"Students"},
             {url:"/alumni",title:"Alumni"},
             {url:"/giving",title:"Giving"},
