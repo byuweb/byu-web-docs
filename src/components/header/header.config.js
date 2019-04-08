@@ -112,7 +112,7 @@ module.exports = {
       name: "all",
       label: "With everything",
       context: {
-        supertitle: "College of",
+        // supertitle: "College of",
         title: "Physical & Mathematical Sciences",
         url: "/",
         actionBtn: {
