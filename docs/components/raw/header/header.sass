@@ -1,3 +1,6 @@
+$dividerColor: mix(#fff, $byuNavy, 20%)
+
+
 .byu-header
 	font-size: 1.125rem
 	box-shadow: 0 0 10px rgba(0,0,0,.16)
@@ -58,7 +61,7 @@
 			height: 1px
 			right: 3%
 			top: 0
-			background: $royalWeb
+			background: $dividerColor
 
 		@supports(display: grid)
 			@media(min-width: $breakSm)
@@ -377,3 +380,15 @@
 
 
 
+
+//********************
+// JS-Enabled Header Styles
+//********************
+
+@media( max-width: $break720)
+	.byu-header.js-enabled
+		.action-id-search, .site-navigation
+			height: 0
+			overflow: hidden
+
+		

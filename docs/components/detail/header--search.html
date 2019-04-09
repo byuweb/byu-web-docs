@@ -275,6 +275,8 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
+                <option value="file-448ac3bb22f90d889dbdb43ebc02fc95">header.js</option>
+                
                 <option value="file-dfa69eed679228b4b559c7838824df82">header.sass</option>
                 
                 <option value="file-a77b4bc902d6c353d70157492055fd8e">nav.sass</option>
@@ -283,7 +285,63 @@
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-dfa69eed679228b4b559c7838824df82" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-448ac3bb22f90d889dbdb43ebc02fc95" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre><span class="hljs-keyword">var</span> byu_header = (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-meta">
+	'use strict'</span>;
+
+	<span class="hljs-keyword">var</span> doc = <span class="hljs-built_in">document</span>; <span class="hljs-comment">// Put this in a variable to enable smaller compression</span>
+	<span class="hljs-keyword">var</span> jsInitClass = <span class="hljs-string">'js-enabled'</span>;
+	<span class="hljs-keyword">var</span> headerEl;
+
+	<span class="hljs-comment">// Execute the initialize function</span>
+	byu_main.executeOnLoad( init );
+
+
+	<span class="hljs-comment">/*
+	 * Func: Init
+	 * Desc: Initialize the header button
+	 * Args: none
+	 */</span>
+	<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span>(<span class="hljs-params"></span>) </span>{
+		headerEl = doc.getElementsByClassName(<span class="hljs-string">'byu-header'</span>)[<span class="hljs-number">0</span>];
+		headerEl.addClass(jsInitClass);
+		<span class="hljs-keyword">if</span>( headerEl.hasClass(jsInitClass) ) {
+			<span class="hljs-built_in">console</span>.log( <span class="hljs-string">'Header js initialized'</span> );
+		}
+	}
+
+	<span class="hljs-keyword">return</span> {};
+
+})();</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/header/header.js"><span>/components/raw/header/header.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/header/header.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">544 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-dfa69eed679228b4b559c7838824df82" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -291,7 +349,10 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
-                                <pre>.byu-header
+                                <pre>$dividerColor: mix(#fff, $byuNavy, <span class="hljs-number">20</span>%)
+
+
+.byu-header
 	font-<span class="hljs-keyword">size</span>: <span class="hljs-number">1.125</span>rem
 	box-shadow: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10</span>px rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">.16</span>)
 	border-bottom: <span class="hljs-number">1</span>px solid #ddd
@@ -351,7 +412,7 @@
 			height: <span class="hljs-number">1</span>px
 			right: <span class="hljs-number">3</span>%
 			top: <span class="hljs-number">0</span>
-			background: $royalWeb
+			background: $dividerColor
 
 		@supports(display: <span class="hljs-keyword">grid</span>)
 			@media(<span class="hljs-keyword">min</span>-width: $breakSm)
@@ -670,6 +731,18 @@
 
 
 
+
+<span class="hljs-comment">//********************</span>
+<span class="hljs-comment">// JS-Enabled Header Styles</span>
+<span class="hljs-comment">//********************</span>
+
+@media( <span class="hljs-keyword">max</span>-width: $break720)
+	.byu-header.js-enabled
+		.action-id-search, .site-navigation
+			height: <span class="hljs-number">0</span>
+			overflow: hidden
+
+		
 </pre>
                             </code>
                             
@@ -686,7 +759,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">6.5 KB</span>
+                    <span class="Meta-value">6.7 KB</span>
                 </li>
             </ul>
         </div>
