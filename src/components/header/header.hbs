@@ -1,31 +1,32 @@
 <header role="banner" class="byu-header">
-    <div class="site-banner">
+    <div class="byu-site-banner">
 
         <a class="byu-link" href="https://byu.edu">
             <span class="visually-hidden">BYU</span>
         </a>
 
-        <div class="titles">
+        <div class="byu-titles">
             {{#if breadcrumbLinks }}
-                <nav class="breadcrumb">
+                <nav class="byu-breadcrumb">
                 {{#each breadcrumbLinks }}<a href="{{ url }}">{{ title }}</a>{{/each}}
                 </nav>
             {{/if}}
-            {{#if supertitle }}<h2 class="site-subtitle">{{ supertitle }}</h2>{{/if}}
-            <h1 class="site-title">
+            {{#if supertitle }}<h2 class="byu-site-subtitle">{{ supertitle }}</h2>{{/if}}
+            <h1 class="byu-site-title">
                 <a href="{{ url }}">{{ title }}</a>
             </h1>
-            {{#if subtitle }}<h2 class="site-subtitle">{{ subtitle }}</h2>{{/if}}
+            {{#if subtitle }}<h2 class="byu-site-subtitle">{{ subtitle }}</h2>{{/if}}
         </div>
 
+        <button class="byu-menu-button" aria-expanded="false">Menu</button>
 
-        <div class="action-id-search">
+        <div class="byu-action-id-search">
 
             {{#with search }}
-            <form class="site-search" action="{{action}}">
-                <label class="search-label" for="site-search">Search</label>
-                <input type="search" id="site-search" name="{{paramName}}" aria-label="Site search" placeholder="Search">
-                <button class="search-btn">
+            <form class="byu-search" action="{{action}}">
+                <label class="byu-search-label" for="site-search">Search</label>
+                <input type="search" id="byu-site-search" name="{{paramName}}" aria-label="Site search" placeholder="Search">
+                <button class="byu-search-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                         <style>.st{stroke-width:10;fill:none;stroke:currentColor;stroke-linecap:round;}</style>
                         <circle class="st" cx="45.5" cy="45.5" r="24.5"/><path class="st" d="M63 63l16 16"/>
@@ -49,7 +50,7 @@
             {{/with}}
 
             {{#with actionBtn}}
-            <div class="action-btn"><a href="{{url}}">{{title}}</a></div>
+            <div class="byu-action-btn"><a href="{{url}}">{{title}}</a></div>
             {{/with}}
 
         </div>
@@ -57,8 +58,7 @@
     </div>
 
     {{#if nav }}
-    <nav class="site-navigation">
-        <button class="menu-button" aria-expanded="false">Menu</button>
+    <nav class="byu-site-navigation">
         <ul>
             {{#each nav}}<li><a href="{{url}}">{{title}}</a></li>{{/each}}
         </ul>
