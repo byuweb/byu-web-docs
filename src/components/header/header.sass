@@ -2,6 +2,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 
 .byu-header
+	z-index: 10
 	font-size: 1.125rem
 	box-shadow: 0 0 10px rgba(0,0,0,.16)
 	border-bottom: 1px solid #ddd
@@ -323,6 +324,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 	font-size: $fontSize16
 	letter-spacing: 0
 	border-top: 1px solid $grey05
+	background: #fff
 	// height: 0
 	// overflow: hidden
 	a
@@ -375,8 +377,34 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 // JS-Enabled Header Styles
 //********************
 
+$menuButtonSize: 1.8em
+
 .byu-menu-button
+	border-radius: $cornerRadius
 	display: none
+	height: $menuButtonSize
+	margin-top: $menuButtonSize * -0.5
+	overflow: hidden
+	padding: 0
+	position: absolute
+	right: 0.5rem
+	text-indent: 50em
+	top: 50%
+	width: $menuButtonSize
+	border: 1px solid $dividerColor
+	background: transparent
+	transition: background 200ms ease
+	background-position: center center
+	color: #fff
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M2 3h6M2 5h6M2 7h6"/></svg>')
+	&:hover
+		background-color: mix($byuNavy, $royalWeb)
+	&:focus
+		border-color: mix($byuNavy, #fff)
+		outline: none
+	&[aria-expanded=true]
+		background-color: $royalWeb
+
 
 .byu-header.js-enabled
 	// Hide the search and menu
@@ -385,6 +413,9 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			height: 0
 			overflow: hidden
 
+		.byu-titles
+			padding-right: 2em
+
 		.byu-menu-button
 			display: block
 
@@ -392,5 +423,12 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 .byu-header.js-enabled.menu-open
 	// Hide the search and menu
 	@media( max-width: ($breakMd - $break0) )
+		margin-bottom: 5em
+
 		.byu-action-id-search, .byu-site-navigation
 			height: auto
+
+		+ main
+			position: fixed
+			top: 3.25em
+			z-index: 1
