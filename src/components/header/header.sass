@@ -5,7 +5,6 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 	z-index: 10
 	font-size: 1.125rem
 	box-shadow: 0 0 10px rgba(0,0,0,.16)
-	border-bottom: 1px solid #ddd
 	font-family: $font-heading
 
 	a, a:link, a:visited
@@ -21,7 +20,6 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		font-size: 1.5rem
 
 	.byu-site-banner, .actionsHeightWrapper
-		background: $byuNavy
 		@supports(display: grid)
 			@media(min-width: $breakSm)
 				display: grid
@@ -32,6 +30,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 			@media(min-width: $breakMd)
 				grid-template-columns: 4.75em auto min-content
+				background: $byuNavy
 
 	.byu-link
 		background: $byuNavy url('../img/byu-monogram-white.png') 0.6em center / 3em auto  no-repeat // Default: png format
@@ -52,6 +51,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 	.byu-titles
 		padding: 0.5em 0.75em
 		flex-grow: 1
+		background: $byuNavy
 
 		// Add a line separating BYU from the titles
 		&:before
@@ -188,6 +188,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		background: transparent
 		border: 1px solid transparent
 		font-size: 1rem
+		border-radius: $cornerRadius
 
 		svg
 			width: 100%
@@ -214,8 +215,6 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 
 .byu-id
-	background: $grey05
-	background-image: linear-gradient($grey10, #fff 4px, #fff 100%)
 	padding: 0.25em 0.65em
 	color: $byuNavy
 	text-align: right
@@ -292,7 +291,6 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			padding: 0.5em
 			grid-column: 1 / 2
 			grid-row: 2 / 3
-			background-image: linear-gradient($grey10, #fff 5px, #fff 100%)
 
 		@media(min-width: $breakMd)
 			background: transparent
@@ -323,7 +321,6 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 	padding: 0
 	font-size: $fontSize16
 	letter-spacing: 0
-	border-top: 1px solid $grey05
 	background: #fff
 	// height: 0
 	// overflow: hidden
@@ -331,9 +328,9 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		&, &:link, &:visited
 			color: $byuNavy
 			display: block
-			padding: 0.5em 0.75em
+			padding: 0.75em 1.5em
 			font-size: 1rem
-			transition: background 250ms ease
+			transition: background 300ms ease
 
 		&:hover, &:focus
 			background: $grey10
@@ -349,16 +346,17 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		margin: 0
 		padding: 0
 		list-style: none
+		border-top: 1px solid $grey10
 
 		li
 			margin: 0
 			padding: 0
 
-		@supports(display: grid)
-			display: grid
-			grid-template-columns: repeat(auto-fill, minmax(6em, auto))
-			grid-gap: 0.25em
-			align-items: center
+		// @supports(display: grid)
+		// 	display: grid
+		// 	grid-template-columns: repeat(auto-fill, minmax(6em, auto))
+		// 	grid-gap: 0.25em
+		// 	align-items: center
 
 		@media(min-width: $breakMd)
 			display: block
@@ -377,9 +375,12 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 // JS-Enabled Header Styles
 //********************
 
-$menuButtonSize: 1.8em
+
+$menuButtonSize: 2em
+
 
 .byu-menu-button
+	cursor: pointer
 	border-radius: $cornerRadius
 	display: none
 	height: $menuButtonSize
@@ -387,23 +388,23 @@ $menuButtonSize: 1.8em
 	overflow: hidden
 	padding: 0
 	position: absolute
-	right: 0.5rem
+	right: 0.25em
 	text-indent: 50em
 	top: 50%
 	width: $menuButtonSize
 	border: 1px solid $dividerColor
-	background: transparent
-	transition: background 200ms ease
-	background-position: center center
+	background: transparent top right / $menuButtonSize $menuButtonSize no-repeat
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.5" d="M2.5 3.5h5M2.5 5h5M2.5 6.5h5"/></svg>')
 	color: #fff
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M2 3h6M2 5h6M2 7h6"/></svg>')
 	&:hover
 		background-color: mix($byuNavy, $royalWeb)
 	&:focus
 		border-color: mix($byuNavy, #fff)
 		outline: none
 	&[aria-expanded=true]
-		background-color: $royalWeb
+		background-color: #fff
+		color: $byuNavy
+
 
 
 .byu-header.js-enabled
@@ -412,6 +413,12 @@ $menuButtonSize: 1.8em
 		.byu-action-id-search, .byu-site-navigation
 			height: 0
 			overflow: hidden
+			width: 22rem
+			margin-left: auto
+			margin-right: 0.25em
+			padding: 0
+			z-index: 10
+			background: #fff
 
 		.byu-titles
 			padding-right: 2em
@@ -419,10 +426,62 @@ $menuButtonSize: 1.8em
 		.byu-menu-button
 			display: block
 
+		.byu-search
+			border: 7px solid $royalWeb
+			background: $royalWeb
+			margin: 0 0 0.25em
+
+		#byu-site-search
+			border-radius: $cornerRadius
+
+		+ #byu-main
+			&:before
+				z-index: 100
+				content: " "
+				display: block
+				position: absolute
+				width: 0
+				height: 0
+				top: 0
+				left: 0
+				background: #000
+				opacity: 0
+				transition: opacity 200ms ease
+
 
 .byu-header.js-enabled.menu-open
-	// Hide the search and menu
+
 	@media( max-width: ($breakMd - $break0) )
+
+		box-shadow: none
+		margin-bottom: 10rem
+
+		.byu-menu-button
+			height: 100%
+			width: 6em
+			background-color: $royalWeb
+			border-color: $royalWeb
+			// &:before
+			// 	text-indent: 0
+			// 	opacity: 1
+			// 	right: 2em
+
+		.byu-site-navigation
+			padding: 0.25em 0 0.75em
 
 		.byu-action-id-search, .byu-site-navigation
 			height: auto
+
+		+ #byu-main
+			position: fixed
+			top: 3.25em
+
+			&:before
+				width: 100%
+				height: 100vh
+				opacity: 0.2
+
+
+
+
+

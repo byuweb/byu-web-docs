@@ -4,6 +4,7 @@ var byu_header = (function() {
 
 	var doc = document; // Put this in a variable to enable smaller compression
 	var menuOpenDuration = 300;
+	var mainEl;
 
 	// For compression: if a string is used more than once, put it in a variable
 	var jsInitClass = 'js-enabled';
@@ -31,6 +32,7 @@ var byu_header = (function() {
 	function init() {
 
 		var headerEls = doc.getElementsByClassName('byu-header');
+		mainEl = doc.getElementById("byu-main");
 
 		Array.prototype.forEach.call(headerEls, function(el) {
 			enableMobileMenu( el );
@@ -90,10 +92,9 @@ var byu_header = (function() {
 	 */
 	function clickMenuButton( btn, headerEl ) {
 		var open = btn.getAttribute(expandedAttr) != 'false';
-		var opening = false;
 		
 		// Open
-		if ( !open && !opening ) {
+		if ( !open ) {
 			openMenu( btn, headerEl );
 		}
 
@@ -114,31 +115,15 @@ var byu_header = (function() {
 	 */
 	function openMenu( btn, headerEl ) {
 
+		var headerHeight = headerEl.getBoundingClientRect().height || headerEl.offsetHeight;
+
 		// Set the open/closed attribute on the button
 		btn.setAttribute(expandedAttr, true);
 
 		// Set the open/closed attribute on the header
-		function addOpenClass() {
-			if ( !headerEl.hasClass( menuOpenClass ) ) {
-				headerEl.addClass( menuOpenClass );
-			}
-		}
-
-		// Animate the elements
-		if ( headerEl.hasNav ) {
-			var nav = headerEl.navEl;
-			var navHeight = nav.offsetHeight;
-			var navEndHeight = animate.getNaturalHeight( nav );
-
-			animate.animateHeight( nav, { start: navHeight, end: navEndHeight, duration: menuOpenDuration, finish: addOpenClass } );
-		}
-
-		if ( headerEl.hasActions ) {
-			var actions = headerEl.actionsEl;
-			var actionsHeight = actions.offsetHeight;
-			var actionsEndHeight = animate.getNaturalHeight( actions, "actionsHeightWrapper" );
-
-			animate.animateHeight( actions, { start: actionsHeight, end: actionsEndHeight, duration: menuOpenDuration, finish: addOpenClass } );
+		if ( !headerEl.hasClass( menuOpenClass ) ) {
+			headerEl.addClass( menuOpenClass );
+			mainEl.style.top = headerHeight + "px";
 		}
 
 	} // openMenu
@@ -157,25 +142,9 @@ var byu_header = (function() {
 		btn.setAttribute(expandedAttr, false);
 
 		// Set the open/closed attribute on the header
+		headerEl.removeClass( menuOpenClass );
+		mainEl.style.top = "";		
 
-		function removeOpenClass() {
-			headerEl.removeClass( menuOpenClass );			
-		}
-
-		// Animate the elements
-		if ( headerEl.hasNav ) {
-			var nav = headerEl.navEl;
-			var navHeight = nav.offsetHeight;
-
-			animate.animateHeight( nav, { start: navHeight, end: 0, finish: removeOpenClass } );
-		}
-
-		if ( headerEl.hasActions ) {
-			var actions = headerEl.actionsEl;
-			var actionsHeight = actions.offsetHeight;
-
-			animate.animateHeight( actions, { start: actionsHeight, end: 0, finish: removeOpenClass } );
-		}
 
 	} // closeMenu
 
