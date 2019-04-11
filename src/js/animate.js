@@ -28,7 +28,7 @@ var animate = (function() {
         var ease = easeFunction;
 
         el.style.height = s.start + s.units;
-        addClass(el, animatingClass);
+        el.addClass(animatingClass);
 
         // Animate height at input rate
         el.animation = animate({
@@ -38,12 +38,12 @@ var animate = (function() {
                 el.style.height = s.start + ((s.end - s.start) * delta) + s.units;
             },
             finish: function() {
-                removeClass(el, animatingClass);
+                el.removeClass(animatingClass);
                 el.style.removeProperty("height");
                 if (typeof s.finish == "function") { s.finish(); }
             },
             interrupt: function() {
-                removeClass(el, animatingClass);
+                el.removeClass(animatingClass);
                 el.style.removeProperty("height");
                 if (typeof s.interrupt == "function") { s.interrupt(); }
             }
@@ -142,11 +142,14 @@ var animate = (function() {
      * Func: getNaturalHeight
      * Desc: Get the height of an element on the page (before visibly rendering it on the page)
      * Args: @el - HTML Element - The element to measure
+     *       @className - String - Class that temporary wrapper element should have (to allow for correct styling and correct height testing)
      */
-    function getNaturalHeight(el) {
+    function getNaturalHeight(el, className) {
         var wrapper, testDiv, height;
+        var className = className || "";
 
         wrapper = wrapInner(el, "div");
+        wrapper.className = className;
         height = wrapper.offsetHeight;
 
         unwrap(wrapper);

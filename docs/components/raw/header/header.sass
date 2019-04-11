@@ -2,6 +2,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 
 .byu-header
+	z-index: 10
 	font-size: 1.125rem
 	box-shadow: 0 0 10px rgba(0,0,0,.16)
 	border-bottom: 1px solid #ddd
@@ -13,23 +14,23 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		transition: opacity 200ms ease
 
 
-	@media( min-width: $break480 )
+	@media( min-width: $breakMdSm )
 		font-size: 1.3125rem
 
-	@media( min-width: $break960 )
+	@media( min-width: $breakMdLg )
 		font-size: 1.5rem
 
-	.site-banner
+	.byu-site-banner, .actionsHeightWrapper
 		background: $byuNavy
 		@supports(display: grid)
 			@media(min-width: $breakSm)
 				display: grid
 				grid-template-columns: 4em auto
 
-			@media(min-width: $break480)
+			@media(min-width: $breakMdSm)
 				grid-template-columns: 4.75em auto
 
-			@media(min-width: $break720)
+			@media(min-width: $breakMd)
 				grid-template-columns: 4.75em auto min-content
 
 	.byu-link
@@ -44,11 +45,11 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 				// min-width: 3.5em
 				height: auto
 
-			@media(min-width: $break480)
+			@media(min-width: $breakMdSm)
 				width: 4.75em
 				background-position: 1em center
 
-	.titles
+	.byu-titles
 		padding: 0.5em 0.75em
 		flex-grow: 1
 
@@ -75,12 +76,12 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 					left: 0
 					top: 13%
 
-			@media(min-width: $break480)
+			@media(min-width: $breakMdSm)
 				padding: 0.5em 1em
 
 
 	// Main site title
-	.site-title
+	.byu-site-title
 		color: #fff
 		font-size: inherit
 		font-weight: 400
@@ -89,7 +90,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 
 	// Subtitle AND supertitle (only difference is placement)
-	.site-subtitle
+	.byu-site-subtitle
 		color: #fff
 		font-size: 0.67em
 		font-weight: 400
@@ -97,7 +98,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 
 
 	// Breadcrumb above the titles
-	.breadcrumb
+	.byu-breadcrumb
 		line-height: 1.4
 		font-size: 0.67em
 		a
@@ -111,7 +112,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 // Action Button, Sign-in and Search Section
 //********************
 
-.action-id-search
+.byu-action-id-search
 	font-size: $fontSize16
 
 	a, svg
@@ -123,7 +124,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			display: grid
 			grid-template-columns: auto min-content
 
-		@media(min-width: $break720)
+		@media(min-width: $breakMd)
 			grid-column: 3 / 4
 			display: flex
 			flex-direction: row
@@ -131,7 +132,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			align-items: center
 			background: transparent none
 
-		@media(min-width: $break960)
+		@media(min-width: $breakMdLg)
 			font-size: 1rem
 
 
@@ -139,25 +140,25 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 // Search
 //********************
 
-.site-search
+.byu-search
 
 	@supports(display: grid)
 		@media(min-width: $breakSm)
 			grid-column: 1 / 3
 
-		@media(min-width: $break720)
+		@media(min-width: $breakMd)
 			min-width: 9em
 			order: 3
 			margin: 0 1em 0 0.5em
 
-		@media(min-width: $break960)
+		@media(min-width: $breakLg)
 			margin: 0 1em
-			min-width: 12em
+			min-width: 13em
 
-	.search-label
+	.byu-search-label
 		@extend .visually-hidden
 
-	#site-search
+	#byu-site-search
 		padding: $spacing3 0.65em
 		width: 100%
 		margin-right: 2em
@@ -167,15 +168,15 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		font-size: 1rem
 		box-sizing: border-box
 
-		@media(min-width: $break480)
+		@media(min-width: $breakMdSm)
 			padding: $spacing3 1.25em
 
 		@supports(display: grid)
-			@media(min-width: $break720)
+			@media(min-width: $breakMd)
 				padding: 0.4em 1em
 				border-radius: 0.9625em
 
-	.search-btn
+	.byu-search-btn
 		@extend %button-reset
 		color: $byuNavy
 		display: block
@@ -200,17 +201,10 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			border: 1px solid #ccc
 
 		@supports(display: grid)
-			@media(min-width: $break720)
+			@media(min-width: $breakMd)
 				width: 1.8em
 				height: 1.8em
 				top: 0
-
-
-
-	#search-icon
-		top: 0.1em
-		width: 1.3em
-		height: 1.3em
 
 
 
@@ -226,7 +220,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 	color: $byuNavy
 	text-align: right
 
-	@media(min-width: $break480)
+	@media(min-width: $breakMdSm)
 		padding: 0.25em 1.1em
 
 	a, a:link, a:visited
@@ -247,7 +241,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		@media(min-width: $breakSm)
 			white-space: nowrap
 
-		@media(min-width: $break720)
+		@media(min-width: $breakMd)
 			background: transparent
 			order: 2
 			color: #fff
@@ -264,7 +258,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 				color: #fff
 				white-space: nowrap
 
-		@media(min-width: $break960)
+		@media(min-width: $breakMdLg)
 			padding: 0 1em
 
 
@@ -273,7 +267,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 //********************
 
 
-.action-btn
+.byu-action-btn
 	padding: 0.25em 0.4em
 	white-space: nowrap
 	background: #fff
@@ -290,7 +284,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			background: mix( $royalWeb, #fff, 90% )
 			text-shadow: 0 0 $spacing2 rgba($byuNavy, 0.75)
 
-	@media(min-width: $break480)
+	@media(min-width: $breakMdSm)
 		padding: 0.25em 0.85em
 
 	@supports(display: grid)
@@ -300,7 +294,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			grid-row: 2 / 3
 			background-image: linear-gradient($grey10, #fff 5px, #fff 100%)
 
-		@media(min-width: $break720)
+		@media(min-width: $breakMd)
 			background: transparent
 			order: 1
 			padding: 0 0.5em
@@ -308,7 +302,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 				background: $royalWeb
 				padding: 0.25em 1em
 
-		@media(min-width: $break960)
+		@media(min-width: $breakMdLg)
 			padding: 0 1em
 			a
 				padding: 0.25em 1.5em
@@ -324,15 +318,13 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 //********************
 
 
-.menu-button
-	display: none
-
-.site-navigation
+.byu-site-navigation
 	margin: 0
 	padding: 0
 	font-size: $fontSize16
 	letter-spacing: 0
 	border-top: 1px solid $grey05
+	background: #fff
 	// height: 0
 	// overflow: hidden
 	a
@@ -346,10 +338,10 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 		&:hover, &:focus
 			background: $grey10
 
-	@media(min-width: $break480)
+	@media(min-width: $breakMdSm)
 		padding: 0 0.5em
 
-	@media(min-width: $break720)
+	@media(min-width: $breakMd)
 		margin-left: 5em
 		background: transparent
 
@@ -368,7 +360,7 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 			grid-gap: 0.25em
 			align-items: center
 
-		@media(min-width: $break720)
+		@media(min-width: $breakMd)
 			display: block
 
 			li
@@ -385,10 +377,52 @@ $dividerColor: mix(#fff, $byuNavy, 20%)
 // JS-Enabled Header Styles
 //********************
 
-@media( max-width: $break720)
-	.byu-header.js-enabled
-		.action-id-search, .site-navigation
+$menuButtonSize: 1.8em
+
+.byu-menu-button
+	border-radius: $cornerRadius
+	display: none
+	height: $menuButtonSize
+	margin-top: $menuButtonSize * -0.5
+	overflow: hidden
+	padding: 0
+	position: absolute
+	right: 0.5rem
+	text-indent: 50em
+	top: 50%
+	width: $menuButtonSize
+	border: 1px solid $dividerColor
+	background: transparent
+	transition: background 200ms ease
+	background-position: center center
+	color: #fff
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M2 3h6M2 5h6M2 7h6"/></svg>')
+	&:hover
+		background-color: mix($byuNavy, $royalWeb)
+	&:focus
+		border-color: mix($byuNavy, #fff)
+		outline: none
+	&[aria-expanded=true]
+		background-color: $royalWeb
+
+
+.byu-header.js-enabled
+	// Hide the search and menu
+	@media( max-width: ($breakMd - $break0) )
+		.byu-action-id-search, .byu-site-navigation
 			height: 0
 			overflow: hidden
 
-		
+		.byu-titles
+			padding-right: 2em
+
+		.byu-menu-button
+			display: block
+
+
+.byu-header.js-enabled.menu-open
+	// Hide the search and menu
+	@media( max-width: ($breakMd - $break0) )
+
+		.byu-action-id-search, .byu-site-navigation
+			height: auto

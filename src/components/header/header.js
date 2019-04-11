@@ -3,9 +3,17 @@ var byu_header = (function() {
 	'use strict';
 
 	var doc = document; // Put this in a variable to enable smaller compression
+	var menuOpenDuration = 300;
+
+	// For compression: if a string is used more than once, put it in a variable
 	var jsInitClass = 'js-enabled';
 	var expandedAttr = 'aria-expanded';
 	var menuOpenClass = 'menu-open';
+	var siteNavClass = 'byu-site-navigation';
+	var siteActionClass = 'byu-action-id-search';
+
+
+
 
 	// Execute the initialize function
 	byu_main.executeOnLoad( init );
@@ -40,11 +48,17 @@ var byu_header = (function() {
 	 */
 	function enableMobileMenu( headerEl ) {
 
-		var showMenuButton = byu_main.elExists('byu-site-navigation', headerEl) || byu_main.hasChildren('byu-action-id-search', headerEl);
+		headerEl.hasNav = byu_main.elExists(siteNavClass, headerEl);
+		headerEl.hasActions = byu_main.hasChildren(siteActionClass, headerEl);
+
+		var showMenuButton = headerEl.hasNav || headerEl.hasActions;
 
 		if ( showMenuButton ) {
 			headerEl.addClass(jsInitClass);
 			initMenuButton( headerEl );
+
+			headerEl.navEl = headerEl.getElementsByClassName( siteNavClass )[0];
+			headerEl.actionsEl = headerEl.getElementsByClassName( siteActionClass )[0];
 		}
 
 	} // enableMobileMenu
@@ -101,11 +115,30 @@ var byu_header = (function() {
 	function openMenu( btn, headerEl ) {
 
 		// Set the open/closed attribute on the button
-		btn.setAttribute(expandedAttr, true); 
+		btn.setAttribute(expandedAttr, true);
 
 		// Set the open/closed attribute on the header
-		if ( !headerEl.hasClass( menuOpenClass ) ) {
-			headerEl.addClass( menuOpenClass );
+		function addOpenClass() {
+			if ( !headerEl.hasClass( menuOpenClass ) ) {
+				headerEl.addClass( menuOpenClass );
+			}
+		}
+
+		// Animate the elements
+		if ( headerEl.hasNav ) {
+			var nav = headerEl.navEl;
+			var navHeight = nav.offsetHeight;
+			var navEndHeight = animate.getNaturalHeight( nav );
+
+			animate.animateHeight( nav, { start: navHeight, end: navEndHeight, duration: menuOpenDuration, finish: addOpenClass } );
+		}
+
+		if ( headerEl.hasActions ) {
+			var actions = headerEl.actionsEl;
+			var actionsHeight = actions.offsetHeight;
+			var actionsEndHeight = animate.getNaturalHeight( actions, "actionsHeightWrapper" );
+
+			animate.animateHeight( actions, { start: actionsHeight, end: actionsEndHeight, duration: menuOpenDuration, finish: addOpenClass } );
 		}
 
 	} // openMenu
@@ -124,7 +157,25 @@ var byu_header = (function() {
 		btn.setAttribute(expandedAttr, false);
 
 		// Set the open/closed attribute on the header
-		headerEl.removeClass( menuOpenClass );
+
+		function removeOpenClass() {
+			headerEl.removeClass( menuOpenClass );			
+		}
+
+		// Animate the elements
+		if ( headerEl.hasNav ) {
+			var nav = headerEl.navEl;
+			var navHeight = nav.offsetHeight;
+
+			animate.animateHeight( nav, { start: navHeight, end: 0, finish: removeOpenClass } );
+		}
+
+		if ( headerEl.hasActions ) {
+			var actions = headerEl.actionsEl;
+			var actionsHeight = actions.offsetHeight;
+
+			animate.animateHeight( actions, { start: actionsHeight, end: 0, finish: removeOpenClass } );
+		}
 
 	} // closeMenu
 
