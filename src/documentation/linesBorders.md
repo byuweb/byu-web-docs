@@ -10,4 +10,4 @@ A 1px solid grey 15 border is used for rule lines and table borders.
 
 Field inputs have a 1px solid grey 20 border.
 
-![Lines and Borders Image 1](lines1.png) 
+![Lines and Borders Image 1](/docs-images/lines1.png) 
