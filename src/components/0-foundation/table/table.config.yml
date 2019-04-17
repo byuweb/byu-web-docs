@@ -68,6 +68,7 @@ variants:
       caption:
         data: Caption text
         id: caption-id
+        # classes: scrollbox
       head:
         cells:
           - data: Heading
