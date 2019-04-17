@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Header",
-  label: "Header",
+  title: "configuration",
+  label: "Configuration variants",
   status: "wip",
   collated: true,
   collator: function(markup, item) {

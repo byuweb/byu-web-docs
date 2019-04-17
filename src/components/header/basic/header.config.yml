@@ -1,0 +1,11 @@
+title: basic
+label: Basic
+status: wip
+context:
+  name: default
+  label: Basic header
+  title: English
+  url: //english.byu.edu
+  breadcrumbLinks:
+    - url: //humanities.byu.edu
+      title: College of Humanities
