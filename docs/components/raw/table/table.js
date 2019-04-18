@@ -41,19 +41,19 @@ var byu_table = (function(){
 	    var t_width = table.offsetWidth;
 	    var table_wide_class = "table-wide";
 	    var start_visible_class = "start-visible";
-	    var end_visible_class = "end-visible";
+		var end_visible_class = "end-visible";
 
 	    if ( c_width < t_width ) {
 
 	    	// Add table wide class if it's not already there
 	    	if ( !container.hasClass( table_wide_class ) ) { 
-		    	container.addClass( table_wide_class );
+				container.addClass( table_wide_class );
 		    }
 
 	    	// Check if the start of the table is visible and handle
 	    	if ( table.scrollLeft == 0 ) {
 	    		if ( !container.hasClass( start_visible_class ) ) {
-		    		container.addClass( start_visible_class );
+					container.addClass( start_visible_class );
 	    		}
 	    	} else {
 	    		container.removeClass( start_visible_class );
@@ -62,7 +62,7 @@ var byu_table = (function(){
 	    	// Check if the end of the table is visible and handle
 	    	if ( t_width - table.scrollLeft == c_width ) {
 	    		if ( !container.hasClass( end_visible_class ) ) {
-		    		container.addClass( end_visible_class );
+					container.addClass( end_visible_class );
 	    		}
 	    	} else {
 	    		container.removeClass( end_visible_class );
