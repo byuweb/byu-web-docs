@@ -1,0 +1,45 @@
+name: header-styles
+label: Styles
+collated: true
+status: wip
+
+context: 
+  title: Physical & Mathematical Sciences
+  url: /
+  actionBtn:
+    url: //donate.byu.edu
+    title: Donate
+  search:
+      action: /
+      paramName: q
+  byuID:
+    username: pparker
+  nav:
+    - url: /
+      title: Home
+    - url: /about
+      title: About
+    - url: /programs
+      title:  Majors & Programs
+    - url: /students
+      title: Students
+    - url: /alumni
+      title: Alumni
+    - url: /giving
+      title: Giving
+
+variants:
+  - name: default
+    label: Default (Dark / Light)
+    context: 
+      classes: "byu-header-dark byu-nav-light"
+  - name: light
+    context: 
+      classes: "byu-header-light byu-nav-light"
+  - name: light-dark
+    label: Light / Dark
+    context: 
+      classes: "byu-header-light byu-nav-dark"
+  - name: dark
+    context: 
+      classes: "byu-header-dark byu-nav-dark"
