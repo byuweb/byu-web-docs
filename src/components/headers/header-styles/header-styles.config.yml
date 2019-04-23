@@ -31,15 +31,45 @@ context:
 variants:
   - name: default
     label: Default (Dark / Light)
-    context: 
-      classes: "byu-header-dark byu-nav-light"
+    classes: "byu-header-dark byu-nav-light"
+    context:
+      byuID: null
+      actionBtn: null
+      title: Site name
+  - name: default-full
+    label: Default (with button and sign-in)
+    classes: "byu-header-dark byu-nav-light"
+
   - name: light
+    context:
+      classes: "byu-header-light byu-nav-light"
+      byuID: null
+      actionBtn: null
+      title: Site name
+  - name: light-full
+    label: Light (with button and sign-in)
     context: 
       classes: "byu-header-light byu-nav-light"
+
   - name: light-dark
     label: Light / Dark
+    context:
+      classes: "byu-header-light byu-nav-dark"
+      byuID: null
+      actionBtn: null
+      title: Site name
+  - name: light-dark-full
+    label: Light / Dark (with button and sign-in)
     context: 
       classes: "byu-header-light byu-nav-dark"
+
   - name: dark
+    context:
+      classes: "byu-header-dark byu-nav-dark"
+      byuID: null
+      actionBtn: null
+      title: Site name
+  - name: dark-full
+    label: Dark (with button and sign-in)
     context: 
       classes: "byu-header-dark byu-nav-dark"

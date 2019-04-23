@@ -1,0 +1,98 @@
+title: "Header"
+label: "Elements"
+context:
+  url: "/"
+variants:
+
+  - name: "default"
+    label: "Standard Text Header"
+    context: 
+      title: "Mission & Aims"
+
+  - name: "breadcrumb"
+    label: "With breadcrumb links"
+    context: 
+      title: "English"
+      url: "//english.byu.edu"
+      breadcrumbLinks: 
+        - url: "//humanities.byu.edu" 
+          title: "College of Humanities"
+
+  - name: "subtitle"
+    label: "With subtitle"
+    context: 
+      title: "Kennedy Center"
+      # supertitle: "David M."
+      subtitle: "David M. Kennedy Center for International Studies"
+      url: "//kennedy.byu.edu"
+
+  - name: "search"
+    label: "With search"
+    context: 
+      title: "Department of Developmental Psychology"
+      search: 
+        action: "/"
+        paramName: "q"
+
+  - name: "action-btn"
+    label: "With action button"
+    context: 
+      title: "College of Engineering"
+      actionBtn: 
+        url: "//donate.byu.edu"
+        title: "Donate"
+      search: '@header--search.search'
+
+ 
+  - name: "nav"
+    label: "With navigation"
+    context: 
+      title: "College of Nursing"
+      nav: 
+        - url: "/"
+          title: "Home"
+        - url: "/about"
+          title: "About"
+        - url: "/programs"
+          title: "Programs"
+        - url: "/students"
+          title: "Students"
+        - url: "/alumni"
+          title: "Alumni"
+        - url: "/giving"
+          title: "Giving"
+ 
+  - name: "nav-search"
+    label: "With navigation and search"
+    context: 
+      title: "College of Life Sciences"
+      search: '@header--search.search'
+      nav: '@header--nav.nav'
+      
+  - name: "all"
+    label: "With everything"
+    context: 
+      # supertitle: "College of"
+      title: "Physical & Mathematical Sciences"
+      actionBtn: '@header--action-btn.actionBtn'
+      search: '@header--search.search'
+      byuID: 
+        username: "pparker"
+      nav: 
+        - url: "/"
+          title: "Home"
+        - url: "/about"
+          title: "About"
+        - url: "/programs"
+          title: "Majors & Programs"
+        - url: "/students"
+          title: "Students"
+        - url: "/alumni"
+          title: "Alumni"
+        - url: "/giving"
+          title: "Giving"
+      
+    
+  
+
+ 

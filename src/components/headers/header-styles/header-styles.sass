@@ -1,6 +1,7 @@
 .byu-header-light
 	.byu-link
-		background: #fff
+		background-color: #fff
+		background-image: url('../img/byu-monogram-navy.svg')
 
 	.byu-site-banner
 		background: #fff
@@ -8,6 +9,9 @@
 
 		a, a:link, a:visited
 			color: $byuNavy
+
+	.byu-titles:before
+		background: $grey10
 
 	.byu-action-btn
 		a, a:link, a:visited
@@ -21,12 +25,19 @@
 
 
 .byu-nav-dark
-
 	.byu-site-navigation
 		background: $byuNavy
 		a, a:link, a:visited
 			color: #fff
+		a:hover, a:focus
+			background: mix($byuNavy, $royalWeb, 60%)
 
 .byu-nav-dark.byu-header-dark
 	.byu-site-navigation
-		background: $byuRoyal
+		background: $royalWeb
+		border-top: 1px solid $byuNavy
+
+	.byu-action-btn
+		a, a:link, a:visited
+			// background: $byuRoyal
+			color: white
