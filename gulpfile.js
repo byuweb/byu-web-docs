@@ -146,7 +146,7 @@ gulp.task('fractal:post-build', function(){
  * =========================== */
 
 const mainSassLocations = [
-    './src/sass/_varsexi.sass',
+    './src/sass/_vars.sass',
     './src/sass/*.sass',
     './src/components/**/*.sass',
     ];
