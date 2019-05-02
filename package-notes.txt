@@ -1,0 +1,9 @@
+Packages to possibly implement for production (especially for compression)
+
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-brotli": "^1.2.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-uncss": "^1.0.6"
