@@ -394,10 +394,10 @@ $menuButtonSize: 1.8em
 	width: $menuButtonSize
 	border: 1px solid $dividerColor
 	background: transparent
-	transition: background 200ms ease
+	transition: background 200ms ease, transform 200ms ease
 	background-position: center center
+	
 	color: #fff
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M2 3h6M2 5h6M2 7h6"/></svg>')
 	&:hover
 		background-color: mix($byuNavy, $royalWeb)
 	&:focus
@@ -405,8 +405,32 @@ $menuButtonSize: 1.8em
 		outline: none
 	&[aria-expanded=true]
 		background-color: $royalWeb
+	
+	&:before, &:after
+		content: " "
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: $menuButtonSize
+		height: $menuButtonSize
+		background-position: center center
+		transition: background 200ms ease, transform 200ms ease
+		
+	&:before
+		opacity: 1
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M2 3h6M2 5h6M2 7h6"/></svg>')
+	&:after
+		opacity: 0
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="none" stroke="white" stroke-width="0.75" d="M 2.5,2.5 L 7.5,7.5"/><path fill="none" stroke="white" stroke-width="0.75" d="M 2.5,7.5 L 7.5,2.5"/></svg>')
+	&[aria-expanded=true]:after, &[aria-expanded=true]:before
+		transform: rotate(360deg)
+	 &[aria-expanded=true]:before
+		opacity: 0	
+	&[aria-expanded=true]:after
+		opacity: 1
 
-
+	
 .byu-header.js-enabled
 	// Hide the search and menu
 	@media( max-width: ($breakMd - $break0) )
