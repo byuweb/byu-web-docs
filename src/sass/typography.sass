@@ -42,7 +42,7 @@
 
 
 $font-heading: "HCo Ringside Narrow SSm", 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif
-$font-text: 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif
+$font-text: 'Public Sans', 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif
 $font-mono: 'Noto Mono', 'Roboto Mono', monospace
 
 $font-weight-normal: 400
@@ -60,6 +60,9 @@ body
 
 	@media( min-width: $breakMdSm )
 		font-size: 1.125rem
+
+	@media( min-width: $breakLg )
+		font-size: 1.25rem
 
 	.open-sans
 		font-family: 'Open Sans', Helvetica, Arial, sans-serif
@@ -83,7 +86,6 @@ h1, h2, h3, h4, h5, h6
 
 p, ul, ol, dl
 	margin: $spacing3 0
-
 
 img
 	max-width: 100%

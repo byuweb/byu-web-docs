@@ -223,14 +223,14 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Sass FileBrowser-code">
-                                <pre>$columnWidth: <span class="hljs-number">42</span>rem
-$emphasisWidth: <span class="hljs-number">52.5</span>rem
-$featureWidth: <span class="hljs-number">60</span>rem
+                                <pre>$columnWidth: <span class="hljs-number">42</span>em
+$emphasisWidth: <span class="hljs-number">52.5</span>em
+$featureWidth: <span class="hljs-number">60</span>em
 
 $emphasisPercent: ( $emphasisWidth / $columnWidth ) * <span class="hljs-number">100</span>%
 $emphasisMargin: ( ($emphasisPercent - <span class="hljs-number">100</span>) / <span class="hljs-number">2</span> ) * <span class="hljs-number">-1</span>
 $featurePercent: ( $featureWidth / $columnWidth ) * <span class="hljs-number">100</span>%
-$featureMargin: ( ($featurePercent - <span class="hljs-number">100</span>) / <span class="hljs-number">2</span> ) * <span class="hljs-number">-1</span>
+$featuremargin: ( ($featurePercent - <span class="hljs-number">100</span>) / <span class="hljs-number">2</span> ) * <span class="hljs-number">-1</span>
 
 =emphasis()
 	<span class="hljs-keyword">max</span>-width: $emphasisPercent
@@ -239,8 +239,8 @@ $featureMargin: ( ($featurePercent - <span class="hljs-number">100</span>) / <sp
 
 =feature()
 	<span class="hljs-keyword">max</span>-width: $featurePercent
-	margin-left: $featureMargin
-	margin-right: $featureMargin
+	margin-left: $featuremargin
+	margin-right: $featuremargin
 
 
 
@@ -269,18 +269,18 @@ section, .column
 
 	@media( <span class="hljs-keyword">min</span>-width: $breakMdLg )
 		margin: <span class="hljs-number">0</span> auto
-		width: <span class="hljs-number">42</span>rem
+		width: <span class="hljs-number">42</span>em
 
 
 section .emphasis
 	<span class="hljs-keyword">max</span>-width: <span class="hljs-number">111.11</span>%
-	margin: <span class="hljs-number">1.5</span>rem <span class="hljs-number">-5.555</span>%
+	margin: <span class="hljs-number">1.5</span>em <span class="hljs-number">-5.555</span>%
 	@media( <span class="hljs-keyword">min</span>-width: $breakMdSm )
 		+emphasis()
 
 section .feature
 	<span class="hljs-keyword">max</span>-width: <span class="hljs-number">111.11</span>%
-	margin: <span class="hljs-number">1.5</span>rem <span class="hljs-number">-5.555</span>%
+	margin: <span class="hljs-number">1.5</span>em <span class="hljs-number">-5.555</span>%
 	@media( <span class="hljs-keyword">min</span>-width: $breakMdSm )
 		+feature()
 

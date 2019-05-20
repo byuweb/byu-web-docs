@@ -1,11 +1,11 @@
-$columnWidth: 42rem
-$emphasisWidth: 52.5rem
-$featureWidth: 60rem
+$columnWidth: 42em
+$emphasisWidth: 52.5em
+$featureWidth: 60em
 
 $emphasisPercent: ( $emphasisWidth / $columnWidth ) * 100%
 $emphasisMargin: ( ($emphasisPercent - 100) / 2 ) * -1
 $featurePercent: ( $featureWidth / $columnWidth ) * 100%
-$featureMargin: ( ($featurePercent - 100) / 2 ) * -1
+$featuremargin: ( ($featurePercent - 100) / 2 ) * -1
 
 =emphasis()
 	max-width: $emphasisPercent
@@ -14,8 +14,8 @@ $featureMargin: ( ($featurePercent - 100) / 2 ) * -1
 
 =feature()
 	max-width: $featurePercent
-	margin-left: $featureMargin
-	margin-right: $featureMargin
+	margin-left: $featuremargin
+	margin-right: $featuremargin
 
 
 
@@ -44,18 +44,18 @@ section, .column
 
 	@media( min-width: $breakMdLg )
 		margin: 0 auto
-		width: 42rem
+		width: 42em
 
 
 section .emphasis
 	max-width: 111.11%
-	margin: 1.5rem -5.555%
+	margin: 1.5em -5.555%
 	@media( min-width: $breakMdSm )
 		+emphasis()
 
 section .feature
 	max-width: 111.11%
-	margin: 1.5rem -5.555%
+	margin: 1.5em -5.555%
 	@media( min-width: $breakMdSm )
 		+feature()
 
