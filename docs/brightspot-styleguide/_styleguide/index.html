@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Styleguide</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="index.html">
+  <script type="application/javascript" src="index.js"></script>
+  <style>
+  </style>
+</head>
+
+<body class="StyleguideBody">
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-images" viewBox="0 0 24 24">
+        <title>image</title>
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z" />
+      </symbol>
+      <symbol id="icon-compare" viewBox="0 0 24 24">
+        <title>comparison</title>
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5l5-6v6zm9-15h-5v2h5v13l-5-6v9h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+      </symbol>
+      <symbol id="icon-checkmark" viewBox="0 0 24 24">
+        <title>checked</title>
+        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z" />
+      </symbol>
+      <symbol id="icon-website" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-chevron-up" viewBox="0 0 28 28">
+        <title>chevron-up</title>
+        <path d="M26.297 20.797l-2.594 2.578c-0.391 0.391-1.016 0.391-1.406 0l-8.297-8.297-8.297 8.297c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.578c-0.391-0.391-0.391-1.031 0-1.422l11.594-11.578c0.391-0.391 1.016-0.391 1.406 0l11.594 11.578c0.391 0.391 0.391 1.031 0 1.422z"></path>
+      </symbol>
+      <symbol id="icon-chevron-down" viewBox="0 0 28 28">
+        <title>chevron-down</title>
+        <path d="M26.297 12.625l-11.594 11.578c-0.391 0.391-1.016 0.391-1.406 0l-11.594-11.578c-0.391-0.391-0.391-1.031 0-1.422l2.594-2.578c0.391-0.391 1.016-0.391 1.406 0l8.297 8.297 8.297-8.297c0.391-0.391 1.016-0.391 1.406 0l2.594 2.578c0.391 0.391 0.391 1.031 0 1.422z"></path>
+      </symbol>
+      <symbol id="icon-bars" viewBox="0 0 24 28">
+        <title>bars</title>
+        <path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path>
+      </symbol>
+      <symbol id="icon-times-circle" viewBox="0 0 24 28">
+        <title>times-circle</title>
+        <path d="M17.953 17.531c0-0.266-0.109-0.516-0.297-0.703l-2.828-2.828 2.828-2.828c0.187-0.187 0.297-0.438 0.297-0.703s-0.109-0.531-0.297-0.719l-1.406-1.406c-0.187-0.187-0.453-0.297-0.719-0.297s-0.516 0.109-0.703 0.297l-2.828 2.828-2.828-2.828c-0.187-0.187-0.438-0.297-0.703-0.297s-0.531 0.109-0.719 0.297l-1.406 1.406c-0.187 0.187-0.297 0.453-0.297 0.719s0.109 0.516 0.297 0.703l2.828 2.828-2.828 2.828c-0.187 0.187-0.297 0.438-0.297 0.703s0.109 0.531 0.297 0.719l1.406 1.406c0.187 0.187 0.453 0.297 0.719 0.297s0.516-0.109 0.703-0.297l2.828-2.828 2.828 2.828c0.187 0.187 0.438 0.297 0.703 0.297s0.531-0.109 0.719-0.297l1.406-1.406c0.187-0.187 0.297-0.453 0.297-0.719zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z"></path>
+      </symbol>
+      <symbol id="icon-external-link" viewBox="0 0 28 28">
+        <title>external-link</title>
+        <path d="M22 14.5v5c0 2.484-2.016 4.5-4.5 4.5h-13c-2.484 0-4.5-2.016-4.5-4.5v-13c0-2.484 2.016-4.5 4.5-4.5h11c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-1.375 0-2.5 1.125-2.5 2.5v13c0 1.375 1.125 2.5 2.5 2.5h13c1.375 0 2.5-1.125 2.5-2.5v-5c0-0.281 0.219-0.5 0.5-0.5h1c0.281 0 0.5 0.219 0.5 0.5zM28 1v8c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-2.75-2.75-10.187 10.187c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-1.781-1.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l10.187-10.187-2.75-2.75c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="StyleguideHeader">
+    <h1 class="StyleguideHeader-title">Styleguide</h1>
+    <div class="toolBroadcast">
+      
+    </div>
+    <div class="NavigationGroup">
+      <h4>Resources</h4>
+      <ul>
+        <li><a target="_blank" href="http://brightspot.com/styleguide-docs">Documentation</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="StyleguideNavigation">
+    <div class="StyleguideDropdown">
+      <div class="StyleguideDropdown-button">Filter Examples</div>
+      <div class="StyleguideDropdown-content">
+        <div class="StyleguideDropdown-search">
+          <input type="text" placeholder="Search.." id="myInput" class="StyleguideDropdown-search-input" />
+          <button class="StyleguideDropdown-search-clear"><svg class="icon-times-circle">
+              <use href="#icon-times-circle"></use>
+            </svg></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="StyleguideNavigation-group">
+
+      <div class="StyleguideNavigation-content">
+        <ul class="StyleguideGroups">
+          <li>
+            <h3 class="StyleguideGroups-name">Foundation <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/action-bar.html" title="Action Bar"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Action Bar<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/buttons.html" title="Buttons"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Buttons<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/colors.html" title="Color"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Color<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/grid.html" title="Grid (Layout)"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Grid (Layout)<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/inputs.html" title="Inputs"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Inputs<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/lists.html" title="Lists"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/social-bar.html" title="Social Bar"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Social Bar<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../foundation/typography.html" title="Typography"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Typography<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Carousels <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/carousel/carousel-module.html" title="Gallery Module"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Module<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/carousel/carousel-module-full-width.html" title="Gallery Module - Full Width"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Module - Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--LargeHeadline.html" title="Large Headline"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Large Headline<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--MediumHeadline.html" title="Medium Headline"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Medium Headline<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--SmallHeadline.html" title="Small Headline"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Small Headline<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--BoxedHeadline.html" title="Boxed Headline"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Boxed Headline<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--Buttons.html" title="Three Buttons"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Three Buttons<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/ListCarousel--QuoteFullWidth.html" title="Three Buttons"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Three Buttons<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Containers <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/container/ThreeColumnContainer.html" title="1/3–1/3–1/3"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        1/3–1/3–1/3<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/container/TwoColumnContainer3070.html" title="1/3–2/3"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        1/3–2/3<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/container/TwoColumnContainer7030.html" title="2/3–1/3"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        2/3–1/3<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/container/TwoColumnContainer5050.html" title="1/2–1/2"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        1/2–1/2<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Lists <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/Masonry&#32;Lists.html" title="Masonry Lists"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Logo On Top","content":"/examples/list/List--CardLogoOnTopsMasonry.html","height":"660px","width":"100%","slugName":"Logo-On-Top"},{"name":"Metrics","content":"/examples/list/List--MetricsMasonry.html","height":"660px","width":"100%","slugName":"Metrics"},{"name":"Description On Left","content":"/examples/list/List--CardDescriptionOnLeftMasonry.html","height":"660px","width":"100%","slugName":"Description-On-Left"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Masonry Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/list/Masonry&#32;Lists.html#Logo-On-Top" target="StyleguideExample-frame">Logo On Top</a></li><li><a href="../examples/list/Masonry&#32;Lists.html#Metrics" target="StyleguideExample-frame">Metrics</a></li><li><a href="../examples/list/Masonry&#32;Lists.html#Description-On-Left" target="StyleguideExample-frame">Description On Left</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/Carousel&#32;Lists.html" title="Carousel Lists"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Image Only","content":"/examples/list/List--CardImageOnlyCarousel.html","height":"660px","width":"100%","slugName":"Image-Only"},{"name":"Image On Top","content":"/examples/list/List--CardImageOnTopCarousel.html","height":"660px","width":"100%","slugName":"Image-On-Top"},{"name":"Image On Side","content":"/examples/list/List--CardImageOnSideCarousel.html","height":"660px","width":"100%","slugName":"Image-On-Side"},{"name":"Quote Cards","content":"/examples/list/List--CardQuoteCarousel.html","height":"660px","width":"100%","slugName":"Quote-Cards"},{"name":"Text Only","content":"/examples/list/List--CardTextOnlyCarousel.html","height":"660px","width":"100%","slugName":"Text-Only"},{"name":"Icon On Side","content":"/examples/list/List--IconOnSideCarousel.html","height":"660px","width":"100%","slugName":"Icon-On-Side"},{"name":"Icon On Top, Small","content":"/examples/list/List--IconOnTopSmallCarousel.html","height":"660px","width":"100%","slugName":"Icon-On-Top,-Small"},{"name":"Image On Top, Circular","content":"/examples/list/List--ImageOnTopCircularCarousel.html","height":"660px","width":"100%","slugName":"Image-On-Top,-Circular"},{"name":"Logo Only","content":"/examples/list/List--LogoOnlyCarousel.html","height":"660px","width":"100%","slugName":"Logo-Only"},{"name":"Logo On Top","content":"/examples/list/List--CardLogoOnTopCarousel.html","height":"660px","width":"100%","slugName":"Logo-On-Top"},{"name":"Metrics","content":"/examples/list/List--MetricsCarousel.html","height":"660px","width":"100%","slugName":"Metrics"},{"name":"Description On Left","content":"/examples/list/List--CardDescriptionOnLeftCarousel.html","height":"660px","width":"100%","slugName":"Description-On-Left"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Carousel Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/list/Carousel&#32;Lists.html#Image-Only" target="StyleguideExample-frame">Image Only</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Image-On-Top" target="StyleguideExample-frame">Image On Top</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Image-On-Side" target="StyleguideExample-frame">Image On Side</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Quote-Cards" target="StyleguideExample-frame">Quote Cards</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Text-Only" target="StyleguideExample-frame">Text Only</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Icon-On-Side" target="StyleguideExample-frame">Icon On Side</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Icon-On-Top,-Small" target="StyleguideExample-frame">Icon On Top, Small</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Image-On-Top,-Circular" target="StyleguideExample-frame">Image On Top, Circular</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Logo-Only" target="StyleguideExample-frame">Logo Only</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Logo-On-Top" target="StyleguideExample-frame">Logo On Top</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Metrics" target="StyleguideExample-frame">Metrics</a></li><li><a href="../examples/list/Carousel&#32;Lists.html#Description-On-Left" target="StyleguideExample-frame">Description On Left</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/Flip&#32;Card&#32;Lists.html" title="Flip Card Lists"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Image & Button","content":"/examples/list/ListFlipCard--ImageAndButton.html","height":"660px","width":"100%","slugName":"Image-&-Button"},{"name":"Icon & Quote","content":"/examples/list/ListFlipCard--IconAndQuote.html","height":"660px","width":"100%","slugName":"Icon-&-Quote"},{"name":"Logo & Button","content":"/examples/list/ListFlipCard--LogoAndButton.html","height":"660px","width":"100%","slugName":"Logo-&-Button"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Flip Card Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/list/Flip&#32;Card&#32;Lists.html#Image-&amp;-Button" target="StyleguideExample-frame">Image &amp; Button</a></li><li><a href="../examples/list/Flip&#32;Card&#32;Lists.html#Icon-&amp;-Quote" target="StyleguideExample-frame">Icon &amp; Quote</a></li><li><a href="../examples/list/Flip&#32;Card&#32;Lists.html#Logo-&amp;-Button" target="StyleguideExample-frame">Logo &amp; Button</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/Card&#32;Lists.html" title="Card Lists"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Description On Left","content":"/examples/list/List--CardDescriptionOnLeft.html","height":"660px","width":"100%","slugName":"Description-On-Left"},{"name":"Image On Top","content":"/examples/list/List--CardImageOnTop.html","height":"660px","width":"100%","slugName":"Image-On-Top"},{"name":"Image On Side","content":"/examples/list/List--CardImageOnSide.html","height":"660px","width":"100%","slugName":"Image-On-Side"},{"name":"Background","content":"/examples/list/List--CardBackground.html","height":"660px","width":"100%","slugName":"Background"},{"name":"Image Only","content":"/examples/list/List--CardImageOnly.html","height":"660px","width":"100%","slugName":"Image-Only"},{"name":"Quotes","content":"/examples/list/List--CardQuote.html","height":"660px","width":"100%","slugName":"Quotes"},{"name":"Text Only","content":"/examples/list/List--CardTextOnly.html","height":"660px","width":"100%","slugName":"Text-Only"},{"name":"Logo On Top","content":"/examples/list/List--CardLogoOnTop.html","height":"660px","width":"100%","slugName":"Logo-On-Top"},{"name":"Logo On Bottom","content":"/examples/list/List--CardLogoOnBottom.html","height":"660px","width":"100%","slugName":"Logo-On-Bottom"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Card Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/list/Card&#32;Lists.html#Description-On-Left" target="StyleguideExample-frame">Description On Left</a></li><li><a href="../examples/list/Card&#32;Lists.html#Image-On-Top" target="StyleguideExample-frame">Image On Top</a></li><li><a href="../examples/list/Card&#32;Lists.html#Image-On-Side" target="StyleguideExample-frame">Image On Side</a></li><li><a href="../examples/list/Card&#32;Lists.html#Background" target="StyleguideExample-frame">Background</a></li><li><a href="../examples/list/Card&#32;Lists.html#Image-Only" target="StyleguideExample-frame">Image Only</a></li><li><a href="../examples/list/Card&#32;Lists.html#Quotes" target="StyleguideExample-frame">Quotes</a></li><li><a href="../examples/list/Card&#32;Lists.html#Text-Only" target="StyleguideExample-frame">Text Only</a></li><li><a href="../examples/list/Card&#32;Lists.html#Logo-On-Top" target="StyleguideExample-frame">Logo On Top</a></li><li><a href="../examples/list/Card&#32;Lists.html#Logo-On-Bottom" target="StyleguideExample-frame">Logo On Bottom</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/list/Promo&#32;Lists.html" title="Promo Lists"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Icon On Side","content":"/examples/list/List--IconOnSide.html","height":"660px","width":"100%","slugName":"Icon-On-Side"},{"name":"Image On Top, Circular","content":"/examples/list/List--ImageOnTopCircular.html","height":"660px","width":"100%","slugName":"Image-On-Top,-Circular"},{"name":"Icon On Top, Large","content":"/examples/list/List--IconOnTopLarge.html","height":"660px","width":"100%","slugName":"Icon-On-Top,-Large"},{"name":"Icon On Top, Small","content":"/examples/list/List--IconOnTopSmall.html","height":"660px","width":"100%","slugName":"Icon-On-Top,-Small"},{"name":"Logos","content":"/examples/list/List--LogoOnly.html","height":"660px","width":"100%","slugName":"Logos"},{"name":"Metrics","content":"/examples/list/List--Metrics.html","height":"660px","width":"100%","slugName":"Metrics"},{"name":"Tag Cloud","content":"/examples/list/List--TagCloud.html","height":"660px","width":"100%","slugName":"Tag-Cloud"},{"name":"Thumbnail Image","content":"/examples/list/List--ImageThumbnail.html","height":"720px","width":"100%","slugName":"Thumbnail-Image"},{"name":"Small Image","content":"/examples/list/List--ImageSmall.html","height":"960px","width":"100%","slugName":"Small-Image"},{"name":"Medium Image","content":"/examples/list/List--ImageMedium.html","height":"1550px","width":"100%","slugName":"Medium-Image"},{"name":"Large Image","content":"/examples/list/List--ImageLarge.html","height":"720px","width":"100%","slugName":"Large-Image"},{"name":"List Card","content":"/examples/list/List--ListCard.html","height":"660px","width":"100%","slugName":"List-Card"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Promo Lists<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/list/Promo&#32;Lists.html#Icon-On-Side" target="StyleguideExample-frame">Icon On Side</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Image-On-Top,-Circular" target="StyleguideExample-frame">Image On Top, Circular</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Icon-On-Top,-Large" target="StyleguideExample-frame">Icon On Top, Large</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Icon-On-Top,-Small" target="StyleguideExample-frame">Icon On Top, Small</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Logos" target="StyleguideExample-frame">Logos</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Metrics" target="StyleguideExample-frame">Metrics</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Tag-Cloud" target="StyleguideExample-frame">Tag Cloud</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Thumbnail-Image" target="StyleguideExample-frame">Thumbnail Image</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Small-Image" target="StyleguideExample-frame">Small Image</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Medium-Image" target="StyleguideExample-frame">Medium Image</a></li><li><a href="../examples/list/Promo&#32;Lists.html#Large-Image" target="StyleguideExample-frame">Large Image</a></li><li><a href="../examples/list/Promo&#32;Lists.html#List-Card" target="StyleguideExample-frame">List Card</a></li>
+        </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Media <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/gallery/Gallery--Module.html" title="Gallery Module"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Module<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Gallery Module Full Width"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Module Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Image Module"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Image Module<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/media/VideoModule.html" title="Video Module"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video Module<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Video Module With Playlist"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video Module With Playlist<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/media/VideoLead.html" title="Video Module Full Width"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video Module Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/media/VideoLead--HTML5.html" title="Video Module Full Width, HTML5"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video Module Full Width, HTML5<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Promos <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/promo/Flip&#32;Card&#32;Promos.html" title="Flip Card Promos"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Icon & Quote","content":"/examples/promo/PromoFlipCard--IconAndQuote.html","height":"500px","width":"100%","slugName":"Icon-&-Quote"},{"name":"Image & Button","content":"/examples/promo/PromoFlipCard--ImageAndButton.html","height":"500px","width":"100%","slugName":"Image-&-Button"},{"name":"Logo & Button","content":"/examples/promo/PromoFlipCard--LogoAndButton.html","height":"500px","width":"100%","slugName":"Logo-&-Button"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Flip Card Promos<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/promo/Flip&#32;Card&#32;Promos.html#Icon-&amp;-Quote" target="StyleguideExample-frame">Icon &amp; Quote</a></li><li><a href="../examples/promo/Flip&#32;Card&#32;Promos.html#Image-&amp;-Button" target="StyleguideExample-frame">Image &amp; Button</a></li><li><a href="../examples/promo/Flip&#32;Card&#32;Promos.html#Logo-&amp;-Button" target="StyleguideExample-frame">Logo &amp; Button</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/promo/Card&#32;Promos.html" title="Card Promos"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Image On Top, Large","content":"/examples/promo/PromoCard--ImageOnTopLarge.html","height":"910px","width":"100%","slugName":"Image-On-Top,-Large"},{"name":"Image On Top","content":"/examples/promo/PromoCard--ImageOnTop.html","height":"440px","width":"100%","slugName":"Image-On-Top"},{"name":"Background","content":"/examples/promo/PromoCard--Background.html","height":"350px","width":"100%","slugName":"Background"},{"name":"Image Only","content":"/examples/promo/PromoCard--ImageOnly.html","height":"440px","width":"100%","slugName":"Image-Only"},{"name":"Image Only Large","content":"/examples/promo/PromoCard--ImageOnlyLarge.html","height":"510px","width":"100%","slugName":"Image-Only-Large"},{"name":"Image On Side","content":"/examples/promo/PromoCard--ImageOnSide.html","height":"910px","width":"100%","slugName":"Image-On-Side"},{"name":"Text Only","content":"/examples/promo/PromoCard--TextOnly.html","height":"300px","width":"100%","slugName":"Text-Only"},{"name":"Logo on Top","content":"/examples/promo/PromoCard--LogoOnTop.html","height":"460px","width":"100%","slugName":"Logo-on-Top"},{"name":"Logo on Bottom","content":"/examples/promo/PromoCard--LogoOnBottom.html","height":"460px","width":"100%","slugName":"Logo-on-Bottom"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Card Promos<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/promo/Card&#32;Promos.html#Image-On-Top,-Large" target="StyleguideExample-frame">Image On Top, Large</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Image-On-Top" target="StyleguideExample-frame">Image On Top</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Background" target="StyleguideExample-frame">Background</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Image-Only" target="StyleguideExample-frame">Image Only</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Image-Only-Large" target="StyleguideExample-frame">Image Only Large</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Image-On-Side" target="StyleguideExample-frame">Image On Side</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Text-Only" target="StyleguideExample-frame">Text Only</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Logo-on-Top" target="StyleguideExample-frame">Logo on Top</a></li><li><a href="../examples/promo/Card&#32;Promos.html#Logo-on-Bottom" target="StyleguideExample-frame">Logo on Bottom</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/promo/Standard&#32;Promos.html" title="Standard Promos"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Icon On Top, Small","content":"/examples/promo/Promo--IconOnTopSmall.html","height":"110px","width":"100%","slugName":"Icon-On-Top,-Small"},{"name":"Icon On Top, Large","content":"/examples/promo/Promo--IconOnTopLarge.html","height":"300px","width":"100%","slugName":"Icon-On-Top,-Large"},{"name":"Image On Top, Circular","content":"/examples/promo/Promo--ImageOnTopCircular.html","height":"220px","width":"100%","slugName":"Image-On-Top,-Circular"},{"name":"Icon on Side","content":"/examples/promo/Promo--IconOnSide.html","height":"150px","width":"100%","slugName":"Icon-on-Side"},{"name":"Image on Side, Large","content":"/examples/promo/Promo--ImageOnSideLarge.html","height":"550px","width":"100%","slugName":"Image-on-Side,-Large"},{"name":"Image on Bottom, Large","content":"/examples/promo/Promo--ImageOnBottomLarge.html","height":"820px","width":"100%","slugName":"Image-on-Bottom,-Large"},{"name":"Image on Top, Large","content":"/examples/promo/Promo--ImageOnTopLarge.html","height":"820px","width":"100%","slugName":"Image-on-Top,-Large"},{"name":"Metrics","content":"/examples/promo/Promo--Metrics.html","height":"250px","width":"100%","slugName":"Metrics"},{"name":"Thumbnail Image","content":"/examples/promo/Promo--ImageThumbnail.html","height":"110px","width":"100%","slugName":"Thumbnail-Image"},{"name":"Small Image","content":"/examples/promo/Promo--ImageSmall.html","height":"800px","width":"100%","slugName":"Small-Image"},{"name":"Medium Image","content":"/examples/promo/Promo--ImageMedium.html","height":"660px","width":"100%","slugName":"Medium-Image"},{"name":"Large Image","content":"/examples/promo/Promo--ImageLarge.html","height":"300px","width":"100%","slugName":"Large-Image"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Standard Promos<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/promo/Standard&#32;Promos.html#Icon-On-Top,-Small" target="StyleguideExample-frame">Icon On Top, Small</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Icon-On-Top,-Large" target="StyleguideExample-frame">Icon On Top, Large</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Image-On-Top,-Circular" target="StyleguideExample-frame">Image On Top, Circular</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Icon-on-Side" target="StyleguideExample-frame">Icon on Side</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Image-on-Side,-Large" target="StyleguideExample-frame">Image on Side, Large</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Image-on-Bottom,-Large" target="StyleguideExample-frame">Image on Bottom, Large</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Image-on-Top,-Large" target="StyleguideExample-frame">Image on Top, Large</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Metrics" target="StyleguideExample-frame">Metrics</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Thumbnail-Image" target="StyleguideExample-frame">Thumbnail Image</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Small-Image" target="StyleguideExample-frame">Small Image</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Medium-Image" target="StyleguideExample-frame">Medium Image</a></li><li><a href="../examples/promo/Standard&#32;Promos.html#Large-Image" target="StyleguideExample-frame">Large Image</a></li>
+        </ul>
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/promo/Wide&#32;Promos.html" title="Wide Promos"
+        target="StyleguideExample-frame"  data-sections='[{"name":"Full Width","content":"/examples/promo/Promo--FullWidth.html","height":"450px","width":"100%","slugName":"Full-Width"},{"name":"Full Width - Contact","content":"todo","height":"660px","width":"100%","slugName":"Full-Width---Contact"}]' 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Wide Promos<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="../examples/promo/Wide&#32;Promos.html#Full-Width" target="StyleguideExample-frame">Full Width</a></li><li><a href="../examples/promo/Wide&#32;Promos.html#Full-Width---Contact" target="StyleguideExample-frame">Full Width - Contact</a></li>
+        </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Quotes <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/quote/Quote--FullWidth.html" title="Quote - Full Width"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Quote - Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/quote/Quote--FullWidthLeft.html" title="Quote - Full Width, Quote Left"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Quote - Full Width, Quote Left<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/quote/Quote--FullWidthRight.html" title="Quote - Full Width, Quote Right"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Quote - Full Width, Quote Right<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/quote/Quote--Card.html" title="Quote - Card"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Quote - Card<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Forms <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/form/form.html" title="Form"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Form<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../core/form/variations/CustomForm.html" title="Form - Custom"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Form - Custom<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../core/form/variations/FullWidthForm.html" title="Form - Full Width"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Form - Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Misc <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../press-release/PressRelease.html" title="Press Release"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Press Release<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Ads"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Ads<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Playlist"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Playlist<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/text/RichText--Card.html" title="Rich Text Card"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Rich Text Card<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/text/RichText--FullWidth.html" title="Rich Text Full Width"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Rich Text Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="http://localhost:8080/_styleguide/todo" title="Search"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Search<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/stock/stock-ticker.html" title="Stock Ticker"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Stock Ticker<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Article <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/article/Article.html" title="Article"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Article<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/article/Article--NoAside.html" title="Article - No Aside"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Article - No Aside<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/article/Article--NoLead.html" title="Article - No Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Article - No Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/article/Article--LargeLead.html" title="Article - Large Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Article - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/article/Article--CustomLead.html" title="Article - Custom Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Article - Custom Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/ListiclePage.html" title="Listicle"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Listicle<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/listicle/Listicle--Centered.html" title="Listicle - Centered"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Listicle - Centered<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/listicle/Listicle--NoLead.html" title="Listicle - No Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Listicle - No Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Page Templates <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/page/Page.html" title="Page - Default"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Page - Default<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/page/Page--LargeLead.html" title="Page - Large Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../core/homepage/HomePage.html" title="HomePage Page Type"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        HomePage Page Type<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/AuthorPage.html" title="Author Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Author Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/BlogLandingPage--SmallImages.html" title="Blog Landing - Small Images"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Blog Landing - Small Images<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/BlogLandingPage.html" title="Blog Landing - Medium Images"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Blog Landing - Medium Images<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/BlogLandingPage--LargeImages.html" title="Blog Landing - Large Images"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Blog Landing - Large Images<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/BlogPostPage.html" title="Blog Post"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Blog Post<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/BlogPostPage--WithLead.html" title="Blog Post - With Lead"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Blog Post - With Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/EmployeePage.html" title="Employee Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Employee Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/GalleryPage.html" title="Gallery Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/GalleryPage--Masonry.html" title="Gallery Page - Masonry"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Gallery Page - Masonry<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/HomePage.html" title="Homepage"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Homepage<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/HomePage--V2.html" title="Homepage V2"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Homepage V2<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/SearchResultsPage.html" title="Search Results"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Search Results<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/SearchResultsPage--gridView.html" title="Search Results - Grid View"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Search Results - Grid View<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/VideoPage.html" title="Video Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/VideoPage-playlist.html" title="Video - Playlist Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video - Playlist Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/VideoPage-youtube.html" title="Video - Youtube Page"
+        target="StyleguideExample-frame" 
+          data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Video - Youtube Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Taxonomy Pages <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../corporate/brand/BrandPage.html" title="Brand Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Brand Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/brand-page-lead-bg-image.html" title="Brand Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Brand Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/brand-page-gradient.html" title="Brand Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Brand Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/brand-page-brand-image.html" title="Brand Page - Brand Logo"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Brand Page - Brand Logo<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../corporate/product/ProductPage.html" title="Product Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Product Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/product-page-lead-bg-image.html" title="Product Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Product Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/product-page-gradient.html" title="Product Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Product Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../corporate/topic/TopicPage.html" title="Topic Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Topic Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/topic-page-lead-bg-image.html" title="Topic Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Topic Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/topic-page-gradient.html" title="Topic Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Topic Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../corporate/country/CountryPage.html" title="Country Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Country Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/country-page-lead-bg-image.html" title="Country Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Country Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/country-page-gradient.html" title="Country Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Country Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../core/tag/TagPage.html" title="Tag Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tag Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/tag-page-lead-bg-image.html" title="Tag Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tag Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/tag-page-gradient.html" title="Tag Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tag Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../core/section/SectionPage.html" title="Section Page"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Section Page<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/section-page-lead-bg-image.html" title="Section Page - Large Lead"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Section Page - Large Lead<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/taxonomy/section-page-gradient.html" title="Section Page - Beige Gradient"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Section Page - Beige Gradient<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="StyleguideGroups-name">Tabs <svg class="icon-chevron-down">
+                <use href="#icon-chevron-down"></use>
+              </svg>
+            </h3>
+            <ul class="StyleguideGroups-examples">
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/tabs/tabs.html" title="Tabs"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tabs<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/tabs/tabs-border-bottom.html" title="Tabs - Border Bottom"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tabs - Border Bottom<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+              <li class="StyleguideGroups-examples-example"  data-filter="all" >
+                      <a class="StyleguideGroups-examples-example StyleguideGroups-examples-link" href="../examples/tabs/tabs-full-width.html" title="Tabs - Full Width"
+        target="StyleguideExample-frame" 
+         data-tabbed="true"   data-source='{"html":"Example","json":"JSON (Original)","jsonProcessed":{"text":"JSON (Processed)","ext":"processed.json"}}' >
+        Tabs - Full Width<svg class="icon-external-link" title="Open Example in a New Window">
+          <use href="#icon-external-link"></use>
+        </svg>
+      </a>
+      
+        
+        
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+
+  <div class="StyleguideContent">
+    <section class="StyleguideExample">
+      <div class="StyleguideExample-wrapper"><iframe class="StyleguideExample-frame" frameborder="0" name="StyleguideExample-frame"
+          src="about:blank"></iframe></div>
+    </section>
+  </div>
+
+  <script src="index.html" type="application/javascript"></script>
+</body>
+
+</html>

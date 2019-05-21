@@ -2,21 +2,24 @@ name: color
 collated: true
 variants:
   - name: default
-    title: Main Colors
-    label: Main Colors
+    title: Primary
+    label: Primary
     context:
       colors:
         - name: BYU Navy
           hex: 002e5d
           var: byuNavy
           dark: true
+        - name: White
+          hex: fff
+          var: white
+  - name: secondary
+    context:
+      colors:
         - name: BYU Royal
           hex: 0057b8
           var: byuRoyal
           dark: true
-        - name: White
-          hex: fff
-          var: white
 
   - name: Greys
     context: 
@@ -29,16 +32,22 @@ variants:
           hex: "666"
           var: grey70
           dark: true
-        - name: Medium Grey
+        - name: Medium-Dark Grey
           hex: 8f8f8f
           var: grey50
           dark: true
-        - name: Light Grey
+        - name: Medium Grey
           hex: c5c5c5
           var: grey30
-        - name: Lightest Grey
+        - name: Medium-Light Grey
           hex: e6e6e6
           var: grey10
+        - name: Light Grey
+          hex: f4f4f4
+          var: grey05
+        - name: Lightest Grey
+          hex: fafafa
+          var: grey02
 
   - name: Accent Colors
     context:
@@ -65,16 +74,16 @@ variants:
           var: yellow20
           hex: "fff0c5"
 
-        - name: Purple
-          var: purple
-          hex: "500e7c"
-          dark: true
-        - name: Medium Purple
-          var: purple50
-          hex: "af88ca"
-        - name: Light Purple
-          var: purple20
-          hex: "d6bde7"
+        # - name: Purple
+        #   var: purple
+        #   hex: "500e7c"
+        #   dark: true
+        # - name: Medium Purple
+        #   var: purple50
+        #   hex: "af88ca"
+        # - name: Light Purple
+        #   var: purple20
+        #   hex: "d6bde7"
 
         - name: Green
           var: green
@@ -87,16 +96,16 @@ variants:
           var: green20
           hex: "cee0c3"
 
-        - name: Orange
-          var: orange
-          hex: "d8580c"
-          dark: true
-        - name: Medium Orange
-          var: orange50
-          hex: "f7a883"
-        - name: Light Orange
-          var: orange20
-          hex: "ffdacf"
+        # - name: Orange
+        #   var: orange
+        #   hex: "d8580c"
+        #   dark: true
+        # - name: Medium Orange
+        #   var: orange50
+        #   hex: "f7a883"
+        # - name: Light Orange
+        #   var: orange20
+        #   hex: "ffdacf"
 
         - name: Red
           var: red

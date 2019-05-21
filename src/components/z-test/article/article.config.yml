@@ -1,0 +1,32 @@
+name: article
+title: Article
+label: Article (typography test)
+preview: "@preview--article"
+status: wip
+# hidden: true
+
+variants:
+  - name: default
+    label: Open Sans
+    context:
+      classes: open-sans
+    # hidden: true
+  - name: roboto
+    label: Roboto
+    context:
+      classes: roboto
+    # hidden: true
+  - name: noto
+    label: Noto Sans
+    context:
+      classes: noto-sans
+
+  - name: public
+    label: Public Sans
+    context:
+      classes: public-sans
+
+  - name: ringside
+    label: Ringside
+    context:
+      classes: ringside
