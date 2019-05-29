@@ -1,21 +1,21 @@
+input
+  box-sizing: border-box
+  
 .usa-form  
   font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif  
   font-size: 1.06471rem  
   line-height: 1.26796  
-  width: 320px
 
-@media (max-width: 490px) 
+@media (max-width: 480px) 
   .usa-form
     width: 75%
-  
-.usa-form
-  max-width: 20rem
-
-.usa-form .usa-button
-  margin-top: 1.5rem
-
-.usa-form--large
-  max-width: 30rem
+@media all and (min-width: 30em)  
+  .usa-form
+    max-width: 20rem
+  .usa-form .usa-button
+    margin-top: 1.5rem
+  .usa-form--large
+    max-width: 30rem
 
 .usa-form .usa-input,
 .usa-form .usa-range,
@@ -90,12 +90,15 @@
   border-radius: 0
   color: #1b1b1b
   display: block
-
   margin-top: 0.5rem
   max-width: 30rem
   padding: 0.5rem
   width: 100%
 
+.radio
+  input:not([disabled]):focus
+    outline: none
+    outline-offset: 0
 
 .usa-input.usa-input--success,
 .usa-textarea.usa-input--success,
@@ -120,6 +123,9 @@
   padding-left: 1rem
   position: relative
 
+@media all and (min-width: 64em)
+  .usa-form-group--error
+    margin-left: -1.25rem
 
 .usa-input--error
   border-width: 0.25rem
@@ -448,15 +454,14 @@
 .usa-form-group--month,
 .usa-form-group--year
   -webkit-box-flex: 0
-      -ms-flex: 0 0 auto
-          flex: 0 0 auto
+    -ms-flex: 0 0 auto
+      flex: 0 0 auto
   margin-right: 1rem
   width: 3rem
 
 
 .usa-form-group--year
   width: 4.5rem
-
 
 .padding-2
   padding-top: 1em
@@ -480,18 +485,16 @@
   padding-left: 1rem
   padding-right: 1rem
 
-@media (max-width: 490px)
+@media (max-width: 480px)
   .validation
-    .usa-button
-      width: 100%
-    .usa-input
-      width: 100%
+    .usa-button,
+    .usa-input,
     .usa-alert
       width: 100%
 
 
 .mobile-lg\:grid-col-4
-  webkit-box-flex: 0
+  -webkit-box-flex: 0
     -ms-flex: 0 0 auto
       flex: 0 0 auto
   width: 33.33333%
@@ -499,6 +502,11 @@
 .address
   .usa-form
     width: 480px
+
+@media (max-width: 520px) 
+   .address 
+    .usa-form
+      width: 75%
 
 .grid-row
   display: -webkit-box
@@ -510,6 +518,11 @@
 .grid-row.grid-gap
   margin-left: -0.5rem
   margin-right: -0.5rem
+
+.grid-row.grid-gap>* 
+  padding-left: .5rem
+  padding-right: .5rem
+
 
 .mobile-lg\:grid-col-8
   -webkit-box-flex: 0
