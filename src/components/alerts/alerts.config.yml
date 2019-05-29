@@ -7,14 +7,14 @@ variants:
     label: Info
     context:
       alert:
-        classes: "usa-alert--info"
+        classes: "byu-alert--info"
         title: Informative status
 
   - name: success
     label: Success
     context:
       alert:
-        classes: "usa-alert--success"
+        classes: "byu-alert--success"
         title: Success status
 
 
@@ -22,14 +22,14 @@ variants:
     label: Warning
     context:
       alert:
-        classes: "usa-alert--warning"
+        classes: "byu-alert--warning"
         title: Warning status
 
   - name: error
     label: Error
     context:
       alert:
-        classes: "usa-alert--error"
+        classes: "byu-alert--error"
         title: Error status
         role: "alert"
 
@@ -37,19 +37,19 @@ variants:
     label: No header
     context:
       alert:
-        classes: "usa-alert--info"
+        classes: "byu-alert--info"
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
 
   - name: no-icon
     label: No icon
     context:
       alert:
-        classes: "usa-alert--info usa-alert--no-icon"
+        classes: "byu-alert--info byu-alert--no-icon"
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
 
   - name: slim
     label: Slim
     context:
       alert:
-        classes: "usa-alert--info usa-alert--slim"
+        classes: "byu-alert--info byu-alert--slim"
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."

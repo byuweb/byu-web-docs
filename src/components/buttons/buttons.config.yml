@@ -5,35 +5,35 @@ variants:
     context:
       category: alternate
       label: Secondary buttons
-      classes: 'usa-button--secondary'
+      classes: 'byu-button--secondary'
 
   - name: accent-cool
     context:
       category: alternate
       label: Accent cool buttons
-      classes: 'usa-button--accent-cool'
+      classes: 'byu-button--accent-cool'
 
   - name: base
     context:
       category: alternate
       label: Gray buttons
-      classes: 'usa-button--base'
+      classes: 'byu-button--base'
 
   - name: outline
     context:
       category: outline
       label: outline buttons
-      classes: 'usa-button--outline'
+      classes: 'byu-button--outline'
 
   - name: outline-inverse
     context:
       category: outline-inverse
       label: outline inverse buttons
-      classes: 'usa-button--outline usa-button--inverse'
+      classes: 'byu-button--outline byu-button--inverse'
 
   - name: big
     context:
       category: 'big'
       label: Big button
-      classes: 'usa-button--big'
+      classes: 'byu-button--big'
 
