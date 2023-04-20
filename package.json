@@ -9,7 +9,7 @@
   "author": "Nathan Walton",
   "license": "ISC",
   "dependencies": {
-    "@frctl/fractal": "^1.1.7",
+    "@frctl/fractal": "^1.5.15",
     "@frctl/mandelbrot": "^1.2.1",
     "natives": "^1.1.6"
   },
